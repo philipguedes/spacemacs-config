@@ -1,0 +1,27 @@
+;; Object teste/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "teste/"
+  :tables
+  (list
+    (semanticdb-table "merge_csv.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("pandas" include nil nil [1 14])
+            ("os" include nil nil [15 24])
+            ("sys" include nil nil [25 45])
+            ("re" include nil nil [46 55])
+            ("date" variable nil nil [89 103])
+            ("num" variable nil nil [108 126])
+            ("print" code nil nil [127 127])
+            ("print" code nil nil [127 127])
+            ("validate_date" function nil nil [129 332])
+            ("main" function nil nil [334 838])
+            ("if" code nil nil [840 878]))          
+      :file "merge_csv.py"
+      :pointmax 878
+      :fsize 877
+      :lastmodtime '(22796 33263 596331 423000)
+      :unmatched-syntax nil))
+  :file "!home!philip!Desktop!teste!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

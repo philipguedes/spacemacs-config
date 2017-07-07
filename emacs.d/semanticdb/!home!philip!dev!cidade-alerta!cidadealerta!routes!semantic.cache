@@ -1,0 +1,40 @@
+;; Object routes/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "routes/"
+  :tables
+  (list
+    (semanticdb-table "alerts.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("flask" include nil nil [1 37])
+            ("flask_cors" include nil nil [38 79])
+            ("blah" include nil nil [80 113])
+            ("blah" include nil nil [114 149])
+            ("flask_headers" include nil nil [150 183])
+            ("ALLOWED_CROSS_DOMAINS" variable nil nil [186 234])
+            ("alerts" variable nil nil [236 274])
+            ("public" variable nil nil [275 313])
+            ("CORS" code nil nil [314 326])
+            ("" code nil nil [342 369])
+            ("" code nil nil [383 414])
+            ("create_alert" function nil nil [415 542])
+            ("" code nil nil [557 611])
+            ("" code nil nil [625 656])
+            ("delete_alert" function (:arguments 
+              ( ("alert_id" variable nil (reparse-symbol function_parameters) [674 682]))              ) nil [657 727]))          
+      :file "alerts.py"
+      :pointmax 727
+      :fsize 726
+      :lastmodtime '(22841 38822 597361 21000)
+      :unmatched-syntax nil)
+    (semanticdb-table "__init__.py"
+      :major-mode 'python-mode
+      :tags nil
+      :file "__init__.py"
+      :pointmax 1
+      :fsize 0
+      :lastmodtime '(22841 38822 597361 21000)
+      :unmatched-syntax nil))
+  :file "!home!philip!dev!cidade-alerta!cidadealerta!routes!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

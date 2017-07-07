@@ -1,0 +1,59 @@
+;; Object analytics/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "analytics/"
+  :tables
+  (list
+    (semanticdb-table "__init__.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("httplib2" include nil nil [17 32])
+            ("os" include nil nil [33 42])
+            ("apiclient" include nil nil [44 75])
+            ("oauth2client.service_account" include nil nil [76 142])
+            ("ACCOUNT_NAME" variable nil nil [144 172])
+            ("PROPERTY_NAME" variable nil nil [173 230])
+            ("PROFILE_NAME" variable nil nil [231 255])
+            ("Analytics" type
+               (:superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("scope" variable nil (reparse-symbol indented_block_body) [314 376])
+                            ("analytics_key_file" variable nil (reparse-symbol indented_block_body) [385 438])
+                            ("credentials" variable nil (reparse-symbol indented_block_body) [447 556])
+                            ("http" variable nil (reparse-symbol indented_block_body) [565 610])
+                            ("self" variable nil (reparse-symbol indented_block_body) [619 681])
+                            ("accounts" variable nil (reparse-symbol indented_block_body) [691 757])
+                            ("account" variable nil (reparse-symbol indented_block_body) [766 820])
+                            ("properties" variable nil (reparse-symbol indented_block_body) [830 933])
+                            ("property" variable nil (reparse-symbol indented_block_body) [942 1000])
+                            ("profiles" variable nil (reparse-symbol indented_block_body) [1010 1130])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1139 1198]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [299 303]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [286 1199])
+                    ("_get_named_item" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1224 1228])
+                            ("container" variable nil (reparse-symbol function_parameters) [1230 1239])
+                            ("name" variable nil (reparse-symbol function_parameters) [1241 1245]))                          )
+                        (reparse-symbol indented_block_body) [1204 1379])
+                    ("get_all" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1396 1400])
+                            ("params" variable nil (reparse-symbol function_parameters) [1402 1410]))                          )
+                        (reparse-symbol indented_block_body) [1384 1897]))                  
+                :type "class")
+                nil [257 1897]))          
+      :file "__init__.py"
+      :pointmax 1899
+      :fsize 1900
+      :lastmodtime '(22766 26829 703348 494000)
+      :unmatched-syntax nil))
+  :file "!home!philip!dev!analytics!analytics!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,73 @@
+;; Object workers/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "workers/"
+  :tables
+  (list
+    (semanticdb-table "kafka_worker.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("cidadealerta.workers.run_async" include nil nil [1 48])
+            ("functools" include nil nil [49 65])
+            ("json" include nil nil [66 77])
+            ("logging" include nil nil [78 92])
+            ("sys" include nil nil [131 141])
+            ("kafka" include nil nil [202 268])
+            ("logging" code nil nil [271 378])
+            ("LOGGER" variable nil nil [1012 1054])
+            ("TOPICS" variable nil nil [1465 1494])
+            ("process_messages" function (:arguments 
+              ( ("consumer" variable nil (reparse-symbol function_parameters) [1518 1526]))              ) nil [1497 1788])
+            ("process_message" function (:arguments 
+              ( ("consumer" variable nil (reparse-symbol function_parameters) [2109 2117])
+                ("message" variable nil (reparse-symbol function_parameters) [2119 2126])
+                ("topic" variable nil (reparse-symbol function_parameters) [2128 2133]))              ) nil [2089 2704])
+            ("main" function nil nil [2706 2972])
+            ("if" code nil nil [2974 3012]))          
+      :file "kafka_worker.py"
+      :pointmax 3012
+      :fsize 3003
+      :lastmodtime '(22877 5345 502612 378000)
+      :unmatched-syntax nil)
+    (semanticdb-table "run_async.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("'''
+skeleton for runnig async jobs
+'''" code nil nil [1 39])
+            ("sys" include nil nil [40 50])
+            ("math" include nil nil [51 62])
+            ("logging" include nil nil [63 77])
+            ("signal" include nil nil [78 91])
+            ("timeit" include nil nil [92 133])
+            ("asyncio" include nil nil [134 148])
+            ("logging_format" variable nil nil [151 222])
+            ("logging" code nil nil [223 373])
+            ("LOGGER" variable nil nil [374 410])
+            ("LOOP" variable nil nil [411 442])
+            ("RUNNING_INTERVAL" variable nil nil [443 464])
+            ("CLOSING" variable nil nil [465 480])
+            ("CLOSED" variable nil nil [481 506])
+            ("calc_time_to_sleep" function (:arguments 
+              ( ("elapsed" variable nil (reparse-symbol function_parameters) [532 539]))              ) nil [509 699])
+            ("run_async" function (:arguments 
+              ( ("function" variable nil (reparse-symbol function_parameters) [721 729]))              ) nil [707 1167])
+            ("stop" function (:arguments 
+              ( ("loop" variable nil (reparse-symbol function_parameters) [1178 1182]))              ) nil [1169 1388])
+            ("run_forever" function (:arguments 
+              ( ("function" variable nil (reparse-symbol function_parameters) [1406 1414]))              ) nil [1390 1705]))          
+      :file "run_async.py"
+      :pointmax 1705
+      :fsize 1704
+      :lastmodtime '(22877 5345 502612 378000)
+      :unmatched-syntax nil)
+    (semanticdb-table "__init__.py"
+      :major-mode 'python-mode
+      :tags nil
+      :file "__init__.py"
+      :pointmax 1
+      :fsize 0
+      :lastmodtime '(22877 5345 502612 378000)
+      :unmatched-syntax nil))
+  :file "!home!philip!dev!cidade-alerta!cidadealerta!workers!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

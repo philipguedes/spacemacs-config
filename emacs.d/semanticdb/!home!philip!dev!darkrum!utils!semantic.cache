@@ -1,0 +1,125 @@
+;; Object utils/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "utils/"
+  :tables
+  (list
+    (semanticdb-table "__init__.py"
+      :major-mode 'python-mode
+      :tags nil
+      :file "__init__.py"
+      :pointmax 1
+      :fsize 0
+      :lastmodtime '(22775 43509 465060 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "image_utils.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("__future__" include nil nil [96 127])
+            ("flask" include nil nil [128 153])
+            ("PIL" include nil nil [154 175])
+            ("libxmp" include nil nil [176 201])
+            ("os" include nil nil [202 211])
+            ("libxmp.utils" include nil nil [212 231])
+            ("imghdr" include nil nil [232 245])
+            ("flask_utils" include nil nil [246 264])
+            ("tempfile" include nil nil [265 280])
+            ("PHOTOSPHERE_NAMESPACE" variable nil nil [282 349])
+            ("PHOTOSPHERE_MAX_WIDTH" variable nil nil [350 378])
+            ("PHOTOSPHERE_MAX_HEIGHT" variable nil nil [379 408])
+            ("is_photosphere" function (:arguments 
+              ( ("image" variable nil (reparse-symbol function_parameters) [430 435]))              ) nil [411 743])
+            ("validate_photosphere" function (:arguments 
+              ( ("image" variable nil (reparse-symbol function_parameters) [770 775]))              ) nil [745 1022])
+            ("get_file_format" function (:arguments 
+              ( ("filename" variable nil (reparse-symbol function_parameters) [1044 1052]))              ) nil [1024 1088])
+            ("validate_upload" function nil nil [1090 1214])
+            ("store_temp_image" function (:arguments 
+              ( ("image" variable nil (reparse-symbol function_parameters) [1237 1242])
+                ("format" variable nil (reparse-symbol function_parameters) [1244 1250]))              ) nil [1216 1445])
+            ("check_resolution_or_scale" function
+               (:documentation "
+    Will check if the image needs to be resized or not, and will
+    resize it, if necessary, to 4096px X 2048px. The resize alse will do a
+    downgrade in the photosphere quality, to prevent large files.
+
+    The return will be a tuple of a Boolean type (with resize operation result)
+    and the path for the new file.
+    The resize operation result in 'True' if resizing was not necessary,
+    otherwise it will return if the result of the metadata transfer
+    was successful or not.
+    "
+                :arguments 
+                  ( ("image" variable nil (reparse-symbol function_parameters) [1477 1482]))                  )
+                nil [1447 2431])
+            ("resize_and_save_image" function (:arguments 
+              ( ("original_img" variable nil (reparse-symbol function_parameters) [2459 2471])
+                ("scaled_img" variable nil (reparse-symbol function_parameters) [2473 2483])
+                ("width" variable nil (reparse-symbol function_parameters) [2485 2490])
+                ("height" variable nil (reparse-symbol function_parameters) [2492 2498]))              ) nil [2433 2700])
+            ("transfer_metadata" function (:arguments 
+              ( ("from_img" variable nil (reparse-symbol function_parameters) [2724 2732])
+                ("to_img" variable nil (reparse-symbol function_parameters) [2734 2740]))              ) nil [2702 4232]))          
+      :file "image_utils.py"
+      :pointmax 4232
+      :fsize 4231
+      :lastmodtime '(22819 21340 342384 817000)
+      :unmatched-syntax nil)
+    (semanticdb-table "jwt_utils.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("Crypto.PublicKey" include nil nil [1 33])
+            ("jwt" include nil nil [34 44])
+            ("os" include nil nil [45 54])
+            ("RSA_PUBLICKEY_MODULUS" variable nil nil [56 125])
+            ("RSA_PUBLICKEY_EXPONENT" variable nil nil [126 197])
+            ("get_jwt_data" function
+               (:documentation "
+    Construct RSA PublicKey and check the signature
+    Returns an empty dict if it fails
+    "
+                :arguments 
+                  ( ("token" variable nil (reparse-symbol function_parameters) [217 222]))                  )
+                nil [200 539]))          
+      :file "jwt_utils.py"
+      :pointmax 539
+      :fsize 538
+      :lastmodtime '(22784 59136 57753 833000)
+      :unmatched-syntax nil)
+    (semanticdb-table "flask_utils.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("flask" include nil nil [1 32])
+            ("werkzeug.routing" include nil nil [33 75])
+            ("re" include nil nil [76 85])
+            ("logging" include nil nil [86 100])
+            ("sys" include nil nil [101 111])
+            ("logging_format" variable nil nil [114 185])
+            ("logging" code nil nil [186 356])
+            ("build_response" function (:arguments 
+              ( ("message" variable nil (reparse-symbol function_parameters) [378 385])
+                ("code" variable nil (reparse-symbol function_parameters) [387 391]))              ) nil [359 484])
+            ("HexConverter" type
+               (:superclasses ("BaseConverter")
+                :members 
+                  ( ("to_python" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [539 543])
+                            ("value" variable nil (reparse-symbol function_parameters) [545 550]))                          )
+                        (reparse-symbol indented_block_body) [525 719])
+                    ("to_url" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [735 739])
+                            ("value" variable nil (reparse-symbol function_parameters) [741 746]))                          )
+                        (reparse-symbol indented_block_body) [724 775]))                  
+                :type "class")
+                nil [486 775]))          
+      :file "flask_utils.py"
+      :pointmax 775
+      :fsize 774
+      :lastmodtime '(22819 21355 698535 752000)
+      :unmatched-syntax nil))
+  :file "!home!philip!dev!darkrum!utils!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

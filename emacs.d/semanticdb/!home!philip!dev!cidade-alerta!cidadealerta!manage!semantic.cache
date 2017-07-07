@@ -1,0 +1,87 @@
+;; Object manage/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "manage/"
+  :tables
+  (list
+    (semanticdb-table "profiles.py"
+      :major-mode 'python-mode
+      :tags nil
+      :file "profiles.py"
+      :pointmax 131
+      :fsize 130
+      :lastmodtime '(22829 54637 676004 943000)
+      :unmatched-syntax '(($EOI 131 . 131)))
+    (semanticdb-table "users.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("\"\"\"
+    cidadealerta.manage.users
+    ~~~~~~~~~~~~~~~~~~~~~~~~~
+    
+    user management commands
+\"\"\"" code nil nil [25 126])
+            ("flask_script" include nil nil [128 168])
+            ("users" include nil nil [186 198])
+            ("CreateUserCommand" type
+               (:documentation "Create a user"
+                :superclasses ("Command")
+                :members 
+                  ( ("run" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [272 276]))                          )
+                        (reparse-symbol indented_block_body) [264 459]))                  
+                :type "class")
+                nil [201 459])
+            ("DeleteUserCommand" type
+               (:documentation "Delete a user"
+                :superclasses ("Command")
+                :members 
+                  ( ("run" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [532 536]))                          )
+                        (reparse-symbol indented_block_body) [524 755]))                  
+                :type "class")
+                nil [461 755])
+            ("ListUsersCommand" type
+               (:documentation "List all users"
+                :superclasses ("Command")
+                :members 
+                  ( ("run" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [828 832]))                          )
+                        (reparse-symbol indented_block_body) [820 925]))                  
+                :type "class")
+                nil [757 925]))          
+      :file "users.py"
+      :pointmax 925
+      :fsize 924
+      :lastmodtime '(22829 54637 676004 943000)
+      :unmatched-syntax '((PERIOD 176 . 177) (FROM 170 . 174) (PERIOD 175 . 176)))
+    (semanticdb-table "__init__.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("\"\"\"
+    cidadealerta.manage
+    ~~~~~~~~~~~~~~~~~~~
+    
+    cidade-alerta manager package
+\"\"\"" code nil nil [25 119]))          
+      :file "__init__.py"
+      :pointmax 188
+      :fsize 187
+      :lastmodtime '(22829 54637 676004 943000)
+      :unmatched-syntax '((IMPORT 179 . 185) (MULT 186 . 187) (FROM 167 . 171) (PERIOD 172 . 173) (IMPORT 158 . 164) (MULT 165 . 166) (FROM 145 . 149) (PERIOD 150 . 151) (IMPORT 136 . 142) (MULT 143 . 144) (FROM 121 . 125) (PERIOD 126 . 127)))
+    (semanticdb-table "alerts.py"
+      :major-mode 'python-mode
+      :tags nil
+      :file "alerts.py"
+      :pointmax 126
+      :fsize 125
+      :lastmodtime '(22829 54637 676004 943000)
+      :unmatched-syntax '(($EOI 126 . 126))))
+  :file "!home!philip!dev!cidade-alerta!cidadealerta!manage!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,169 @@
+;; Object python3.5/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "python3.5/"
+  :tables
+  (list
+    (semanticdb-table "re.py"
+      :file "re.py"
+      :fsize 15501
+      :lastmodtime '(22499 52230 0 0))
+    (semanticdb-table "datetime.py"
+      :file "datetime.py"
+      :fsize 75899
+      :lastmodtime '(22499 52230 0 0))
+    (semanticdb-table "copy.py"
+      :file "copy.py"
+      :fsize 8946
+      :lastmodtime '(22499 52230 0 0))
+    (semanticdb-table "os.py"
+      :file "os.py"
+      :fsize 36970
+      :lastmodtime '(22499 52230 0 0))
+    (semanticdb-table "weakref.py"
+      :file "weakref.py"
+      :fsize 19408
+      :lastmodtime '(22499 52230 0 0))
+    (semanticdb-table "base64.py"
+      :file "base64.py"
+      :fsize 20440
+      :lastmodtime '(22499 52230 0 0))
+    (semanticdb-table "functools.py"
+      :file "functools.py"
+      :fsize 28776
+      :lastmodtime '(22499 52230 0 0))
+    (semanticdb-table "socket.py"
+      :file "socket.py"
+      :fsize 27135
+      :lastmodtime '(22499 52230 0 0))
+    (semanticdb-table "inspect.py"
+      :file "inspect.py"
+      :fsize 113322
+      :lastmodtime '(22499 52230 0 0))
+    (semanticdb-table "calendar.py"
+      :file "calendar.py"
+      :fsize 22941
+      :lastmodtime '(22499 52230 0 0))
+    (semanticdb-table "hashlib.py"
+      :file "hashlib.py"
+      :fsize 7979
+      :lastmodtime '(22499 52230 0 0))
+    (semanticdb-table "__future__.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("\"\"\"Record of phased-in incompatible language changes.
+
+Each line is of the form:
+
+    FeatureName = \"_Feature(\" OptionalRelease \",\" MandatoryRelease \",\"
+                              CompilerFlag \")\"
+
+where, normally, OptionalRelease < MandatoryRelease, and both are 5-tuples
+of the same form as sys.version_info:
+
+    (PY_MAJOR_VERSION, # the 2 in 2.1.0a3; an int
+     PY_MINOR_VERSION, # the 1; an int
+     PY_MICRO_VERSION, # the 0; an int
+     PY_RELEASE_LEVEL, # \"alpha\", \"beta\", \"candidate\" or \"final\"; string
+     PY_RELEASE_SERIAL # the 3; an int
+    )
+
+OptionalRelease records the first release in which
+
+    from __future__ import FeatureName
+
+was accepted.
+
+In the case of MandatoryReleases that have not yet occurred,
+MandatoryRelease predicts the release in which the feature will become part
+of the language.
+
+Else MandatoryRelease records when the feature became part of the language;
+in releases at or after that, modules no longer need
+
+    from __future__ import FeatureName
+
+to use the feature in question, but may continue to use such imports.
+
+MandatoryRelease may also be None, meaning that a planned feature got
+dropped.
+
+Instances of class _Feature have two corresponding methods,
+.getOptionalRelease() and .getMandatoryRelease().
+
+CompilerFlag is the (bitfield) flag that should be passed in the fourth
+argument to the builtin function compile() to enable the feature in
+dynamically compiled code.  This flag is stored in the .compiler_flag
+attribute on _Future instances.  These values must match the appropriate
+#defines of CO_xxx flags in Include/compile.h.
+
+No feature line is ever to be deleted from this file.
+\"\"\"" code nil nil [1 1645])
+            ("all_feature_names" variable nil nil [1647 1860])
+            ("__all__" code nil nil [1862 1913])
+            ("CO_NESTED" variable nil nil [2137 2166])
+            ("CO_GENERATOR_ALLOWED" variable nil nil [2185 2209])
+            ("CO_FUTURE_DIVISION" variable nil nil [2253 2282])
+            ("CO_FUTURE_ABSOLUTE_IMPORT" variable nil nil [2296 2330])
+            ("CO_FUTURE_WITH_STATEMENT" variable nil nil [2369 2403])
+            ("CO_FUTURE_PRINT_FUNCTION" variable nil nil [2423 2458])
+            ("CO_FUTURE_UNICODE_LITERALS" variable nil nil [2478 2514])
+            ("CO_FUTURE_BARRY_AS_BDFL" variable nil nil [2541 2574])
+            ("CO_FUTURE_GENERATOR_STOP" variable nil nil [2575 2610])
+            ("_Feature" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [2761 2792])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2801 2834])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2843 2877]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2696 2700])
+                            ("optionalRelease" variable nil (reparse-symbol function_parameters) [2702 2717])
+                            ("mandatoryRelease" variable nil (reparse-symbol function_parameters) [2719 2735])
+                            ("compiler_flag" variable nil (reparse-symbol function_parameters) [2737 2750]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [2683 2878])
+                    ("getOptionalRelease" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2906 2910]))                          
+                        :documentation "Return first release in which this feature was recognized.
+
+        This is a 5-tuple, of the same form as sys.version_info.
+        ")
+                        (reparse-symbol indented_block_body) [2883 3091])
+                    ("getMandatoryRelease" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3120 3124]))                          
+                        :documentation "Return release in which this feature will become mandatory.
+
+        This is a 5-tuple, of the same form as sys.version_info, or, if
+        the feature was dropped, is None.
+        ")
+                        (reparse-symbol indented_block_body) [3096 3356])
+                    ("__repr__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3374 3378]))                          )
+                        (reparse-symbol indented_block_body) [3361 3535]))                  
+                :type "class")
+                nil [2663 3535])
+            ("nested_scopes" variable nil nil [3536 3667])
+            ("generators" variable nil nil [3669 3802])
+            ("division" variable nil nil [3804 3929])
+            ("absolute_import" variable nil nil [3931 4084])
+            ("with_statement" variable nil nil [4086 4235])
+            ("print_function" variable nil nil [4237 4386])
+            ("unicode_literals" variable nil nil [4388 4545])
+            ("barry_as_FLUFL" variable nil nil [4547 4693])
+            ("generator_stop" variable nil nil [4695 4841]))          
+      :file "__future__.py"
+      :pointmax 4842
+      :fsize 4841
+      :lastmodtime '(22499 52230 0 0)
+      :unmatched-syntax nil))
+  :file "!usr!lib!python3.5!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

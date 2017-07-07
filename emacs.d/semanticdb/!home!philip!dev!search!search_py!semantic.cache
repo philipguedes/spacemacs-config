@@ -1,0 +1,16 @@
+;; Object search_py/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "search_py/"
+  :tables
+  (list
+    (semanticdb-table "__init__.py"
+      :major-mode 'python-mode
+      :tags nil
+      :file "__init__.py"
+      :pointmax 1
+      :fsize 0
+      :lastmodtime '(22755 63654 254621 540000)
+      :unmatched-syntax nil))
+  :file "!home!philip!dev!search!search_py!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

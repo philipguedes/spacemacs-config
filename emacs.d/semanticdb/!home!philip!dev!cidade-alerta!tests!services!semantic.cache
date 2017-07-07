@@ -1,0 +1,124 @@
+;; Object services/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "services/"
+  :tables
+  (list
+    (semanticdb-table "test_profile_controller.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("pytest" include nil nil [1 14])
+            ("pymongo" include nil nil [15 29])
+            ("cidadealerta.services.profile" include nil nil [30 89])
+            ("tests.entities" include nil nil [90 134])
+            ("" code nil nil [152 170])
+            ("profile_controller" function (:arguments 
+              ( ("db" variable nil (reparse-symbol function_parameters) [194 196]))              ) nil [171 260])
+            ("test_get_by_email" function (:arguments 
+              ( ("created_profiles" variable nil (reparse-symbol function_parameters) [284 300])
+                ("profile_controller" variable nil (reparse-symbol function_parameters) [302 320]))              ) nil [262 525])
+            ("test_get_by_id" function (:arguments 
+              ( ("created_profiles" variable nil (reparse-symbol function_parameters) [546 562])
+                ("profile_controller" variable nil (reparse-symbol function_parameters) [564 582]))              ) nil [527 771])
+            ("test_create_or_get_profile" function (:arguments 
+              ( ("profile_controller" variable nil (reparse-symbol function_parameters) [804 822]))              ) nil [773 1015])
+            ("test_update_email" function (:arguments 
+              ( ("created_profiles" variable nil (reparse-symbol function_parameters) [1039 1055])
+                ("profile_controller" variable nil (reparse-symbol function_parameters) [1057 1075]))              ) nil [1017 1464])
+            ("test_get_alerts_id" function (:arguments 
+              ( ("profile_controller" variable nil (reparse-symbol function_parameters) [1489 1507])
+                ("created_profiles" variable nil (reparse-symbol function_parameters) [1509 1525]))              ) nil [1466 1722])
+            ("test_insert_alert" function (:arguments 
+              ( ("profile_controller" variable nil (reparse-symbol function_parameters) [1746 1764])
+                ("created_profiles" variable nil (reparse-symbol function_parameters) [1766 1782])
+                ("created_alerts" variable nil (reparse-symbol function_parameters) [1784 1798]))              ) nil [1724 2238])
+            ("test_get_all" function (:arguments 
+              ( ("profile_controller" variable nil (reparse-symbol function_parameters) [2257 2275])
+                ("created_profiles" variable nil (reparse-symbol function_parameters) [2277 2293]))              ) nil [2240 2403])
+            ("test_update_profile_by_id" function (:arguments 
+              ( ("profile_controller" variable nil (reparse-symbol function_parameters) [2435 2453])
+                ("created_profiles" variable nil (reparse-symbol function_parameters) [2455 2471]))              ) nil [2405 2623]))          
+      :file "test_profile_controller.py"
+      :pointmax 2623
+      :fsize 2622
+      :lastmodtime '(22878 46730 402903 226000)
+      :unmatched-syntax nil)
+    (semanticdb-table "test_alert_controller.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("test_get_alert_fields" function (:arguments 
+              ( ("alert_controller" variable nil (reparse-symbol function_parameters) [29 45])
+                ("created_alerts" variable nil (reparse-symbol function_parameters) [47 61]))              ) nil [3 292]))          
+      :file "test_alert_controller.py"
+      :pointmax 292
+      :fsize 1240
+      :lastmodtime '(22878 46730 402903 226000)
+      :unmatched-syntax nil)
+    (semanticdb-table "test_service_controller.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("pytest" include nil nil [1 14])
+            ("pymongo" include nil nil [15 29])
+            ("cidadealerta.services.service" include nil nil [30 89])
+            ("tests.entities" include nil nil [90 134])
+            ("tests.entities" include nil nil [135 177])
+            ("" code nil nil [195 213])
+            ("service_controller" function (:arguments 
+              ( ("db" variable nil (reparse-symbol function_parameters) [237 239]))              ) nil [214 303])
+            ("test_create_alert" function (:arguments 
+              ( ("service_controller" variable nil (reparse-symbol function_parameters) [327 345])
+                ("drop_service_collections" variable nil (reparse-symbol function_parameters) [347 371]))              ) nil [305 550])
+            ("test_delete_alert" function (:arguments 
+              ( ("service_controller" variable nil (reparse-symbol function_parameters) [574 592])
+                ("created_alerts" variable nil (reparse-symbol function_parameters) [594 608]))              ) nil [552 760])
+            ("test_get_alert" function (:arguments 
+              ( ("service_controller" variable nil (reparse-symbol function_parameters) [781 799])
+                ("created_alerts" variable nil (reparse-symbol function_parameters) [801 815]))              ) nil [762 1132])
+            ("test_get_all_alerts" function (:arguments 
+              ( ("service_controller" variable nil (reparse-symbol function_parameters) [1158 1176])
+                ("created_alerts" variable nil (reparse-symbol function_parameters) [1178 1192]))              ) nil [1134 1304])
+            ("test_get_profile" function (:arguments 
+              ( ("service_controller" variable nil (reparse-symbol function_parameters) [1327 1345])
+                ("created_profiles" variable nil (reparse-symbol function_parameters) [1347 1363]))              ) nil [1306 1527])
+            ("test_get_all_profiles" function (:arguments 
+              ( ("service_controller" variable nil (reparse-symbol function_parameters) [1555 1573])
+                ("created_profiles" variable nil (reparse-symbol function_parameters) [1575 1591]))              ) nil [1529 1710])
+            ("test_get_profile_alerts" function (:arguments 
+              ( ("service_controller" variable nil (reparse-symbol function_parameters) [1740 1758])
+                ("created_profile_with_alert" variable nil (reparse-symbol function_parameters) [1788 1814]))              ) nil [1712 2081])
+            ("test_get_profile_alerts_id" function (:arguments 
+              ( ("service_controller" variable nil (reparse-symbol function_parameters) [2114 2132])
+                ("created_profile_with_alert" variable nil (reparse-symbol function_parameters) [2134 2160]))              ) nil [2083 2405])
+            ("test_update_alert" function (:arguments 
+              ( ("service_controller" variable nil (reparse-symbol function_parameters) [2429 2447])
+                ("created_profile_with_alert" variable nil (reparse-symbol function_parameters) [2449 2475]))              ) nil [2407 2729])
+            ("test_update_email" function (:arguments 
+              ( ("service_controller" variable nil (reparse-symbol function_parameters) [2753 2771])
+                ("created_profiles" variable nil (reparse-symbol function_parameters) [2773 2789]))              ) nil [2731 3178])
+            ("test_update_profile" function (:arguments 
+              ( ("service_controller" variable nil (reparse-symbol function_parameters) [3204 3222])
+                ("created_profiles" variable nil (reparse-symbol function_parameters) [3224 3240]))              ) nil [3180 3386]))          
+      :file "test_service_controller.py"
+      :pointmax 3386
+      :fsize 3385
+      :lastmodtime '(22878 46730 402903 226000)
+      :unmatched-syntax nil)
+    (semanticdb-table "test_cloudsearch.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("unittest.mock" include nil nil [1 32])
+            ("cidadealerta.services.cloudsearch" include nil nil [33 88])
+            ("" code nil nil [89 89])
+            ("test_client" function (:arguments 
+              ( ("mock" variable nil (reparse-symbol function_parameters) [89 89])
+                ("monkeypatch" variable nil (reparse-symbol function_parameters) [89 89]))              ) nil [89 89])
+            ("" code nil nil [97 129])
+            ("test_cloudsearch" function (:arguments 
+              ( ("monkeypatch" variable nil (reparse-symbol function_parameters) [151 162]))              ) nil [130 931]))          
+      :file "test_cloudsearch.py"
+      :pointmax 931
+      :fsize 930
+      :lastmodtime '(22878 46730 402903 226000)
+      :unmatched-syntax nil))
+  :file "!home!philip!dev!cidade-alerta!tests!services!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

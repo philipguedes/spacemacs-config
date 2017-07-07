@@ -1,0 +1,30 @@
+;; Object editor/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "editor/"
+  :tables
+  (list
+    (semanticdb-table "__init__.py"
+      :major-mode 'python-mode
+      :tags nil
+      :file "__init__.py"
+      :pointmax 1
+      :fsize 0
+      :lastmodtime '(22774 34858 844927 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "crop.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("tempfile" include nil nil [1 16])
+            ("numpy" include nil nil [17 29])
+            ("cv2" include nil nil [30 40])
+            ("math" include nil nil [41 52])
+            ("create_preview" function (:arguments 
+              ( ("input_filename" variable nil (reparse-symbol function_parameters) [74 88]))              ) nil [55 878]))          
+      :file "crop.py"
+      :pointmax 878
+      :fsize 877
+      :lastmodtime '(22813 55290 354413 38000)
+      :unmatched-syntax nil))
+  :file "!home!philip!dev!darkrum!editor!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

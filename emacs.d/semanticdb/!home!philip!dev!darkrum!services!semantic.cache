@@ -1,0 +1,58 @@
+;; Object services/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "services/"
+  :tables
+  (list
+    (semanticdb-table "__init__.py"
+      :major-mode 'python-mode
+      :tags nil
+      :file "__init__.py"
+      :pointmax 1
+      :fsize 0
+      :lastmodtime '(22775 33553 88650 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "photosphere.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("flask" include nil nil [1 45])
+            ("os" include nil nil [46 55])
+            ("s3" include nil nil [56 65])
+            ("uuid" include nil nil [66 77])
+            ("entities.photosphere" include nil nil [78 129])
+            ("utils" include nil nil [130 172])
+            ("editor" include nil nil [173 196])
+            ("PIL" include nil nil [197 218])
+            ("StringIO" include nil nil [219 234])
+            ("logging" include nil nil [235 249])
+            ("PHOTOSPHERE_S3_FOLDER" variable nil nil [251 288])
+            ("logger" variable nil nil [289 325])
+            ("get_service" function nil nil [328 379])
+            ("get_photospheres" function (:arguments 
+              ( ("house_id" variable nil (reparse-symbol function_parameters) [402 410]))              ) nil [381 563])
+            ("update_photosphere_description" function (:arguments 
+              ( ("photo_id" variable nil (reparse-symbol function_parameters) [600 608])
+                ("description" variable nil (reparse-symbol function_parameters) [610 621]))              ) nil [565 986])
+            ("image_upload" function (:arguments 
+              ( ("house_id" variable nil (reparse-symbol function_parameters) [1005 1013]))              ) nil [988 2185])
+            ("delete_image" function (:arguments 
+              ( ("photo_id" variable nil (reparse-symbol function_parameters) [2204 2212]))              ) nil [2187 2814])
+            ("get_preview" function (:arguments 
+              ( ("photo_id" variable nil (reparse-symbol function_parameters) [2832 2840]))              ) nil [2816 3500])
+            ("find_preview" function (:arguments 
+              ( ("url" variable nil (reparse-symbol function_parameters) [3519 3522]))              ) nil [3502 3915])
+            ("update_order" function (:arguments 
+              ( ("photo_id" variable nil (reparse-symbol function_parameters) [3934 3942])
+                ("order" variable nil (reparse-symbol function_parameters) [3944 3949]))              ) nil [3917 4507])
+            ("update_photosphere_data" function (:arguments 
+              ( ("house_id" variable nil (reparse-symbol function_parameters) [4537 4545])
+                ("photosphere_list" variable nil (reparse-symbol function_parameters) [4547 4563]))              ) nil [4509 5439])
+            ("delete_all_photospheres" function (:arguments 
+              ( ("house_id" variable nil (reparse-symbol function_parameters) [5469 5477]))              ) nil [5441 6013]))          
+      :file "photosphere.py"
+      :pointmax 6013
+      :fsize 6012
+      :lastmodtime '(22819 21355 658535 360000)
+      :unmatched-syntax '((INDENT_BLOCK 3838 . 3915) (NEWLINE 3837 . 3838) (COLON 3836 . 3837) (FINALLY 3829 . 3836) (INDENT_BLOCK 3425 . 3500) (NEWLINE 3424 . 3425) (COLON 3423 . 3424) (FINALLY 3416 . 3423) (INDENT_BLOCK 2157 . 2185) (NEWLINE 2156 . 2157) (COLON 2155 . 2156) (FINALLY 2148 . 2155))))
+  :file "!home!philip!dev!darkrum!services!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,31 @@
+;; Object utils/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "utils/"
+  :tables
+  (list
+    (semanticdb-table "image_utils.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("libxmp.utils" include nil nil [1 20])
+            ("PHOTOSPHERE_NAMESPACE" variable nil nil [22 89])
+            ("is_photosphere" function (:arguments 
+              ( ("image" variable nil (reparse-symbol function_parameters) [111 116]))              ) nil [92 424])
+            ("valid_request" function (:arguments 
+              ( ("request" variable nil (reparse-symbol function_parameters) [444 451]))              ) nil [426 578]))          
+      :file "image_utils.py"
+      :pointmax 578
+      :fsize 577
+      :lastmodtime '(22775 45299 294874 285000)
+      :unmatched-syntax '((DEF 426 . 429) ($EOI 521 . 521) (DEF 426 . 429) ($EOI 522 . 522) (DEF 426 . 429) ($EOI 544 . 544)))
+    (semanticdb-table "__init__.py"
+      :major-mode 'python-mode
+      :tags nil
+      :file "__init__.py"
+      :pointmax 1
+      :fsize 0
+      :lastmodtime '(22775 43509 465060 314000)
+      :unmatched-syntax nil)
+)
+  :file "!home!philip!dev!magritte!utils!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

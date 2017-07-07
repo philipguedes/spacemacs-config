@@ -1,0 +1,164 @@
+;; Object profiles/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "profiles/"
+  :tables
+  (list
+    (semanticdb-table "__init__.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("\"\"\"
+    cidadealerta.profiles
+    ~~~~~~~~~~~~~~~~~~~~~
+    
+    cidade-alerta profiles package
+\"\"\"" code nil nil [25 124])
+            ("CidadeAlertaError" include nil nil [138 171])
+            ("Service" include nil nil [138 171])
+            ("Property" include nil nil [185 262])
+            ("Value" include nil nil [185 262])
+            ("SelectionFilter" include nil nil [185 262])
+            ("RangeFilter" include nil nil [185 262])
+            ("ViewportFilter" include nil nil [185 262])
+            ("Profile" include nil nil [185 262])
+            ("ValueService" type
+               (:superclasses ("Service")
+                :members 
+                  ( ("__model__" variable nil (reparse-symbol indented_block_body) [298 315]))                  
+                :type "class")
+                nil [265 316])
+            ("PropertyService" type
+               (:superclasses ("Service")
+                :members 
+                  ( ("__model__" variable nil (reparse-symbol indented_block_body) [354 374]))                  
+                :type "class")
+                nil [318 375])
+            ("SelectionFilterService" type
+               (:superclasses ("Service")
+                :members 
+                  ( ("__model__" variable nil (reparse-symbol indented_block_body) [420 447]))                  
+                :type "class")
+                nil [377 448])
+            ("RangeFilterService" type
+               (:superclasses ("Service")
+                :members 
+                  ( ("__model__" variable nil (reparse-symbol indented_block_body) [489 512]))                  
+                :type "class")
+                nil [450 513])
+            ("ViewportFilterService" type
+               (:superclasses ("Service")
+                :members 
+                  ( ("__model__" variable nil (reparse-symbol indented_block_body) [557 583]))                  
+                :type "class")
+                nil [515 584])
+            ("ProfilesService" type
+               (:superclasses ("Service")
+                :members 
+                  ( ("__model__" variable nil (reparse-symbol indented_block_body) [622 641])
+                    ("__init__" function
+                       (:suite 
+                          ( ("super" code nil (reparse-symbol indented_block_body) [692 746])
+                            ("self" variable nil (reparse-symbol indented_block_body) [755 801])
+                            ("self" variable nil (reparse-symbol indented_block_body) [810 851])
+                            ("self" variable nil (reparse-symbol indented_block_body) [860 909]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [660 664])
+                            ("args" variable nil (reparse-symbol function_parameters) [666 671])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [673 681]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [647 910])
+                    ("__proprocess_params" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [939 943])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [945 951]))                          )
+                        (reparse-symbol indented_block_body) [915 1740])
+                    ("add_profile" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1761 1765])
+                            ("user" variable nil (reparse-symbol function_parameters) [1767 1771])
+                            ("profile" variable nil (reparse-symbol function_parameters) [1773 1780]))                          )
+                        (reparse-symbol indented_block_body) [1745 1953]))                  
+                :type "class")
+                nil [586 1953]))          
+      :file "__init__.py"
+      :pointmax 1953
+      :fsize 1952
+      :lastmodtime '(22829 54637 676004 943000)
+      :unmatched-syntax '((FROM 172 . 176) (PERIOD 177 . 178) (PERIOD 132 . 133) (FROM 126 . 130) (PERIOD 131 . 132)))
+    (semanticdb-table "models.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("\"\"\"
+    cidadealerta.profiles.models
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    
+    Profile models
+\"\"\"" code nil nil [25 122])
+            ("db" include nil nil [136 145])
+            ("Profile" type
+               (:superclasses ("db.Model")
+                :members 
+                  ( ("id" variable nil (reparse-symbol indented_block_body) [177 221])
+                    ("name" variable nil (reparse-symbol indented_block_body) [226 258])
+                    ("user_id" variable nil (reparse-symbol indented_block_body) [263 320])
+                    ("viewport_filter" variable nil (reparse-symbol indented_block_body) [326 454])
+                    ("range_filters" variable nil (reparse-symbol indented_block_body) [459 582])
+                    ("selection_filters" variable nil (reparse-symbol indented_block_body) [587 718]))                  
+                :type "class")
+                nil [148 719])
+            ("ViewportFilter" type
+               (:superclasses ("db.Model")
+                :members 
+                  ( ("center_latlng" variable nil (reparse-symbol indented_block_body) [757 798])
+                    ("viewport_heigth" variable nil (reparse-symbol indented_block_body) [803 842])
+                    ("viewport_width" variable nil (reparse-symbol indented_block_body) [847 885])
+                    ("zoom" variable nil (reparse-symbol indented_block_body) [890 918])
+                    ("profile_id" variable nil (reparse-symbol indented_block_body) [923 1004]))                  
+                :type "class")
+                nil [721 1005])
+            ("RangeFilter" type
+               (:superclasses ("db.Model")
+                :members 
+                  ( ("id" variable nil (reparse-symbol indented_block_body) [1040 1084])
+                    ("min" variable nil (reparse-symbol indented_block_body) [1089 1116])
+                    ("max" variable nil (reparse-symbol indented_block_body) [1121 1148])
+                    ("profile_id" variable nil (reparse-symbol indented_block_body) [1153 1216])
+                    ("property_id" variable nil (reparse-symbol indented_block_body) [1221 1286])
+                    ("property" variable nil (reparse-symbol indented_block_body) [1292 1330]))                  
+                :type "class")
+                nil [1007 1331])
+            ("SelectionFilter" type
+               (:superclasses ("db.Model")
+                :members 
+                  ( ("id" variable nil (reparse-symbol indented_block_body) [1370 1414])
+                    ("profile_id" variable nil (reparse-symbol indented_block_body) [1419 1482])
+                    ("value_id" variable nil (reparse-symbol indented_block_body) [1487 1546])
+                    ("value" variable nil (reparse-symbol indented_block_body) [1552 1584]))                  
+                :type "class")
+                nil [1333 1585])
+            ("Value" type
+               (:superclasses ("db.Model")
+                :members 
+                  ( ("id" variable nil (reparse-symbol indented_block_body) [1614 1658])
+                    ("property_id" variable nil (reparse-symbol indented_block_body) [1663 1728])
+                    ("name" variable nil (reparse-symbol indented_block_body) [1733 1765])
+                    ("property" variable nil (reparse-symbol indented_block_body) [1771 1809]))                  
+                :type "class")
+                nil [1587 1810])
+            ("Property" type
+               (:superclasses ("db.Model")
+                :members 
+                  ( ("id" variable nil (reparse-symbol indented_block_body) [1842 1886])
+                    ("name" variable nil (reparse-symbol indented_block_body) [1891 1923]))                  
+                :type "class")
+                nil [1812 1924]))          
+      :file "models.py"
+      :pointmax 1924
+      :fsize 1923
+      :lastmodtime '(22829 54637 676004 943000)
+      :unmatched-syntax '((PERIOD 130 . 131) (FROM 124 . 128) (PERIOD 129 . 130))))
+  :file "!home!philip!dev!cidade-alerta!cidadealerta!profiles!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

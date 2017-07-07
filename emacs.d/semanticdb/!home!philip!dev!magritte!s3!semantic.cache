@@ -1,0 +1,21 @@
+;; Object s3/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "s3/"
+  :tables
+  (list
+    (semanticdb-table "__init__.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("boto3" include nil nil [1 13])
+            ("uuid" include nil nil [14 25])
+            ("S3_BUCKET" variable nil nil [27 56])
+            ("upload_to_s3" function (:arguments 
+              ( ("local_filename" variable nil (reparse-symbol function_parameters) [120 134]))              ) nil [103 318]))          
+      :file "__init__.py"
+      :pointmax 318
+      :fsize 317
+      :lastmodtime '(22775 43507 153048 480000)
+      :unmatched-syntax nil))
+  :file "!home!philip!dev!magritte!s3!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

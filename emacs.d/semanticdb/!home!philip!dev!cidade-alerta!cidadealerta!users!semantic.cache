@@ -1,0 +1,56 @@
+;; Object users/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "users/"
+  :tables
+  (list
+    (semanticdb-table "__init__.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("\"\"\"
+    cidadealerta.users
+    ~~~~~~~~~~~~~~~~~~
+
+    cidade-alerta users package
+\"\"\"" code nil nil [25 111])
+            ("CidadeAlertaError" include nil nil [136 169])
+            ("Service" include nil nil [136 169])
+            ("User" include nil nil [201 212])
+            ("UsersService" type
+               (:superclasses ("Service")
+                :members 
+                  ( ("__model__" variable nil (reparse-symbol indented_block_body) [248 264]))                  
+                :type "class")
+                nil [215 265]))          
+      :file "__init__.py"
+      :pointmax 266
+      :fsize 265
+      :lastmodtime '(22819 20740 251102 412000)
+      :unmatched-syntax nil)
+    (semanticdb-table "models.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("\"\"\"
+    cidadealerta.users.models
+    ~~~~~~~~~~~~~~~~~~~~~~~~
+
+    User models
+\"\"\"" code nil nil [25 108])
+            ("db" include nil nil [133 142])
+            ("User" type
+               (:superclasses ("db.Model")
+                :members 
+                  ( ("id" variable nil (reparse-symbol indented_block_body) [171 215])
+                    ("email" variable nil (reparse-symbol indented_block_body) [220 253])
+                    ("quintoandar_user_id" variable nil (reparse-symbol indented_block_body) [258 301])
+                    ("profiles" variable nil (reparse-symbol indented_block_body) [307 417])
+                    ("alerts" variable nil (reparse-symbol indented_block_body) [422 529]))                  
+                :type "class")
+                nil [145 530]))          
+      :file "models.py"
+      :pointmax 530
+      :fsize 529
+      :lastmodtime '(22819 20762 583444 155000)
+      :unmatched-syntax nil))
+  :file "!home!philip!dev!cidade-alerta!cidadealerta!users!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

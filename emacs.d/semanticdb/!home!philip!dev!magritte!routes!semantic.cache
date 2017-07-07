@@ -1,0 +1,33 @@
+;; Object routes/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "routes/"
+  :tables
+  (list
+    (semanticdb-table "upload.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("flask" include nil nil [1 28])
+            ("services" include nil nil [29 61])
+            ("utils" include nil nil [62 91])
+            ("upload" variable nil nil [92 130])
+            ("" code nil nil [146 180])
+            ("teste" function nil nil [181 240])
+            ("" code nil nil [255 311])
+            ("image_upload" function (:arguments 
+              ( ("house_id" variable nil (reparse-symbol function_parameters) [329 337]))              ) nil [312 386]))          
+      :file "upload.py"
+      :pointmax 386
+      :fsize 385
+      :lastmodtime '(22775 52846 547276 338000)
+      :unmatched-syntax '((AT 387 . 388) (PAREN_BLOCK 400 . 428) ($EOI 428 . 428) (AT 387 . 388) (PAREN_BLOCK 400 . 426) ($EOI 426 . 426)))
+    (semanticdb-table "__init__.py"
+      :major-mode 'python-mode
+      :tags nil
+      :file "__init__.py"
+      :pointmax 1
+      :fsize 0
+      :lastmodtime '(22774 36265 360628 509000)
+      :unmatched-syntax nil))
+  :file "!home!philip!dev!magritte!routes!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,310 @@
+;; Object scripts/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "scripts/"
+  :tables
+  (list
+    (semanticdb-table "create_database.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("MySQLdb" include nil nil [1 22])
+            ("os" include nil nil [23 32])
+            ("argparse" include nil nil [33 68])
+            ("getpass" include nil nil [69 96])
+            ("path" variable nil nil [98 131])
+            ("parser" variable nil nil [132 196])
+            ("parser" code nil nil [197 260])
+            ("parser" code nil nil [261 403])
+            ("DBService" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" code nil (reparse-symbol indented_block_body) [471 501])
+                            ("self" variable nil (reparse-symbol indented_block_body) [510 547]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [440 444])
+                            ("user" variable nil (reparse-symbol function_parameters) [446 450])
+                            ("password" variable nil (reparse-symbol function_parameters) [452 460]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [427 548])
+                    ("create_db" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [567 571])
+                            ("user" variable nil (reparse-symbol function_parameters) [573 577])
+                            ("password" variable nil (reparse-symbol function_parameters) [579 587]))                          )
+                        (reparse-symbol indented_block_body) [553 863])
+                    ("get_db" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [879 883])
+                            ("user" variable nil (reparse-symbol function_parameters) [885 889])
+                            ("password" variable nil (reparse-symbol function_parameters) [891 899]))                          )
+                        (reparse-symbol indented_block_body) [868 1092])
+                    ("execute_query" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1115 1119])
+                            ("query" variable nil (reparse-symbol function_parameters) [1121 1126]))                          )
+                        (reparse-symbol indented_block_body) [1097 1238]))                  
+                :type "class")
+                nil [406 1238])
+            ("main" function nil nil [1240 1582])
+            ("if" code nil nil [1584 1622]))          
+      :file "create_database.py"
+      :pointmax 1622
+      :fsize 1621
+      :lastmodtime '(22846 42704 747089 186000)
+      :unmatched-syntax nil)
+    (semanticdb-table "populate_database.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("abc" include nil nil [386 409])
+            ("MySQLdb" include nil nil [410 431])
+            ("os" include nil nil [432 441])
+            ("uuid" include nil nil [442 453])
+            ("PROD_HOST" variable nil nil [455 502])
+            ("PROD_USER" variable nil nil [503 545])
+            ("PROD_PASSWORD" variable nil nil [546 592])
+            ("PROD_HOST_EBDB" variable nil nil [594 651])
+            ("PROD_USER_EBDB" variable nil nil [652 704])
+            ("PROD_PASSWORD_EBDB" variable nil nil [705 761])
+            ("DBService" type
+               (:members 
+                  ( ("__metaclass__" variable nil (reparse-symbol indented_block_body) [994 1017])
+                    ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [1087 1112])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1121 1151]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1036 1040])
+                            ("db" variable nil (reparse-symbol function_parameters) [1042 1044]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [1023 1120])
+                    ("get_db" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1136 1140])
+                            ("db" variable nil (reparse-symbol function_parameters) [1142 1144]))                          )
+                        (reparse-symbol indented_block_body) [1125 1584])
+                    ("commit" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1600 1604]))                          )
+                        (reparse-symbol indented_block_body) [1589 1632])
+                    ("rollback" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1650 1654]))                          )
+                        (reparse-symbol indented_block_body) [1637 1684]))                  
+                :type "class")
+                nil [972 1684])
+            ("Ebdb" type
+               (:superclasses ("DBService")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("super" code nil (reparse-symbol indented_block_body) [1773 1817]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1726 1730]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [1713 1786])
+                    ("get_alerts" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1806 1810]))                          )
+                        (reparse-symbol indented_block_body) [1791 3356])
+                    ("get_amenidades_pets" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3385 3389]))                          )
+                        (reparse-symbol indented_block_body) [3361 3762]))                  
+                :type "class")
+                nil [1686 3762])
+            ("CidadeAlerta" type
+               (:superclasses ("DBService")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("super" code nil (reparse-symbol indented_block_body) [3859 3911]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3812 3816]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [3799 3880])
+                    ("get_ids" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3897 3901])
+                            ("item" variable nil (reparse-symbol function_parameters) [3903 3907]))                          
+                        :documentation "
+        Function to make this script faster when populating db from ebdb
+        ")
+                        (reparse-symbol indented_block_body) [3885 4038])
+                    ("create_profile" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4062 4066])
+                            ("profile_id" variable nil (reparse-symbol function_parameters) [4068 4078])
+                            ("email" variable nil (reparse-symbol function_parameters) [4080 4085]))                          )
+                        (reparse-symbol indented_block_body) [4043 4246])
+                    ("create_alert" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4268 4272])
+                            ("name" variable nil (reparse-symbol function_parameters) [4274 4278])
+                            ("profile_id" variable nil (reparse-symbol function_parameters) [4280 4290])
+                            ("alert_id" variable nil (reparse-symbol function_parameters) [4292 4300]))                          )
+                        (reparse-symbol indented_block_body) [4251 4505])
+                    ("insert_area" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4526 4530])
+                            ("areaMax" variable nil (reparse-symbol function_parameters) [4532 4539])
+                            ("areaMin" variable nil (reparse-symbol function_parameters) [4541 4548])
+                            ("alerta" variable nil (reparse-symbol function_parameters) [4550 4556]))                          )
+                        (reparse-symbol indented_block_body) [4510 4897])
+                    ("insert_aluguel" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4921 4925])
+                            ("precoMax" variable nil (reparse-symbol function_parameters) [4927 4935])
+                            ("precoMin" variable nil (reparse-symbol function_parameters) [4937 4945])
+                            ("alerta" variable nil (reparse-symbol function_parameters) [4947 4953]))                          )
+                        (reparse-symbol indented_block_body) [4902 5307])
+                    ("insert_quartos" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5331 5335])
+                            ("quartosMax" variable nil (reparse-symbol function_parameters) [5337 5347])
+                            ("quartosMin" variable nil (reparse-symbol function_parameters) [5349 5359])
+                            ("alerta" variable nil (reparse-symbol function_parameters) [5361 5367]))                          )
+                        (reparse-symbol indented_block_body) [5312 5729])
+                    ("insert_vagas" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5751 5755])
+                            ("vagasMax" variable nil (reparse-symbol function_parameters) [5757 5765])
+                            ("vagasMin" variable nil (reparse-symbol function_parameters) [5767 5775])
+                            ("alerta" variable nil (reparse-symbol function_parameters) [5777 5783]))                          )
+                        (reparse-symbol indented_block_body) [5734 6131])
+                    ("insert_mobiliado" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6157 6161])
+                            ("mobiliado" variable nil (reparse-symbol function_parameters) [6163 6172])
+                            ("alerta" variable nil (reparse-symbol function_parameters) [6174 6180]))                          )
+                        (reparse-symbol indented_block_body) [6136 6508])
+                    ("insert_pet" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6528 6532])
+                            ("alerta" variable nil (reparse-symbol function_parameters) [6534 6540])
+                            ("has_pet" variable nil (reparse-symbol function_parameters) [6542 6549]))                          )
+                        (reparse-symbol indented_block_body) [6513 6896]))                  
+                :type "class")
+                nil [3764 6896])
+            ("create_alerts" function nil nil [6898 8873])
+            ("if" code nil nil [8875 8922]))          
+      :file "populate_database.py"
+      :pointmax 8922
+      :fsize 8921
+      :lastmodtime '(22846 42704 747089 186000)
+      :unmatched-syntax nil)
+    (semanticdb-table "populate_mongodb.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("abc" include nil nil [1 24])
+            ("MySQLdb" include nil nil [25 46])
+            ("os" include nil nil [47 56])
+            ("uuid" include nil nil [57 68])
+            ("pymongo" include nil nil [69 100])
+            ("PROD_HOST" variable nil nil [102 149])
+            ("PROD_USER" variable nil nil [150 192])
+            ("PROD_PASSWORD" variable nil nil [193 239])
+            ("DBService" type
+               (:members 
+                  ( ("__metaclass__" variable nil (reparse-symbol indented_block_body) [264 287])
+                    ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [702 727])
+                            ("self" variable nil (reparse-symbol indented_block_body) [736 766]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [306 310])
+                            ("db" variable nil (reparse-symbol function_parameters) [312 314]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [293 390])
+                    ("get_db" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [406 410])
+                            ("db" variable nil (reparse-symbol function_parameters) [412 414]))                          )
+                        (reparse-symbol indented_block_body) [395 603])
+                    ("commit" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [619 623]))                          )
+                        (reparse-symbol indented_block_body) [608 651])
+                    ("rollback" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [669 673]))                          )
+                        (reparse-symbol indented_block_body) [656 703]))                  
+                :type "class")
+                nil [242 703])
+            ("Ebdb" type
+               (:superclasses ("DBService")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("super" code nil (reparse-symbol indented_block_body) [1388 1432]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [745 749]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [732 805])
+                    ("get_alerts" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [825 829]))                          )
+                        (reparse-symbol indented_block_body) [810 2375])
+                    ("get_amenidades_pets" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2404 2408]))                          )
+                        (reparse-symbol indented_block_body) [2380 2781]))                  
+                :type "class")
+                nil [705 2781])
+            ("CidadeAlerta" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("client" variable nil (reparse-symbol indented_block_body) [3463 3513])
+                            ("self" variable nil (reparse-symbol indented_block_body) [3522 3551])
+                            ("self" variable nil (reparse-symbol indented_block_body) [3560 3594]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2820 2824]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [2807 2967])
+                    ("insert_alert" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2989 2993])
+                            ("alert" variable nil (reparse-symbol function_parameters) [2995 3000]))                          )
+                        (reparse-symbol indented_block_body) [2972 3223]))                  
+                :type "class")
+                nil [2783 3201])
+            ("create_alerts" function nil nil [3225 7132])
+            ("if" code nil nil [7134 7181]))          
+      :file "populate_mongodb.py"
+      :pointmax 7181
+      :fsize 7182
+      :lastmodtime '(22846 49697 322100 774000)
+      :unmatched-syntax nil))
+  :file "!home!philip!dev!cidade-alerta!scripts!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

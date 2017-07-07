@@ -1,0 +1,395 @@
+;; Object entities/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "entities/"
+  :tables
+  (list
+    (semanticdb-table "file.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("entities" include nil nil [1 31])
+            ("os" include nil nil [32 41])
+            ("FileService" type
+               (:superclasses ("DBService")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("table_name" variable nil (reparse-symbol indented_block_body) [106 155])
+                            ("super" code nil (reparse-symbol indented_block_body) [164 192]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [91 95]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [78 193])
+                    ("search_paginated" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [219 223])
+                            ("query" variable nil (reparse-symbol function_parameters) [225 230])
+                            ("skip" variable nil (reparse-symbol function_parameters) [232 236])
+                            ("limit" variable nil (reparse-symbol function_parameters) [238 243])
+                            ("sort_field" variable nil (reparse-symbol function_parameters) [245 255]))                          )
+                        (reparse-symbol indented_block_body) [198 538]))                  
+                :type "class")
+                nil [44 538]))          
+      :file "file.py"
+      :pointmax 538
+      :fsize 537
+      :lastmodtime '(22681 53931 517539 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "__init__.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("entities.audit" include nil nil [1 40])
+            ("pymongo" include nil nil [41 72])
+            ("pymongo.errors" include nil nil [73 117])
+            ("bson" include nil nil [118 144])
+            ("urllib" include nil nil [145 158])
+            ("json" include nil nil [159 170])
+            ("os" include nil nil [171 180])
+            ("logging" include nil nil [181 195])
+            ("logger" variable nil nil [197 233])
+            ("DBService" type
+               (:superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("mongo_host" variable nil (reparse-symbol indented_block_body) [305 354])
+                            ("mongo_port" variable nil (reparse-symbol indented_block_body) [363 413])
+                            ("mongo_user" variable nil (reparse-symbol indented_block_body) [422 464])
+                            ("mongo_pass" variable nil (reparse-symbol indented_block_body) [473 519])
+                            ("mong_admin_db" variable nil (reparse-symbol indented_block_body) [528 577])
+                            ("client" variable nil (reparse-symbol indented_block_body) [586 630])
+                            ("db" variable nil (reparse-symbol indented_block_body) [639 658])
+                            ("if" code nil (reparse-symbol indented_block_body) [667 940])
+                            ("self" variable nil (reparse-symbol indented_block_body) [948 981])
+                            ("self" variable nil (reparse-symbol indented_block_body) [990 1022])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1031 1066]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [278 282])
+                            ("collection" variable nil (reparse-symbol function_parameters) [284 294]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [265 1067])
+                    ("convertObjectIdStr" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1095 1099])
+                            ("result" variable nil (reparse-symbol function_parameters) [1101 1107]))                          )
+                        (reparse-symbol indented_block_body) [1072 1161])
+                    ("convertStrObjectId" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1189 1193])
+                            ("result" variable nil (reparse-symbol function_parameters) [1195 1201]))                          )
+                        (reparse-symbol indented_block_body) [1166 1255])
+                    ("get_one" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1272 1276])
+                            ("query" variable nil (reparse-symbol function_parameters) [1278 1283]))                          )
+                        (reparse-symbol indented_block_body) [1260 1358])
+                    ("get_all" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1375 1379]))                          )
+                        (reparse-symbol indented_block_body) [1363 1445])
+                    ("get_all_paginated" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1472 1476])
+                            ("skip" variable nil (reparse-symbol function_parameters) [1478 1482])
+                            ("limit" variable nil (reparse-symbol function_parameters) [1484 1489]))                          )
+                        (reparse-symbol indented_block_body) [1450 1619])
+                    ("get_all_paginated_sorted" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1653 1657])
+                            ("skip" variable nil (reparse-symbol function_parameters) [1659 1663])
+                            ("limit" variable nil (reparse-symbol function_parameters) [1665 1670])
+                            ("sort" variable nil (reparse-symbol function_parameters) [1672 1676])
+                            ("direction" variable nil (reparse-symbol function_parameters) [1678 1687]))                          )
+                        (reparse-symbol indented_block_body) [1624 1839])
+                    ("search" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1855 1859])
+                            ("query" variable nil (reparse-symbol function_parameters) [1861 1866]))                          )
+                        (reparse-symbol indented_block_body) [1844 1901])
+                    ("find" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1915 1919])
+                            ("query" variable nil (reparse-symbol function_parameters) [1921 1926]))                          )
+                        (reparse-symbol indented_block_body) [1906 2077])
+                    ("find_one" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2095 2099])
+                            ("query" variable nil (reparse-symbol function_parameters) [2101 2106]))                          )
+                        (reparse-symbol indented_block_body) [2082 2261])
+                    ("search_paginated" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2287 2291])
+                            ("query" variable nil (reparse-symbol function_parameters) [2293 2298])
+                            ("skip" variable nil (reparse-symbol function_parameters) [2300 2304])
+                            ("limit" variable nil (reparse-symbol function_parameters) [2306 2311]))                          )
+                        (reparse-symbol indented_block_body) [2266 2413])
+                    ("search_paginated_unwind" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2446 2450])
+                            ("query" variable nil (reparse-symbol function_parameters) [2452 2457])
+                            ("skip" variable nil (reparse-symbol function_parameters) [2459 2463])
+                            ("limit" variable nil (reparse-symbol function_parameters) [2465 2470])
+                            ("unwind_field" variable nil (reparse-symbol function_parameters) [2472 2484]))                          )
+                        (reparse-symbol indented_block_body) [2418 2701])
+                    ("count_paginated_unwind" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2733 2737])
+                            ("query" variable nil (reparse-symbol function_parameters) [2739 2744])
+                            ("unwind_field" variable nil (reparse-symbol function_parameters) [2746 2758]))                          )
+                        (reparse-symbol indented_block_body) [2706 3076])
+                    ("get_search_size" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3101 3105])
+                            ("query" variable nil (reparse-symbol function_parameters) [3107 3112]))                          )
+                        (reparse-symbol indented_block_body) [3081 3166])
+                    ("insert_one" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3186 3190])
+                            ("json" variable nil (reparse-symbol function_parameters) [3192 3196])
+                            ("user" variable nil (reparse-symbol function_parameters) [3198 3202]))                          )
+                        (reparse-symbol indented_block_body) [3171 3751])
+                    ("upsert_one" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3771 3775])
+                            ("json" variable nil (reparse-symbol function_parameters) [3777 3781])
+                            ("id_key" variable nil (reparse-symbol function_parameters) [3783 3789])
+                            ("user" variable nil (reparse-symbol function_parameters) [3791 3795]))                          )
+                        (reparse-symbol indented_block_body) [3756 4410])
+                    ("update_one" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4430 4434])
+                            ("query" variable nil (reparse-symbol function_parameters) [4436 4441])
+                            ("update" variable nil (reparse-symbol function_parameters) [4443 4449])
+                            ("user" variable nil (reparse-symbol function_parameters) [4451 4455]))                          )
+                        (reparse-symbol indented_block_body) [4415 5021])
+                    ("update_many" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5042 5046])
+                            ("query" variable nil (reparse-symbol function_parameters) [5048 5053])
+                            ("update" variable nil (reparse-symbol function_parameters) [5055 5061])
+                            ("user" variable nil (reparse-symbol function_parameters) [5063 5067]))                          )
+                        (reparse-symbol indented_block_body) [5026 5605])
+                    ("delete_one" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5625 5629])
+                            ("query" variable nil (reparse-symbol function_parameters) [5631 5636])
+                            ("user" variable nil (reparse-symbol function_parameters) [5638 5642]))                          )
+                        (reparse-symbol indented_block_body) [5610 6077]))                  
+                :type "class")
+                nil [236 6077]))          
+      :file "__init__.py"
+      :pointmax 6077
+      :fsize 6076
+      :lastmodtime '(22750 32558 901164 400000)
+      :unmatched-syntax nil)
+    (semanticdb-table "audit.py"
+      :file "audit.py"
+      :fsize 1268
+      :lastmodtime '(22676 48220 893332 0))
+    (semanticdb-table "migration.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("entities.boleto" include nil nil [1 42])
+            ("entities.condo_manager" include nil nil [43 97])
+            ("entities.expense" include nil nil [98 141])
+            ("entities.file" include nil nil [142 179])
+            ("entities.home" include nil nil [180 217])
+            ("entities.pdf_file" include nil nil [218 262])
+            ("dynamo" include nil nil [263 290])
+            ("os" include nil nil [291 300])
+            ("decimal" include nil nil [301 328])
+            ("logging" include nil nil [329 343])
+            ("sys" include nil nil [344 354])
+            ("logging_format" variable nil nil [357 428])
+            ("logging" code nil nil [429 599])
+            ("logger" variable nil nil [600 639])
+            ("Migration" type
+               (:superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [699 882])
+                            ("self" variable nil (reparse-symbol indented_block_body) [891 1097])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1106 1295])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1304 1475])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1484 1655])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1664 1859])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1868 1905])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1914 1964])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1973 2012])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2021 2054])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2063 2096])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2105 2145]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [684 688]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [671 2146])
+                    ("migrate_basic" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2169 2173])
+                            ("dynamo" variable nil (reparse-symbol function_parameters) [2175 2181])
+                            ("mongo" variable nil (reparse-symbol function_parameters) [2183 2188]))                          )
+                        (reparse-symbol indented_block_body) [2151 2555])
+                    ("migrate_condo_manager" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2586 2590]))                          )
+                        (reparse-symbol indented_block_body) [2560 2713])
+                    ("migrate_pdf_file" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2739 2743]))                          )
+                        (reparse-symbol indented_block_body) [2718 2857])
+                    ("migrate_expense" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2882 2886]))                          )
+                        (reparse-symbol indented_block_body) [2862 2997])
+                    ("convert_decimal" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3022 3026])
+                            ("item" variable nil (reparse-symbol function_parameters) [3028 3032]))                          )
+                        (reparse-symbol indented_block_body) [3002 3174])
+                    ("migrate_home" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3196 3200]))                          )
+                        (reparse-symbol indented_block_body) [3179 3498])
+                    ("migrate_boletos" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3523 3527]))                          )
+                        (reparse-symbol indented_block_body) [3503 3973])
+                    ("migrate_files" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3996 4000]))                          )
+                        (reparse-symbol indented_block_body) [3978 4815])
+                    ("migrate_all" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4836 4840]))                          )
+                        (reparse-symbol indented_block_body) [4820 5031])
+                    ("migrate" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5048 5052]))                          )
+                        (reparse-symbol indented_block_body) [5036 5410]))                  
+                :type "class")
+                nil [642 5410])
+            ("main" function nil nil [5412 5460])
+            ("if" code nil nil [5461 5499]))          
+      :file "migration.py"
+      :pointmax 5499
+      :fsize 5498
+      :lastmodtime '(22676 48220 893332 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "boleto.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("condominium.bar_code_utils" include nil nil [1 52])
+            ("condominium.boleto_status" include nil nil [53 119])
+            ("entities.home" include nil nil [120 157])
+            ("entities" include nil nil [158 188])
+            ("os" include nil nil [189 198])
+            ("BoletoService" type
+               (:superclasses ("DBService")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [265 323])
+                            ("super" code nil (reparse-symbol indented_block_body) [332 365])
+                            ("self" variable nil (reparse-symbol indented_block_body) [374 407]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [250 254]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [237 408])
+                    ("update_status" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [431 435])
+                            ("query" variable nil (reparse-symbol function_parameters) [437 442])
+                            ("update" variable nil (reparse-symbol function_parameters) [444 450])
+                            ("user" variable nil (reparse-symbol function_parameters) [452 456]))                          )
+                        (reparse-symbol indented_block_body) [413 511])
+                    ("update" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [527 531])
+                            ("query" variable nil (reparse-symbol function_parameters) [533 538])
+                            ("update" variable nil (reparse-symbol function_parameters) [540 546])
+                            ("user" variable nil (reparse-symbol function_parameters) [548 552]))                          )
+                        (reparse-symbol indented_block_body) [516 1242])
+                    ("get_summary" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1263 1267])
+                            ("query" variable nil (reparse-symbol function_parameters) [1269 1274]))                          
+                        :documentation "Get aggregate values from the received query.")
+                        (reparse-symbol indented_block_body) [1247 2342])
+                    ("search_paginated" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2368 2372])
+                            ("query" variable nil (reparse-symbol function_parameters) [2374 2379])
+                            ("skip" variable nil (reparse-symbol function_parameters) [2381 2385])
+                            ("limit" variable nil (reparse-symbol function_parameters) [2387 2392])
+                            ("sort_field" variable nil (reparse-symbol function_parameters) [2394 2404]))                          )
+                        (reparse-symbol indented_block_body) [2347 2691])
+                    ("search" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2707 2711])
+                            ("query" variable nil (reparse-symbol function_parameters) [2713 2718])
+                            ("sort_field" variable nil (reparse-symbol function_parameters) [2720 2730]))                          )
+                        (reparse-symbol indented_block_body) [2696 2873]))                  
+                :type "class")
+                nil [201 2873]))          
+      :file "boleto.py"
+      :pointmax 2873
+      :fsize 1705
+      :lastmodtime '(22750 32558 901164 400000)
+      :unmatched-syntax nil)
+    (semanticdb-table "condo_manager.py"
+      :file "condo_manager.py"
+      :fsize 517
+      :lastmodtime '(22676 48220 893332 0))
+    (semanticdb-table "expense.py"
+      :file "expense.py"
+      :fsize 201
+      :lastmodtime '(22676 48220 893332 0))
+    (semanticdb-table "home.py"
+      :file "home.py"
+      :fsize 396
+      :lastmodtime '(22676 48220 893332 0))
+    (semanticdb-table "pdf_file.py"
+      :file "pdf_file.py"
+      :fsize 203
+      :lastmodtime '(22676 48220 893332 0)))
+  :file "!home!philip!dev!cyclops!entities!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

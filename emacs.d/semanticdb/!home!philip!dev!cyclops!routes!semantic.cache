@@ -1,0 +1,151 @@
+;; Object routes/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "routes/"
+  :tables
+  (list
+    (semanticdb-table "file.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("entities.file" include nil nil [1 38])
+            ("flask" include nil nil [39 99])
+            ("services.seu_barriga" include nil nil [100 143])
+            ("reports.utils" include nil nil [144 180])
+            ("utils.flask_utils" include nil nil [181 220])
+            ("requests" include nil nil [221 236])
+            ("base64" include nil nil [237 250])
+            ("files" variable nil nil [253 289])
+            ("file_service" variable nil nil [290 318])
+            ("" code nil nil [333 360])
+            ("list_files" function nil nil [361 422])
+            ("" code nil nil [436 473])
+            ("list_files_paginated" function nil nil [474 783])
+            ("" code nil nil [797 832])
+            ("files_search" function nil nil [833 1173])
+            ("" code nil nil [1187 1229])
+            ("download" function (:arguments 
+              ( ("file_name" variable nil (reparse-symbol function_parameters) [1243 1252]))              ) nil [1230 1669])
+            ("" code nil nil [1683 1757])
+            ("download_boleto" function (:arguments 
+              ( ("contract_id" variable nil (reparse-symbol function_parameters) [1785 1796])
+                ("year" variable nil (reparse-symbol function_parameters) [1798 1802])
+                ("month" variable nil (reparse-symbol function_parameters) [1804 1809]))              ) nil [1765 2546])
+            ("build_download_response" function (:arguments 
+              ( ("content" variable nil (reparse-symbol function_parameters) [2576 2583])
+                ("file_name" variable nil (reparse-symbol function_parameters) [2585 2594]))              ) nil [2548 2835]))          
+      :file "file.py"
+      :pointmax 2835
+      :fsize 2835
+      :lastmodtime '(22732 15180 404791 525000)
+      :unmatched-syntax nil)
+    (semanticdb-table "boleto.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("datetime" include nil nil [1 30])
+            ("calendar" include nil nil [31 62])
+            ("flask" include nil nil [63 123])
+            ("entities.boleto" include nil nil [124 165])
+            ("reports.duplicated_report" include nil nil [166 227])
+            ("reports.home_report" include nil nil [228 277])
+            ("utils.flask_utils" include nil nil [278 317])
+            ("condominium.boleto_status" include nil nil [318 368])
+            ("boletos" variable nil nil [371 411])
+            ("boleto_service" variable nil nil [412 444])
+            ("" code nil nil [461 489])
+            ("boleto_get_all" function nil nil [490 664])
+            ("" code nil nil [680 714])
+            ("boleto_get_size" function nil nil [715 832])
+            ("" code nil nil [848 884])
+            ("boleto_search" function nil nil [885 1232])
+            ("" code nil nil [1248 1286])
+            ("clear_filter" function nil nil [1287 1374])
+            ("" code nil nil [1390 1423])
+            ("boleto_update_one" function (:arguments 
+              ( ("id" variable nil (reparse-symbol function_parameters) [1446 1448]))              ) nil [1424 1599])
+            ("" code nil nil [1615 1655])
+            ("boleto_update_status" function (:arguments 
+              ( ("id" variable nil (reparse-symbol function_parameters) [1681 1683]))              ) nil [1656 1892])
+            ("" code nil nil [1908 1944])
+            ("boleto_delete_one" function (:arguments 
+              ( ("id" variable nil (reparse-symbol function_parameters) [1967 1969]))              ) nil [1945 2114])
+            ("" code nil nil [2130 2164])
+            ("generate_home_report" function nil nil [2165 2419])
+            ("" code nil nil [2435 2475])
+            ("generate_duplicated_report" function nil nil [2476 2951])
+            ("" code nil nil [2967 3035])
+            ("get_boletos_aggregate" function (:arguments 
+              ( ("contract_id" variable nil (reparse-symbol function_parameters) [3070 3081])
+                ("accrual_year" variable nil (reparse-symbol function_parameters) [3083 3095])
+                ("accrual_month" variable nil (reparse-symbol function_parameters) [3097 3110]))              ) nil [3044 4140]))          
+      :file "boleto.py"
+      :pointmax 4140
+      :fsize 4139
+      :lastmodtime '(22750 32558 905164 420000)
+      :unmatched-syntax '((INDENT_BLOCK 4093 . 4140) (NEWLINE 4092 . 4093) (COLON 4091 . 4092) (TRY 4020 . 4023) (AS 4087 . 4089)))
+    (semanticdb-table "contract.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("utils.flask_utils" include nil nil [1 40])
+            ("flask" include nil nil [41 77])
+            ("controllers.contract" include nil nil [78 129])
+            ("controllers.entry" include nil nil [130 175])
+            ("services.seu_barriga" include nil nil [176 219])
+            ("contract" variable nil nil [222 264])
+            ("" code nil nil [282 379])
+            ("entry_get_by_accrual_year_month" function (:arguments 
+              ( ("contract_id" variable nil (reparse-symbol function_parameters) [416 427])
+                ("accrual_year" variable nil (reparse-symbol function_parameters) [434 446])
+                ("accrual_month" variable nil (reparse-symbol function_parameters) [489 502]))              ) nil [380 863])
+            ("" code nil nil [880 915])
+            ("contract_get_one" function (:arguments 
+              ( ("id" variable nil (reparse-symbol function_parameters) [937 939]))              ) nil [916 1193]))          
+      :file "contract.py"
+      :pointmax 1193
+      :fsize 2318
+      :lastmodtime '(22746 50984 751716 746000)
+      :unmatched-syntax nil)
+    (semanticdb-table "entry.py"
+      :file "entry.py"
+      :fsize 2182
+      :lastmodtime '(22729 31421 670639 0))
+    (semanticdb-table "home.py"
+      :file "home.py"
+      :fsize 656
+      :lastmodtime '(22694 1019 35697 0))
+    (semanticdb-table "iptu.py"
+      :file "iptu.py"
+      :fsize 667
+      :lastmodtime '(22694 1019 35697 0))
+    (semanticdb-table "manager.py"
+      :file "manager.py"
+      :fsize 1319
+      :lastmodtime '(22694 1019 35697 0))
+    (semanticdb-table "sispag.py"
+      :file "sispag.py"
+      :fsize 838
+      :lastmodtime '(22694 1019 35697 0))
+    (semanticdb-table "invoice.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("utils.flask_utils" include nil nil [1 40])
+            ("flask" include nil nil [41 77])
+            ("services.seu_barriga" include nil nil [78 121])
+            ("invoice" variable nil nil [124 164])
+            ("" code nil nil [181 277])
+            ("send_email" function (:arguments 
+              ( ("invoice_type" variable nil (reparse-symbol function_parameters) [293 305])
+                ("contract_id" variable nil (reparse-symbol function_parameters) [307 318])
+                ("year" variable nil (reparse-symbol function_parameters) [320 324])
+                ("month" variable nil (reparse-symbol function_parameters) [326 331]))              ) nil [278 575])
+            ("" code nil nil [591 673])
+            ("get_invoice_preview" function (:arguments 
+              ( ("contract_id" variable nil (reparse-symbol function_parameters) [698 709])
+                ("year" variable nil (reparse-symbol function_parameters) [711 715])
+                ("month" variable nil (reparse-symbol function_parameters) [717 722]))              ) nil [674 961]))          
+      :file "invoice.py"
+      :pointmax 961
+      :fsize 960
+      :lastmodtime '(22750 32558 905164 420000)
+      :unmatched-syntax nil))
+  :file "!home!philip!dev!cyclops!routes!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

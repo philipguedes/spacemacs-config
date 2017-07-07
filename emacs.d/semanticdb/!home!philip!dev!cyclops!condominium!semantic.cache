@@ -1,0 +1,709 @@
+;; Object condominium/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "condominium/"
+  :tables
+  (list
+    (semanticdb-table "downloader.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("google.drive" include nil nil [1 31])
+            ("datetime" include nil nil [32 47])
+            ("os" include nil nil [48 57])
+            ("Downloader" type
+               (:documentation "
+    Provides file download and manipulation
+    "
+                :superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [178 206])
+                            ("self" variable nil (reparse-symbol indented_block_body) [215 242]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [163 167]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [150 243])
+                    ("get_folder_name" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [268 272]))                          
+                        :documentation "
+        Build the folder name, using the yyyy.dd format
+        ")
+                        (reparse-symbol indented_block_body) [248 505])
+                    ("get_folder_id" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [528 532])
+                            ("folder_name" variable nil (reparse-symbol function_parameters) [534 545])
+                            ("parent_id" variable nil (reparse-symbol function_parameters) [547 556]))                          
+                        :documentation "
+        Gets the google drive folder id, for a folder name
+        ")
+                        (reparse-symbol indented_block_body) [510 858])
+                    ("list_files" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [878 882])
+                            ("folder_id" variable nil (reparse-symbol function_parameters) [884 893]))                          
+                        :documentation "
+        List the files in a folder
+        ")
+                        (reparse-symbol indented_block_body) [863 1015])
+                    ("download_file" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1038 1042])
+                            ("file_id" variable nil (reparse-symbol function_parameters) [1044 1051])
+                            ("path" variable nil (reparse-symbol function_parameters) [1053 1057]))                          
+                        :documentation "
+        Downloads a file from google drive
+        ")
+                        (reparse-symbol indented_block_body) [1020 1242])
+                    ("get_file_content" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1268 1272])
+                            ("file_id" variable nil (reparse-symbol function_parameters) [1274 1281]))                          
+                        :documentation "
+        Get the file content from drive
+        ")
+                        (reparse-symbol indented_block_body) [1247 1441])
+                    ("create_folder" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1464 1468])
+                            ("folder_name" variable nil (reparse-symbol function_parameters) [1470 1481])
+                            ("parent_id" variable nil (reparse-symbol function_parameters) [1483 1492]))                          )
+                        (reparse-symbol indented_block_body) [1446 1602])
+                    ("upload_file" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1623 1627])
+                            ("file_path" variable nil (reparse-symbol function_parameters) [1629 1638])
+                            ("parent_id" variable nil (reparse-symbol function_parameters) [1640 1649]))                          )
+                        (reparse-symbol indented_block_body) [1607 1766])
+                    ("delete_file" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1787 1791])
+                            ("file_name" variable nil (reparse-symbol function_parameters) [1793 1802])
+                            ("file_id" variable nil (reparse-symbol function_parameters) [1804 1811])
+                            ("new_p" variable nil (reparse-symbol function_parameters) [1813 1818])
+                            ("old_p" variable nil (reparse-symbol function_parameters) [1820 1825]))                          
+                        :documentation "
+        Deletes a local file
+        ")
+                        (reparse-symbol indented_block_body) [1771 2049]))                  
+                :type "class")
+                nil [60 2049]))          
+      :file "downloader.py"
+      :pointmax 2049
+      :fsize 2048
+      :lastmodtime '(22786 21324 823671 491000)
+      :unmatched-syntax nil)
+    (semanticdb-table "reader_service.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("'''
+Provides functions to read and process boletos
+'''" code nil nil [1 55])
+            ("re" include nil nil [56 65])
+            ("os" include nil nil [66 75])
+            ("logging" include nil nil [76 90])
+            ("datetime" include nil nil [91 120])
+            ("pymongo" include nil nil [121 135])
+            ("utils.boleto_process_status" include nil nil [136 195])
+            ("pymongo.errors" include nil nil [196 240])
+            ("entities" include nil nil [241 271])
+            ("entities.boleto" include nil nil [272 313])
+            ("condominium.bar_code_reader" include nil nil [314 367])
+            ("services.seu_barriga" include nil nil [368 411])
+            ("controllers.contract" include nil nil [412 463])
+            ("bson" include nil nil [464 489])
+            ("utils" include nil nil [490 502])
+            ("FILE_PATTERN" variable nil nil [504 849])
+            ("LOGGER" variable nil nil [850 886])
+            ("build_step" function (:arguments 
+              ( ("step_id" variable nil (reparse-symbol function_parameters) [904 911])
+                ("message" variable nil (reparse-symbol function_parameters) [913 920]))              ) nil [889 1120])
+            ("format_data" function (:arguments 
+              ( ("pdf_file" variable nil (reparse-symbol function_parameters) [1138 1146])
+                ("bar_code" variable nil (reparse-symbol function_parameters) [1148 1156])
+                ("value" variable nil (reparse-symbol function_parameters) [1158 1163])
+                ("due_date" variable nil (reparse-symbol function_parameters) [1165 1173])
+                ("contract_id" variable nil (reparse-symbol function_parameters) [1191 1202])
+                ("status" variable nil (reparse-symbol function_parameters) [1204 1210])
+                ("error" variable nil (reparse-symbol function_parameters) [1212 1217]))              ) nil [1122 1719])
+            ("ReaderService" type
+               (:members 
+                  ( ("'''
+    Service that reads, process and saves boletos
+    '''" code nil (reparse-symbol indented_block_body) [1746 1807])
+                    ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [1852 1895])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1904 1953])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1962 1990])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1999 2036]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1825 1829])
+                            ("downloader" variable nil (reparse-symbol function_parameters) [1831 1841]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [1812 2037])
+                    ("download_file" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2060 2064])
+                            ("pdf_file" variable nil (reparse-symbol function_parameters) [2066 2074]))                          )
+                        (reparse-symbol indented_block_body) [2042 2366])
+                    ("read_file" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2385 2389])
+                            ("pdf_file_path" variable nil (reparse-symbol function_parameters) [2391 2404])
+                            ("file_name" variable nil (reparse-symbol function_parameters) [2406 2415]))                          )
+                        (reparse-symbol indented_block_body) [2371 2570])
+                    ("get_info_file_name" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2598 2602])
+                            ("file_name" variable nil (reparse-symbol function_parameters) [2604 2613]))                          )
+                        (reparse-symbol indented_block_body) [2575 2936])
+                    ("insert_boleto" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2959 2963])
+                            ("data" variable nil (reparse-symbol function_parameters) [2965 2969]))                          )
+                        (reparse-symbol indented_block_body) [2941 3359])
+                    ("get_contract" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3381 3385])
+                            ("contract_id" variable nil (reparse-symbol function_parameters) [3387 3398]))                          )
+                        (reparse-symbol indented_block_body) [3364 3528])
+                    ("get_processed_folder_id" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3561 3565])
+                            ("folder_id" variable nil (reparse-symbol function_parameters) [3567 3576]))                          )
+                        (reparse-symbol indented_block_body) [3533 4035])
+                    ("get_folder" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4055 4059]))                          )
+                        (reparse-symbol indented_block_body) [4040 4724])
+                    ("move_file" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4743 4747])
+                            ("pdf_file" variable nil (reparse-symbol function_parameters) [4749 4757]))                          )
+                        (reparse-symbol indented_block_body) [4729 5353])
+                    ("get_file" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5371 5375]))                          )
+                        (reparse-symbol indented_block_body) [5358 5710])
+                    ("get_boleto" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5730 5734])
+                            ("boleto_id" variable nil (reparse-symbol function_parameters) [5736 5745]))                          )
+                        (reparse-symbol indented_block_body) [5715 5855]))                  
+                :type "class")
+                nil [1721 5855]))          
+      :file "reader_service.py"
+      :pointmax 5855
+      :fsize 5854
+      :lastmodtime '(22786 21324 823671 491000)
+      :unmatched-syntax nil)
+    (semanticdb-table "boleto_status.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("\"\"\"Enums for boleto module.\"\"\"" code nil nil [1 31])
+            ("enum" include nil nil [32 53])
+            ("BoletoStatus" type
+               (:documentation "Boleto status enum."
+                :superclasses ("Enum")
+                :members 
+                  ( ("new_boleto" variable nil (reparse-symbol indented_block_body) [117 142])
+                    ("pending" variable nil (reparse-symbol indented_block_body) [147 166])
+                    ("discarded" variable nil (reparse-symbol indented_block_body) [171 194])
+                    ("attributed" variable nil (reparse-symbol indented_block_body) [199 224])
+                    ("file_created" variable nil (reparse-symbol indented_block_body) [229 258])
+                    ("paid" variable nil (reparse-symbol indented_block_body) [263 276])
+                    ("manualy_paid" variable nil (reparse-symbol indented_block_body) [281 310])
+                    ("sispag_error" variable nil (reparse-symbol indented_block_body) [315 344]))                  
+                :type "class")
+                nil [56 345])
+            ("ErrorType" type
+               (:documentation "Boleto error enum."
+                :superclasses ("Enum")
+                :members 
+                  ( ("no_error" variable nil (reparse-symbol indented_block_body) [404 425])
+                    ("barcode" variable nil (reparse-symbol indented_block_body) [430 449])
+                    ("duplicated" variable nil (reparse-symbol indented_block_body) [454 479])
+                    ("without_value" variable nil (reparse-symbol indented_block_body) [484 515])
+                    ("expired" variable nil (reparse-symbol indented_block_body) [520 539])
+                    ("responsability" variable nil (reparse-symbol indented_block_body) [544 577])
+                    ("no_contract" variable nil (reparse-symbol indented_block_body) [582 609])
+                    ("extra_boleto" variable nil (reparse-symbol indented_block_body) [614 643])
+                    ("discount" variable nil (reparse-symbol indented_block_body) [648 669]))                  
+                :type "class")
+                nil [347 670])
+            ("ExpensesStatus" type
+               (:documentation "Boleto expenses status."
+                :superclasses ("Enum")
+                :members 
+                  ( ("no_invoice" variable nil (reparse-symbol indented_block_body) [739 764])
+                    ("not_entered" variable nil (reparse-symbol indented_block_body) [769 796])
+                    ("entered" variable nil (reparse-symbol indented_block_body) [801 820]))                  
+                :type "class")
+                nil [672 821]))          
+      :file "boleto_status.py"
+      :pointmax 821
+      :fsize 856
+      :lastmodtime '(22786 21324 823671 491000)
+      :unmatched-syntax nil)
+    (semanticdb-table "bar_code_reader.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("condominium.pdf_reader_3" include nil nil [1 47])
+            ("condominium.bar_code_utils" include nil nil [48 99])
+            ("condominium.bar_code_scanner" include nil nil [100 155])
+            ("os" include nil nil [156 165])
+            ("condominium.ocr_utils" include nil nil [166 207])
+            ("sys" include nil nil [208 218])
+            ("logging" include nil nil [219 233])
+            ("logger" variable nil nil [236 272])
+            ("BarCodeReader" type
+               (:documentation "
+    Reads the bar code from a file
+    "
+                :superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [387 416])
+                            ("self" variable nil (reparse-symbol indented_block_body) [425 465])
+                            ("self" variable nil (reparse-symbol indented_block_body) [474 529])
+                            ("self" variable nil (reparse-symbol indented_block_body) [538 593])
+                            ("self" variable nil (reparse-symbol indented_block_body) [602 663]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [372 376]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [359 664])
+                    ("read_bar_code_pdf" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [691 695])
+                            ("file_name" variable nil (reparse-symbol function_parameters) [697 706]))                          
+                        :documentation "
+        Read the bar code by parsing the pdf
+        ")
+                        (reparse-symbol indented_block_body) [669 944])
+                    ("scan_bar_code" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [967 971])
+                            ("file_name" variable nil (reparse-symbol function_parameters) [973 982]))                          
+                        :documentation "
+        Scan the bar code using zbar
+        ")
+                        (reparse-symbol indented_block_body) [949 1610])
+                    ("validate_bar_code" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1637 1641])
+                            ("bar_code" variable nil (reparse-symbol function_parameters) [1643 1651]))                          
+                        :documentation "
+        Validate the bar code, using the verification digits
+        ")
+                        (reparse-symbol indented_block_body) [1615 1792])
+                    ("read_bar_code" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1815 1819])
+                            ("file_name" variable nil (reparse-symbol function_parameters) [1821 1830]))                          
+                        :documentation "
+        Try to scan the bar code using zbar, if that do not works, parses
+        the pdf
+        ")
+                        (reparse-symbol indented_block_body) [1797 2352]))                  
+                :type "class")
+                nil [275 2352])
+            ("main" function nil nil [2354 2460])
+            ("if" code nil nil [2462 2500]))          
+      :file "bar_code_reader.py"
+      :pointmax 2500
+      :fsize 2499
+      :lastmodtime '(22676 48220 893332 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "bar_code_utils.py"
+      :file "bar_code_utils.py"
+      :fsize 4478
+      :lastmodtime '(22786 21324 823671 491000))
+    (semanticdb-table "responsability_check.py"
+      :file "responsability_check.py"
+      :fsize 2306
+      :lastmodtime '(22812 27902 625628 363000))
+    (semanticdb-table "pdf_reader_3.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("pdfminer.pdfparser" include nil nil [1 54])
+            ("pdfminer.pdfinterp" include nil nil [55 124])
+            ("pdfminer.converter" include nil nil [125 173])
+            ("pdfminer.layout" include nil nil [174 233])
+            ("pdfminer.layout" include nil nil [234 311])
+            ("re" include nil nil [312 321])
+            ("PdfReader" type
+               (:superclasses ("object")
+                :members 
+                  ( ("OFFSET" variable nil (reparse-symbol indented_block_body) [353 364])
+                    ("regex" variable nil (reparse-symbol indented_block_body) [369 432])
+                    ("process_pages" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [456 460])
+                            ("file_name" variable nil (reparse-symbol function_parameters) [462 471]))                          )
+                        (reparse-symbol indented_block_body) [438 1192])
+                    ("get_value" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1211 1215])
+                            ("x0" variable nil (reparse-symbol function_parameters) [1217 1219])
+                            ("x1" variable nil (reparse-symbol function_parameters) [1221 1223])
+                            ("y0" variable nil (reparse-symbol function_parameters) [1225 1227])
+                            ("y1" variable nil (reparse-symbol function_parameters) [1229 1231])
+                            ("rows" variable nil (reparse-symbol function_parameters) [1233 1237]))                          )
+                        (reparse-symbol indented_block_body) [1197 1772])
+                    ("search_bar_code" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1797 1801])
+                            ("item" variable nil (reparse-symbol function_parameters) [1803 1807]))                          
+                        :documentation "
+        Scan through a page, searching for a bar code
+        ")
+                        (reparse-symbol indented_block_body) [1777 2418])
+                    ("get_bar_code" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2440 2444])
+                            ("file_name" variable nil (reparse-symbol function_parameters) [2446 2455]))                          
+                        :documentation "
+        Reads all the pages, searching for bar_codes
+        ")
+                        (reparse-symbol indented_block_body) [2423 2698])
+                    ("remove_extra_spaces" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2727 2731])
+                            ("bar_code" variable nil (reparse-symbol function_parameters) [2733 2741]))                          
+                        :documentation "
+        Remove extra spaces in bar code
+        ")
+                        (reparse-symbol indented_block_body) [2703 2909]))                  
+                :type "class")
+                nil [324 2909])
+            ("main" function nil nil [2911 3079])
+            ("if" code nil nil [3080 3118]))          
+      :file "pdf_reader_3.py"
+      :pointmax 3118
+      :fsize 3117
+      :lastmodtime '(22676 48220 893332 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "bar_code_scanner.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("condominium.bar_code_utils" include nil nil [1 52])
+            ("subprocess" include nil nil [53 70])
+            ("BarCodeScanner" type
+               (:documentation "
+    Read a bar code, using zbar
+    "
+                :superclasses ("object")
+                :members 
+                  ( ("call_zbar" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [169 173])
+                            ("file_name" variable nil (reparse-symbol function_parameters) [175 184]))                          
+                        :documentation "
+        Read a bar code, using zbar. The python3 zbar library only work with
+        QR codes, so the the native zbar utility is called
+        ")
+                        (reparse-symbol indented_block_body) [155 681])
+                    ("scan_image" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [701 705])
+                            ("file_name" variable nil (reparse-symbol function_parameters) [707 716]))                          
+                        :documentation "
+        Read a bar code, and then convert it to the 'linha digitavel' format
+        ")
+                        (reparse-symbol indented_block_body) [686 921]))                  
+                :type "class")
+                nil [73 921]))          
+      :file "bar_code_scanner.py"
+      :pointmax 921
+      :fsize 920
+      :lastmodtime '(22676 48220 893332 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "ocr_utils.py"
+      :file "ocr_utils.py"
+      :fsize 2231
+      :lastmodtime '(22676 48220 893332 0))
+    (semanticdb-table "boleto_process.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("datetime" include nil nil [1 30])
+            ("transitions" include nil nil [31 62])
+            ("condominium.reader_service" include nil nil [63 115])
+            ("condominium.bar_code_utils" include nil nil [116 167])
+            ("condominium.responsability_check" include nil nil [168 231])
+            ("condominium.boleto_status" include nil nil [232 309])
+            ("condominium.downloader" include nil nil [310 355])
+            ("logging" include nil nil [356 370])
+            ("pprint" include nil nil [371 396])
+            ("inspect" include nil nil [397 411])
+            ("LOGGER" variable nil nil [414 450])
+            ("BoletoProcess" type
+               (:superclasses ("Machine")
+                :members 
+                  ( ("states" variable nil (reparse-symbol indented_block_body) [487 1381])
+                    ("stop_states" variable nil (reparse-symbol indented_block_body) [1387 2051])
+                    ("transitions" variable nil (reparse-symbol indented_block_body) [2057 8614])
+                    ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [8725 8749])
+                            ("self" variable nil (reparse-symbol indented_block_body) [8758 8792])
+                            ("self" variable nil (reparse-symbol indented_block_body) [8801 8841])
+                            ("self" variable nil (reparse-symbol indented_block_body) [8850 8878])
+                            ("self" variable nil (reparse-symbol indented_block_body) [8888 8911])
+                            ("self" variable nil (reparse-symbol indented_block_body) [8920 8957])
+                            ("self" variable nil (reparse-symbol indented_block_body) [8966 8997])
+                            ("self" variable nil (reparse-symbol indented_block_body) [9006 9055])
+                            ("self" variable nil (reparse-symbol indented_block_body) [9064 9084])
+                            ("self" variable nil (reparse-symbol indented_block_body) [9093 9110])
+                            ("self" variable nil (reparse-symbol indented_block_body) [9119 9139])
+                            ("self" variable nil (reparse-symbol indented_block_body) [9148 9168])
+                            ("self" variable nil (reparse-symbol indented_block_body) [9177 9202])
+                            ("self" variable nil (reparse-symbol indented_block_body) [9211 9233])
+                            ("super" code nil (reparse-symbol indented_block_body) [9243 9473]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8633 8637])
+                            ("pdf_file" variable nil (reparse-symbol function_parameters) [8639 8647])
+                            ("downloader" variable nil (reparse-symbol function_parameters) [8649 8659])
+                            ("initial_state" variable nil (reparse-symbol function_parameters) [8661 8674]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [8620 9447])
+                    ("download_file" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9470 9474]))                          )
+                        (reparse-symbol indented_block_body) [9452 9616])
+                    ("get_bar_code_info" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9643 9647]))                          )
+                        (reparse-symbol indented_block_body) [9621 9903])
+                    ("get_info_file_name" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9931 9935]))                          )
+                        (reparse-symbol indented_block_body) [9908 10198])
+                    ("get_contract" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10220 10224]))                          )
+                        (reparse-symbol indented_block_body) [10203 10397])
+                    ("get_bar_code" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10419 10423]))                          )
+                        (reparse-symbol indented_block_body) [10402 10652])
+                    ("move_file" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10671 10675]))                          )
+                        (reparse-symbol indented_block_body) [10657 10787])
+                    ("get_boleto_info" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10812 10816]))                          )
+                        (reparse-symbol indented_block_body) [10792 10959])
+                    ("save_bar_code" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10982 10986])
+                            ("bar_code" variable nil (reparse-symbol function_parameters) [10988 10996]))                          )
+                        (reparse-symbol indented_block_body) [10964 11095])
+                    ("has_bar_code_error" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11123 11127]))                          )
+                        (reparse-symbol indented_block_body) [11100 11167])
+                    ("has_info_error" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11191 11195]))                          )
+                        (reparse-symbol indented_block_body) [11172 11274])
+                    ("set_info" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11292 11296])
+                            ("boleto_value" variable nil (reparse-symbol function_parameters) [11298 11310])
+                            ("due_date" variable nil (reparse-symbol function_parameters) [11312 11320]))                          )
+                        (reparse-symbol indented_block_body) [11279 11390])
+                    ("has_expired_error" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11417 11421]))                          )
+                        (reparse-symbol indented_block_body) [11395 11489])
+                    ("has_contract_error" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11517 11521]))                          )
+                        (reparse-symbol indented_block_body) [11494 11561])
+                    ("set_contract" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11583 11587])
+                            ("contract_id" variable nil (reparse-symbol function_parameters) [11589 11600]))                          )
+                        (reparse-symbol indented_block_body) [11566 11670])
+                    ("has_responsability_error" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11704 11708]))                          )
+                        (reparse-symbol indented_block_body) [11675 11863])
+                    ("has_extra_boleto" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11889 11893]))                          )
+                        (reparse-symbol indented_block_body) [11868 11952])
+                    ("has_discount" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11974 11978]))                          )
+                        (reparse-symbol indented_block_body) [11957 12037])
+                    ("set_value_discount" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12065 12069])
+                            ("boleto_value" variable nil (reparse-symbol function_parameters) [12071 12083]))                          )
+                        (reparse-symbol indented_block_body) [12042 12192])
+                    ("mark_paid" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12211 12215]))                          )
+                        (reparse-symbol indented_block_body) [12197 12292])
+                    ("revert_manual_pay" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12319 12323]))                          )
+                        (reparse-symbol indented_block_body) [12297 12398])
+                    ("remove_file" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12419 12423]))                          )
+                        (reparse-symbol indented_block_body) [12403 12498])
+                    ("mark_as_paid" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12520 12524]))                          )
+                        (reparse-symbol indented_block_body) [12503 12593])
+                    ("format_data" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12614 12618]))                          )
+                        (reparse-symbol indented_block_body) [12598 13614])
+                    ("load_data" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [13633 13637])
+                            ("data" variable nil (reparse-symbol function_parameters) [13639 13643]))                          )
+                        (reparse-symbol indented_block_body) [13619 13992])
+                    ("save_boleto_db" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [14016 14020]))                          )
+                        (reparse-symbol indented_block_body) [13997 14165])
+                    ("is_duplicated" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [14188 14192]))                          )
+                        (reparse-symbol indented_block_body) [14170 14226])
+                    ("generate_sispag" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [14251 14255]))                          )
+                        (reparse-symbol indented_block_body) [14231 14335])
+                    ("save_duplicated" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [14360 14364]))                          )
+                        (reparse-symbol indented_block_body) [14340 14538])
+                    ("change_status" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [14561 14565])
+                            ("status" variable nil (reparse-symbol function_parameters) [14567 14573])
+                            ("error" variable nil (reparse-symbol function_parameters) [14580 14585]))                          )
+                        (reparse-symbol indented_block_body) [14543 14679])
+                    ("update_status" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [14702 14706]))                          )
+                        (reparse-symbol indented_block_body) [14684 14925])
+                    ("run" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [14938 14942]))                          )
+                        (reparse-symbol indented_block_body) [14930 15196])
+                    ("run_from_step" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [15219 15223])
+                            ("action_name" variable nil (reparse-symbol function_parameters) [15225 15236])
+                            ("args" variable nil (reparse-symbol function_parameters) [15238 15242]))                          )
+                        (reparse-symbol indented_block_body) [15201 15326])
+                    ("get_possible_actions" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [15356 15360])
+                            ("state" variable nil (reparse-symbol function_parameters) [15362 15367]))                          )
+                        (reparse-symbol indented_block_body) [15331 15429])
+                    ("get_function_args" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [15456 15460])
+                            ("state" variable nil (reparse-symbol function_parameters) [15462 15467])
+                            ("trigger" variable nil (reparse-symbol function_parameters) [15469 15476]))                          )
+                        (reparse-symbol indented_block_body) [15434 15889])
+                    ("get_all_possible_actions" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [15923 15927]))                          )
+                        (reparse-symbol indented_block_body) [15894 16325])
+                    ("draw_graph" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [16345 16349]))                          )
+                        (reparse-symbol indented_block_body) [16330 16418]))                  
+                :type "class")
+                nil [453 16418])
+            ("main" function nil nil [16420 16503])
+            ("if" code nil nil [16504 16542]))          
+      :file "boleto_process.py"
+      :pointmax 16542
+      :fsize 19156
+      :lastmodtime '(22812 27902 625628 363000)
+      :unmatched-syntax nil))
+  :file "!home!philip!dev!cyclops!condominium!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

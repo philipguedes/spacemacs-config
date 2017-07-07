@@ -1,0 +1,103 @@
+;; Object magritte/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "magritte/"
+  :tables
+  (list
+    (semanticdb-table "runflask.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("flask" include nil nil [280 321])
+            ("crop" include nil nil [322 346])
+            ("boto3" include nil nil [347 359])
+            ("database" include nil nil [360 375])
+            ("datetime" include nil nil [376 391])
+            ("imghdr" include nil nil [392 405])
+            ("json" include nil nil [406 417])
+            ("libxmp.utils" include nil nil [418 437])
+            ("os" include nil nil [438 447])
+            ("tempfile" include nil nil [448 463])
+            ("uuid" include nil nil [464 475])
+            ("jwt_utils" include nil nil [476 492])
+            ("app" variable nil nil [494 515])
+            ("PHOTOSPHERE_NAMESPACE" variable nil nil [517 584])
+            ("S3_BUCKET" variable nil nil [585 614])
+            ("" code nil nil [670 703])
+            ("healthcheck" function nil nil [704 739])
+            ("" code nil nil [750 785])
+            ("authenticated" function nil nil [786 884])
+            ("error" function (:arguments 
+              ( ("message" variable nil (reparse-symbol function_parameters) [895 902])
+                ("code" variable nil (reparse-symbol function_parameters) [904 908]))              ) nil [885 1024])
+            ("is_photosphere" function (:arguments 
+              ( ("image" variable nil (reparse-symbol function_parameters) [1047 1052]))              ) nil [1028 1360])
+            ("is_authenticated" function (:arguments 
+              ( ("request" variable nil (reparse-symbol function_parameters) [1382 1389]))              ) nil [1361 1427])
+            ("validate_token" function (:arguments 
+              ( ("request" variable nil (reparse-symbol function_parameters) [1447 1454]))              ) nil [1428 1768])
+            ("store_temp_image" function (:arguments 
+              ( ("image" variable nil (reparse-symbol function_parameters) [1793 1798]))              ) nil [1772 1917])
+            ("valid_house" function (:arguments 
+              ( ("db" variable nil (reparse-symbol function_parameters) [1937 1939])
+                ("house_id" variable nil (reparse-symbol function_parameters) [1941 1949]))              ) nil [1921 2103])
+            ("upload_to_s3" function (:arguments 
+              ( ("local_filename" variable nil (reparse-symbol function_parameters) [2124 2138]))              ) nil [2107 2322])
+            ("add_to_database" function (:arguments 
+              ( ("db" variable nil (reparse-symbol function_parameters) [2346 2348])
+                ("house_id" variable nil (reparse-symbol function_parameters) [2350 2358])
+                ("s3_url" variable nil (reparse-symbol function_parameters) [2360 2366])
+                ("description" variable nil (reparse-symbol function_parameters) [2368 2379])
+                ("preview_from" variable nil (reparse-symbol function_parameters) [2381 2393]))              ) nil [2326 2844])
+            ("create_preview" function (:arguments 
+              ( ("local_filename" variable nil (reparse-symbol function_parameters) [2864 2878]))              ) nil [2845 2998])
+            ("" code nil nil [3009 3053])
+            ("image_upload" function (:arguments 
+              ( ("house_id" variable nil (reparse-symbol function_parameters) [3071 3079]))              ) nil [3054 4242])
+            ("if" code nil nil [4243 4298]))          
+      :file "runflask.py"
+      :pointmax 4298
+      :fsize 4298
+      :lastmodtime '(22775 52897 492206 334000)
+      :unmatched-syntax nil)
+    (semanticdb-table "wsgi.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("server" include nil nil [1 38])
+            ("if" code nil nil [40 89]))          
+      :file "wsgi.py"
+      :pointmax 89
+      :fsize 88
+      :lastmodtime '(22774 29577 790183 556000)
+      :unmatched-syntax nil)
+    (semanticdb-table "server.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("flask" include nil nil [280 336])
+            ("utils" include nil nil [337 364])
+            ("routes.upload" include nil nil [365 397])
+            ("app" variable nil nil [400 421])
+            ("authenticate" function (:decorators 
+              ( ("app.before_request" function (:type "decorator") nil nil))              ) nil [424 620])
+            ("" code nil nil [632 665])
+            ("healthcheck" function nil nil [666 701])
+            ("" code nil nil [713 748])
+            ("authenticated" function nil nil [749 847])
+            ("" code nil nil [859 886])
+            ("teste" function nil nil [887 1045])
+            ("error" function (:arguments 
+              ( ("message" variable nil (reparse-symbol function_parameters) [1057 1064])
+                ("code" variable nil (reparse-symbol function_parameters) [1066 1070]))              ) nil [1047 1186])
+            ("is_authenticated" function (:arguments 
+              ( ("request" variable nil (reparse-symbol function_parameters) [1209 1216]))              ) nil [1188 1254])
+            ("validate_token" function (:arguments 
+              ( ("request" variable nil (reparse-symbol function_parameters) [1275 1282]))              ) nil [1256 1596])
+            ("app" code nil nil [1598 1628])
+            ("app" variable nil nil [1631 1684]))          
+      :file "server.py"
+      :pointmax 1685
+      :fsize 1684
+      :lastmodtime '(22775 52887 588025 741000)
+      :unmatched-syntax '((RETURN 774 . 780) (IF 786 . 788) (ELSE 815 . 819)))
+)
+  :file "!home!philip!dev!magritte!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

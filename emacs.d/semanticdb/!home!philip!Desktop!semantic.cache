@@ -1,0 +1,258 @@
+;; Object Desktop/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Desktop/"
+  :tables
+  (list
+    (semanticdb-table "arvb.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("os" include nil nil [1 10])
+            ("bisect" include nil nil [11 24])
+            ("itertools" include nil nil [25 41])
+            ("operator" include nil nil [42 57])
+            ("glob" include nil nil [58 69])
+            ("BTree" type
+               (:superclasses ("object")
+                :members 
+                  ( ("pai" type
+                       (:superclasses ("object")
+                        :members 
+                          ( ("__init__" function
+                               (:suite 
+                                  ( ("self" variable nil (reparse-symbol indented_block_body) [161 175])
+                                    ("self" variable nil (reparse-symbol indented_block_body) [188 203])
+                                    ("self" variable nil (reparse-symbol indented_block_body) [216 233])
+                                    ("self" variable nil (reparse-symbol indented_block_body) [246 257]))                                  
+                                :parent "dummy"
+                                :arguments 
+                                  ( ("self" variable nil (reparse-symbol function_parameters) [139 143])
+                                    ("t" variable nil (reparse-symbol function_parameters) [145 146]))                                  
+                                :constructor-flag t)
+                                (reparse-symbol indented_block_body) [126 258])
+                            ("split" function
+                               (:parent "dummy"
+                                :arguments 
+                                  ( ("self" variable nil (reparse-symbol function_parameters) [277 281])
+                                    ("pai" variable nil (reparse-symbol function_parameters) [283 286])
+                                    ("payload" variable nil (reparse-symbol function_parameters) [288 295]))                                  )
+                                (reparse-symbol indented_block_body) [267 861])
+                            ("_is_full" function
+                               (:parent "dummy"
+                                :arguments 
+                                  ( ("self" variable nil (reparse-symbol function_parameters) [901 905]))                                  
+                                :decorators 
+                                  ( ("property" function (:type "decorator") nil nil))                                  )
+                                (reparse-symbol indented_block_body) [870 956])
+                            ("size" function
+                               (:parent "dummy"
+                                :arguments 
+                                  ( ("self" variable nil (reparse-symbol function_parameters) [992 996]))                                  
+                                :decorators 
+                                  ( ("property" function (:type "decorator") nil nil))                                  )
+                                (reparse-symbol indented_block_body) [965 1033]))                          
+                        :type "class")
+                        (reparse-symbol indented_block_body) [98 1033])
+                    ("_is_full" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1064 1068]))                          
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [1037 1115])
+                    ("size" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1143 1147]))                          
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [1120 1180])
+                    ("add_key" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1197 1201])
+                            ("value" variable nil (reparse-symbol function_parameters) [1203 1208]))                          )
+                        (reparse-symbol indented_block_body) [1185 1268])
+                    ("add_filho" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1287 1291])
+                            ("new_pai" variable nil (reparse-symbol function_parameters) [1293 1300]))                          )
+                        (reparse-symbol indented_block_body) [1273 1486])
+                    ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [1523 1534])
+                            ("if" code nil (reparse-symbol indented_block_body) [1543 1597])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1605 1628]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1504 1508])
+                            ("t" variable nil (reparse-symbol function_parameters) [1510 1511]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [1491 1628])
+                    ("insert" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1644 1648])
+                            ("payload" variable nil (reparse-symbol function_parameters) [1650 1657]))                          )
+                        (reparse-symbol indented_block_body) [1633 2356])
+                    ("search" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2372 2376])
+                            ("value" variable nil (reparse-symbol function_parameters) [2378 2383])
+                            ("pai" variable nil (reparse-symbol function_parameters) [2385 2388]))                          )
+                        (reparse-symbol indented_block_body) [2361 2714])
+                    ("print_order" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2735 2739]))                          )
+                        (reparse-symbol indented_block_body) [2719 3035]))                  
+                :type "class")
+                nil [72 3035])
+            ("read_pics" function nil nil [3037 3162])
+            ("main" function nil nil [3164 3294])
+            ("if" code nil nil [3296 3334]))          
+      :file "arvb.py"
+      :pointmax 3334
+      :fsize 3333
+      :lastmodtime '(22808 44777 394115 868000)
+      :unmatched-syntax nil)
+    (semanticdb-table "my-arvb.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("\"\"\"
+Preciso me assegurar que vou conseguir acessar a raiz da arvore (smp)
+do jeito q to fazendo o insert eu nao garanto q vou obter a raiz facilmente
+talvez uma funucao arvore get raiz?
+pq eh so ir voltando nos pais ate que um deles tenha pai == none
+
+\"\"\"" code nil nil [1 256])
+            ("Pai" type
+               (:superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [311 325])
+                            ("self" variable nil (reparse-symbol indented_block_body) [360 375])
+                            ("self" variable nil (reparse-symbol indented_block_body) [399 414])
+                            ("self" variable nil (reparse-symbol indented_block_body) [423 440])
+                            ("self" variable nil (reparse-symbol indented_block_body) [449 460]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [293 297])
+                            ("t" variable nil (reparse-symbol function_parameters) [299 300]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [280 461])
+                    ("split" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [500 504]))                          )
+                        (reparse-symbol indented_block_body) [490 1981])
+                    ("get_interval" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2014 2018])
+                            ("payload" variable nil (reparse-symbol function_parameters) [2020 2027]))                          )
+                        (reparse-symbol indented_block_body) [1997 2167])
+                    ("_is_full" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2210 2214]))                          
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [2183 2263])
+                    ("size" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2302 2306]))                          
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [2279 2339])
+                    ("insert" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2366 2370])
+                            ("payload" variable nil (reparse-symbol function_parameters) [2372 2379]))                          )
+                        (reparse-symbol indented_block_body) [2355 2741])
+                    ("add_key" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2769 2773])
+                            ("value" variable nil (reparse-symbol function_parameters) [2775 2780]))                          )
+                        (reparse-symbol indented_block_body) [2757 2840]))                  
+                :type "class")
+                nil [257 2840])
+            ("BTree" type
+               (:superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [2953 2964])
+                            ("if" code nil (reparse-symbol indented_block_body) [2973 3027])
+                            ("self" variable nil (reparse-symbol indented_block_body) [3035 3053]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2879 2883])
+                            ("t" variable nil (reparse-symbol function_parameters) [2885 2886]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [2866 3054])
+                    ("_is_full" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3086 3090]))                          
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [3059 3139])
+                    ("size" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3167 3171]))                          
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [3144 3204])
+                    ("add_key" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3221 3225])
+                            ("value" variable nil (reparse-symbol function_parameters) [3227 3232]))                          )
+                        (reparse-symbol indented_block_body) [3209 3292])
+                    ("add_filho" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3326 3330])
+                            ("new_pai" variable nil (reparse-symbol function_parameters) [3332 3339]))                          )
+                        (reparse-symbol indented_block_body) [3312 3522])
+                    ("insert" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3538 3542])
+                            ("payload" variable nil (reparse-symbol function_parameters) [3544 3551]))                          
+                        :documentation "
+        Desce até a primeira folha, e verifica se há necessidade de split
+        se nao houver, insere
+        se houver, chora")
+                        (reparse-symbol indented_block_body) [3527 3941]))                  
+                :type "class")
+                nil [2841 3941]))          
+      :file "my-arvb.py"
+      :pointmax 3970
+      :fsize 3976
+      :lastmodtime '(22811 1816 885683 873000)
+      :unmatched-syntax '((NAME 3930 . 3933) (NEWLINE 3940 . 3941) ($EOI 3970 . 3970) (NAME 3921 . 3924) (NEWLINE 3931 . 3932) ($EOI 3961 . 3961) (NAME 3829 . 3832) (NEWLINE 3839 . 3840) ($EOI 3869 . 3869) ($EOI 3792 . 3792)))
+    (semanticdb-table "crop.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("tempfile" include nil nil [1 16])
+            ("numpy" include nil nil [17 29])
+            ("cv2" include nil nil [30 40])
+            ("math" include nil nil [41 52])
+            ("create_preview" function (:arguments 
+              ( ("input_filename" variable nil (reparse-symbol function_parameters) [74 88]))              ) nil [55 1497]))          
+      :file "crop.py"
+      :pointmax 1497
+      :fsize 1496
+      :lastmodtime '(22814 10206 879309 551000)
+      :unmatched-syntax nil))
+  :file "!home!philip!Desktop!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

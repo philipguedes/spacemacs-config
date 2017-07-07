@@ -1,0 +1,28 @@
+;; Object database/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "database/"
+  :tables
+  (list
+    (semanticdb-table "__init__.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("MySQLdb" include nil nil [1 28])
+            ("MySQLdb" include nil nil [29 50])
+            ("os" include nil nil [51 60])
+            ("sys" include nil nil [61 71])
+            ("_decode" function (:arguments 
+              ( ("item" variable nil (reparse-symbol function_parameters) [85 89]))              ) nil [73 129])
+            ("get_bairros" function (:arguments 
+              ( ("db" variable nil (reparse-symbol function_parameters) [146 148]))              ) nil [130 521])
+            ("get_published" function (:arguments 
+              ( ("db" variable nil (reparse-symbol function_parameters) [540 542]))              ) nil [522 714])
+            ("get_db" function (:arguments 
+              ( ("serverside" variable nil (reparse-symbol function_parameters) [726 736]))              ) nil [715 1017]))          
+      :file "__init__.py"
+      :pointmax 1018
+      :fsize 1017
+      :lastmodtime '(22766 26829 711348 586000)
+      :unmatched-syntax nil))
+  :file "!home!philip!dev!analytics!database!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,161 @@
+;; Object iptu/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "iptu/"
+  :tables
+  (list
+    (semanticdb-table "update.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("iptu.boleto" include nil nil [1 38])
+            ("entities" include nil nil [39 69])
+            ("logging" include nil nil [70 84])
+            ("datetime" include nil nil [85 125])
+            ("sys" include nil nil [126 136])
+            ("iptu.debits" include nil nil [137 173])
+            ("iptu.boleto_iptu_status" include nil nil [174 226])
+            ("concurrent.futures" include nil nil [227 277])
+            ("os" include nil nil [278 287])
+            ("logging_format" variable nil nil [290 361])
+            ("logging" code nil nil [362 512])
+            ("logger" variable nil nil [513 555])
+            ("workers" variable nil nil [556 568])
+            ("get_all_iptus" function nil nil [571 651])
+            ("get_iptu" function (:arguments 
+              ( ("contributor_code" variable nil (reparse-symbol function_parameters) [666 682])
+                ("base_year" variable nil (reparse-symbol function_parameters) [684 693]))              ) nil [653 839])
+            ("update_iptu_db" function (:arguments 
+              ( ("iptu" variable nil (reparse-symbol function_parameters) [860 864]))              ) nil [841 1183])
+            ("get_debits" function (:arguments 
+              ( ("iptu" variable nil (reparse-symbol function_parameters) [1200 1204]))              ) nil [1185 1445])
+            ("update_installment" function (:arguments 
+              ( ("installment" variable nil (reparse-symbol function_parameters) [1470 1481])
+                ("result" variable nil (reparse-symbol function_parameters) [1483 1489]))              ) nil [1447 1921])
+            ("should_update" function (:arguments 
+              ( ("installment" variable nil (reparse-symbol function_parameters) [1941 1952]))              ) nil [1923 2367])
+            ("update_installments" function (:arguments 
+              ( ("iptu" variable nil (reparse-symbol function_parameters) [2393 2397])
+                ("open_installments" variable nil (reparse-symbol function_parameters) [2399 2416]))              ) nil [2369 3613])
+            ("update_iptu" function (:arguments 
+              ( ("iptu" variable nil (reparse-symbol function_parameters) [3631 3635]))              ) nil [3615 3939])
+            ("update_iptus" function nil nil [3941 4075])
+            ("main" function nil nil [4077 4163])
+            ("if" code nil nil [4165 4203]))          
+      :file "update.py"
+      :pointmax 4203
+      :fsize 4202
+      :lastmodtime '(22681 53931 517539 756000)
+      :unmatched-syntax nil)
+    (semanticdb-table "boleto.py"
+      :file "boleto.py"
+      :fsize 5540
+      :lastmodtime '(22676 48220 893332 174000))
+    (semanticdb-table "debits.py"
+      :file "debits.py"
+      :fsize 3199
+      :lastmodtime '(22676 48220 893332 174000))
+    (semanticdb-table "boleto_iptu_status.py"
+      :file "boleto_iptu_status.py"
+      :fsize 139
+      :lastmodtime '(22676 48220 893332 174000))
+    (semanticdb-table "main.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("iptu.boleto" include nil nil [1 38])
+            ("iptu.debits" include nil nil [39 75])
+            ("iptu.info" include nil nil [76 100])
+            ("iptu.iptu_utils" include nil nil [101 137])
+            ("entities" include nil nil [138 168])
+            ("concurrent.futures" include nil nil [169 219])
+            ("iptu.property_exception" include nil nil [220 273])
+            ("enum" include nil nil [274 295])
+            ("utils" include nil nil [296 308])
+            ("logging" include nil nil [309 323])
+            ("sys" include nil nil [324 334])
+            ("os" include nil nil [335 344])
+            ("datetime" include nil nil [345 374])
+            ("iptu.homes_service" include nil nil [375 417])
+            ("pymongo" include nil nil [419 433])
+            ("logging_format" variable nil nil [436 507])
+            ("logging" code nil nil [508 658])
+            ("logger" variable nil nil [659 700])
+            ("workers" variable nil nil [701 712])
+            ("IPTUStatus" type
+               (:superclasses ("Enum")
+                :members 
+                  ( ("new" variable nil (reparse-symbol indented_block_body) [743 750])
+                    ("processing" variable nil (reparse-symbol indented_block_body) [755 769])
+                    ("processed" variable nil (reparse-symbol indented_block_body) [774 787])
+                    ("reprocess" variable nil (reparse-symbol indented_block_body) [792 805])
+                    ("error" variable nil (reparse-symbol indented_block_body) [810 819])
+                    ("paid" variable nil (reparse-symbol indented_block_body) [824 832]))                  
+                :type "class")
+                nil [715 833])
+            ("insert_home_mongo" function (:arguments 
+              ( ("home" variable nil (reparse-symbol function_parameters) [857 861]))              ) nil [835 1439])
+            ("schedule_iptus" function nil nil [1441 1582])
+            ("update_status" function (:arguments 
+              ( ("contributor_code" variable nil (reparse-symbol function_parameters) [1602 1618])
+                ("home_id" variable nil (reparse-symbol function_parameters) [1620 1627])
+                ("status" variable nil (reparse-symbol function_parameters) [1629 1635]))              ) nil [1584 1851])
+            ("get_iptu_db" function (:arguments 
+              ( ("contributor_code" variable nil (reparse-symbol function_parameters) [1869 1885])
+                ("base_year" variable nil (reparse-symbol function_parameters) [1887 1896]))              ) nil [1853 2059])
+            ("save_iptu_db" function (:arguments 
+              ( ("contributor_code" variable nil (reparse-symbol function_parameters) [2078 2094])
+                ("iptu" variable nil (reparse-symbol function_parameters) [2096 2100])
+                ("base_year" variable nil (reparse-symbol function_parameters) [2102 2111]))              ) nil [2061 2361])
+            ("get_boletos" function (:arguments 
+              ( ("contributor_code" variable nil (reparse-symbol function_parameters) [2379 2395])
+                ("home_id" variable nil (reparse-symbol function_parameters) [2397 2404])
+                ("iptu" variable nil (reparse-symbol function_parameters) [2406 2410])
+                ("base_year" variable nil (reparse-symbol function_parameters) [2412 2421])
+                ("start_date" variable nil (reparse-symbol function_parameters) [2423 2433]))              ) nil [2363 2868])
+            ("get_iptu" function (:arguments 
+              ( ("home_id" variable nil (reparse-symbol function_parameters) [2883 2890])
+                ("contributor_code" variable nil (reparse-symbol function_parameters) [2892 2908])
+                ("base_year" variable nil (reparse-symbol function_parameters) [2910 2919])
+                ("start_date" variable nil (reparse-symbol function_parameters) [2921 2931]))              ) nil [2870 3202])
+            ("get_debits" function (:arguments 
+              ( ("contributor_code" variable nil (reparse-symbol function_parameters) [3219 3235])
+                ("iptu" variable nil (reparse-symbol function_parameters) [3237 3241]))              ) nil [3204 3343])
+            ("get_iptu_data" function (:arguments 
+              ( ("home_id" variable nil (reparse-symbol function_parameters) [3363 3370])
+                ("contributor_code" variable nil (reparse-symbol function_parameters) [3372 3388])
+                ("base_year" variable nil (reparse-symbol function_parameters) [3390 3399])
+                ("start_date" variable nil (reparse-symbol function_parameters) [3401 3411]))              ) nil [3345 3638])
+            ("save_iptu" function (:arguments 
+              ( ("home_id" variable nil (reparse-symbol function_parameters) [3654 3661])
+                ("contributor_code" variable nil (reparse-symbol function_parameters) [3663 3679])
+                ("base_year" variable nil (reparse-symbol function_parameters) [3681 3690])
+                ("start_date" variable nil (reparse-symbol function_parameters) [3692 3702]))              ) nil [3640 4317])
+            ("process" function (:arguments 
+              ( ("iptu" variable nil (reparse-symbol function_parameters) [4331 4335]))              ) nil [4319 4914])
+            ("remove_remaining_files" function nil nil [4916 5042])
+            ("get_iptus" function nil nil [5044 5241])
+            ("process_iptus" function nil nil [5243 5448])
+            ("main" function nil nil [5450 5717])
+            ("if" code nil nil [5718 5756]))          
+      :file "main.py"
+      :pointmax 5756
+      :fsize 5755
+      :lastmodtime '(22681 53931 517539 756000)
+      :unmatched-syntax nil)
+    (semanticdb-table "info.py"
+      :file "info.py"
+      :fsize 3065
+      :lastmodtime '(22676 48220 893332 174000))
+    (semanticdb-table "iptu_utils.py"
+      :file "iptu_utils.py"
+      :fsize 1744
+      :lastmodtime '(22676 48220 893332 174000))
+    (semanticdb-table "property_exception.py"
+      :file "property_exception.py"
+      :fsize 45
+      :lastmodtime '(22676 48220 893332 174000))
+    (semanticdb-table "homes_service.py"
+      :file "homes_service.py"
+      :fsize 937
+      :lastmodtime '(22676 48220 893332 174000)))
+  :file "!home!philip!dev!cyclops!iptu!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

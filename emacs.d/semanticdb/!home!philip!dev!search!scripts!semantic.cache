@@ -1,0 +1,110 @@
+;; Object scripts/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "scripts/"
+  :tables
+  (list
+    (semanticdb-table "load_test.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("locust" include nil nil [184 228])
+            ("MOBILE" variable nil nil [230 437])
+            ("DESKTOP" variable nil nil [439 489])
+            ("USER" variable nil nil [491 539])
+            ("UserBehavior" type
+               (:superclasses ("TaskSet")
+                :members 
+                  ( ("home_mobile" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [601 605]))                          
+                        :decorators 
+                          ( ("task" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [575 682])
+                    ("home_desktop" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [714 718]))                          
+                        :decorators 
+                          ( ("task" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [687 797])
+                    ("map_desktop" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [828 832]))                          
+                        :decorators 
+                          ( ("task" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [802 938])
+                    ("map_desktop_json" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [974 978]))                          
+                        :decorators 
+                          ( ("task" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [943 1096])
+                    ("map_mobile" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1126 1130]))                          
+                        :decorators 
+                          ( ("task" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [1101 1229])
+                    ("desktop_about_us" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1265 1269]))                          
+                        :decorators 
+                          ( ("task" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [1234 1360])
+                    ("real_estate_details" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1399 1403]))                          
+                        :decorators 
+                          ( ("task" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [1365 1533])
+                    ("lead_duplication" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1569 1573]))                          
+                        :decorators 
+                          ( ("task" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [1538 1730])
+                    ("little_car" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1834 1838]))                          
+                        :decorators 
+                          ( ("task" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [1809 1919])
+                    ("connect_test" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2025 2029]))                          
+                        :decorators 
+                          ( ("task" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [1998 2128])
+                    ("cloudsearch" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2271 2275]))                          
+                        :decorators 
+                          ( ("task" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [2245 3030]))                  
+                :type "class")
+                nil [541 3030])
+            ("WebsiteUser" type
+               (:superclasses ("HttpLocust")
+                :members 
+                  ( ("task_set" variable nil (reparse-symbol indented_block_body) [3066 3089])
+                    ("min_wait" variable nil (reparse-symbol indented_block_body) [3094 3106])
+                    ("max_wait" variable nil (reparse-symbol indented_block_body) [3111 3124]))                  
+                :type "class")
+                nil [3031 3125]))          
+      :file "load_test.py"
+      :pointmax 3125
+      :fsize 3124
+      :lastmodtime '(22755 63654 254621 540000)
+      :unmatched-syntax nil))
+  :file "!home!philip!dev!search!scripts!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

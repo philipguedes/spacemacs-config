@@ -1,0 +1,115 @@
+;; Object controllers/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "controllers/"
+  :tables
+  (list
+    (semanticdb-table "contract.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("logging" include nil nil [1 15])
+            ("datetime" include nil nil [16 45])
+            ("requests" include nil nil [46 61])
+            ("logger" variable nil nil [63 99])
+            ("ContractController" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [169 191])
+                            ("self" variable nil (reparse-symbol indented_block_body) [200 240]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [145 149])
+                            ("service" variable nil (reparse-symbol function_parameters) [151 158]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [132 241])
+                    ("serialize" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [260 264])
+                            ("sb_contract" variable nil (reparse-symbol function_parameters) [266 277]))                          )
+                        (reparse-symbol indented_block_body) [246 3274])
+                    ("build_person" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3296 3300])
+                            ("person" variable nil (reparse-symbol function_parameters) [3302 3308]))                          )
+                        (reparse-symbol indented_block_body) [3279 3461])
+                    ("get_one" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3478 3482])
+                            ("contract_id" variable nil (reparse-symbol function_parameters) [3484 3495]))                          )
+                        (reparse-symbol indented_block_body) [3466 3846]))                  
+                :type "class")
+                nil [102 3846]))          
+      :file "contract.py"
+      :pointmax 3846
+      :fsize 3845
+      :lastmodtime '(22786 21324 823671 491000)
+      :unmatched-syntax '((INDENT_BLOCK 3641 . 3846) (NEWLINE 3640 . 3641) (COLON 3639 . 3640) (TRY 3506 . 3509) (AS 3635 . 3637)))
+    (semanticdb-table "entry.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("datetime" include nil nil [1 30])
+            ("logging" include nil nil [31 45])
+            ("logger" variable nil nil [47 83])
+            ("EntryController" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [150 190])
+                            ("self" variable nil (reparse-symbol indented_block_body) [199 221]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [126 130])
+                            ("service" variable nil (reparse-symbol function_parameters) [132 139]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [113 222])
+                    ("serialize" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [241 245])
+                            ("entry" variable nil (reparse-symbol function_parameters) [247 252]))                          )
+                        (reparse-symbol indented_block_body) [227 603])
+                    ("deserialize" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [624 628])
+                            ("entry" variable nil (reparse-symbol function_parameters) [630 635]))                          )
+                        (reparse-symbol indented_block_body) [608 1070])
+                    ("get_by_accrual_year_month" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1105 1109])
+                            ("contract_id" variable nil (reparse-symbol function_parameters) [1111 1122])
+                            ("year" variable nil (reparse-symbol function_parameters) [1124 1128])
+                            ("month" variable nil (reparse-symbol function_parameters) [1130 1135]))                          )
+                        (reparse-symbol indented_block_body) [1075 1398])
+                    ("insert_or_update" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1424 1428])
+                            ("contract_id" variable nil (reparse-symbol function_parameters) [1430 1441])
+                            ("year" variable nil (reparse-symbol function_parameters) [1443 1447])
+                            ("month" variable nil (reparse-symbol function_parameters) [1449 1454])
+                            ("entry_list" variable nil (reparse-symbol function_parameters) [1456 1466]))                          )
+                        (reparse-symbol indented_block_body) [1403 1855])
+                    ("delete_entries" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1879 1883])
+                            ("contract_id" variable nil (reparse-symbol function_parameters) [1885 1896])
+                            ("year" variable nil (reparse-symbol function_parameters) [1898 1902])
+                            ("month" variable nil (reparse-symbol function_parameters) [1904 1909])
+                            ("entry_id_list" variable nil (reparse-symbol function_parameters) [1911 1924]))                          )
+                        (reparse-symbol indented_block_body) [1860 2033]))                  
+                :type "class")
+                nil [86 2033]))          
+      :file "entry.py"
+      :pointmax 2033
+      :fsize 2032
+      :lastmodtime '(22729 31421 666639 0)
+      :unmatched-syntax nil))
+  :file "!home!philip!dev!cyclops!controllers!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

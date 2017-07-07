@@ -1,0 +1,475 @@
+;; Object cloudsearch/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "cloudsearch/"
+  :tables
+  (list
+    (semanticdb-table "adapter.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("logging" include nil nil [16 30])
+            ("re" include nil nil [31 40])
+            ("urllib2" include nil nil [41 55])
+            ("math" include nil nil [56 77])
+            ("requests" include nil nil [79 94])
+            ("search_py.api.adapters.analytics" include nil nil [96 150])
+            ("search_py.api.adapters.cloudsearch" include nil nil [151 226])
+            ("search_py.api.adapters.cloudsearch.util" include nil nil [227 293])
+            ("search_py.api.adapters.gmaps" include nil nil [294 340])
+            ("search_py.api.adapters.property_ranker" include nil nil [341 406])
+            ("search_py.api.adapters.property_similarity" include nil nil [407 480])
+            ("search_py.api.adapters.query" include nil nil [481 534])
+            ("search_py.api.adapters.region_mapper" include nil nil [535 596])
+            ("search_py.api.adapters.slugfier" include nil nil [597 647])
+            ("search_py.api.adapters.tipo" include nil nil [648 707])
+            ("search_py.api.controllers.searchcriteria" include nil nil [708 800])
+            ("search_py.api.utils" include nil nil [801 853])
+            ("search_py.config" include nil nil [854 891])
+            ("logger" variable nil nil [893 929])
+            ("FOTOS_URL" variable nil nil [931 971])
+            ("DEFAULT_FOTO_CAPA" variable nil nil [973 1029])
+            ("CloudSearchAdapter" type
+               (:members 
+                  ( ("CLOUDSEARCH_API_VERSION" variable nil (reparse-symbol indented_block_body) [1061 1099])
+                    ("__init__" function
+                       (:suite 
+                          ( ("if" code nil (reparse-symbol indented_block_body) [1133 1295])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1303 1350]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1118 1122]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [1105 1351])
+                    ("getbaseurl" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1371 1375]))                          
+                        :documentation "Returns: str ascii")
+                        (reparse-symbol indented_block_body) [1356 1601])
+                    ("getfqlist" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1756 1760])
+                            ("fieldName" variable nil (reparse-symbol function_parameters) [1762 1771])
+                            ("listaitens" variable nil (reparse-symbol function_parameters) [1773 1783])
+                            ("topandbeyond" variable nil (reparse-symbol function_parameters) [1785 1797])
+                            ("operator" variable nil (reparse-symbol function_parameters) [1804 1812]))                          )
+                        (reparse-symbol indented_block_body) [1742 2543])
+                    ("getfqrange" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2563 2567])
+                            ("fieldName" variable nil (reparse-symbol function_parameters) [2569 2578])
+                            ("min" variable nil (reparse-symbol function_parameters) [2580 2583])
+                            ("max" variable nil (reparse-symbol function_parameters) [2585 2588]))                          
+                        :documentation "Retorna a query estruturada para listas.
+           Se possuir o valor 'topandbeyond', entao faz um range de topandbeyond aberto ateh o fim.")
+                        (reparse-symbol indented_block_body) [2548 2875])
+                    ("getFqSearchGeo" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2899 2903])
+                            ("georange" variable nil (reparse-symbol function_parameters) [2905 2913]))                          )
+                        (reparse-symbol indented_block_body) [2880 3237])
+                    ("getFilterPreteridos" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3266 3270])
+                            ("preteridos" variable nil (reparse-symbol function_parameters) [3272 3282]))                          )
+                        (reparse-symbol indented_block_body) [3242 3443])
+                    ("encode_name" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3464 3468])
+                            ("value" variable nil (reparse-symbol function_parameters) [3470 3475]))                          )
+                        (reparse-symbol indented_block_body) [3448 3526])
+                    ("quote_names" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3547 3551])
+                            ("adapter" variable nil (reparse-symbol function_parameters) [3553 3560])
+                            ("values" variable nil (reparse-symbol function_parameters) [3562 3568]))                          )
+                        (reparse-symbol indented_block_body) [3531 3738])
+                    ("fqlistquartos" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3761 3765])
+                            ("filters" variable nil (reparse-symbol function_parameters) [3767 3774]))                          )
+                        (reparse-symbol indented_block_body) [3743 4112])
+                    ("getFilter" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4131 4135])
+                            ("tipos" variable nil (reparse-symbol function_parameters) [4137 4142])
+                            ("filters" variable nil (reparse-symbol function_parameters) [4144 4151])
+                            ("georange" variable nil (reparse-symbol function_parameters) [4153 4161]))                          )
+                        (reparse-symbol indented_block_body) [4117 6655])
+                    ("getgarantias" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6677 6681])
+                            ("filter" variable nil (reparse-symbol function_parameters) [6683 6689]))                          )
+                        (reparse-symbol indented_block_body) [6660 6969])
+                    ("parse" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6984 6988])
+                            ("value" variable nil (reparse-symbol function_parameters) [6990 6995])
+                            ("base" variable nil (reparse-symbol function_parameters) [6997 7001]))                          )
+                        (reparse-symbol indented_block_body) [6974 7050])
+                    ("format" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7066 7070])
+                            ("value" variable nil (reparse-symbol function_parameters) [7072 7077])
+                            ("base" variable nil (reparse-symbol function_parameters) [7079 7083]))                          )
+                        (reparse-symbol indented_block_body) [7055 7142])
+                    ("criarEscala" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7163 7167])
+                            ("min" variable nil (reparse-symbol function_parameters) [7169 7172])
+                            ("max" variable nil (reparse-symbol function_parameters) [7174 7177])
+                            ("maxQtd" variable nil (reparse-symbol function_parameters) [7179 7185])
+                            ("baseLog" variable nil (reparse-symbol function_parameters) [7187 7194])
+                            ("semLog" variable nil (reparse-symbol function_parameters) [7196 7202])
+                            ("semLogStep" variable nil (reparse-symbol function_parameters) [7204 7214]))                          )
+                        (reparse-symbol indented_block_body) [7147 7650])
+                    ("getfacets" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7669 7673]))                          )
+                        (reparse-symbol indented_block_body) [7655 8746])
+                    ("getstats" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8764 8768]))                          )
+                        (reparse-symbol indented_block_body) [8751 8950])
+                    ("withpage" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8968 8972])
+                            ("page" variable nil (reparse-symbol function_parameters) [8974 8978])
+                            ("size" variable nil (reparse-symbol function_parameters) [8980 8984])
+                            ("selection_depth" variable nil (reparse-symbol function_parameters) [8986 9001]))                          )
+                        (reparse-symbol indented_block_body) [8955 9225])
+                    ("getSort" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9242 9246])
+                            ("filters" variable nil (reparse-symbol function_parameters) [9248 9255])
+                            ("geoClosest" variable nil (reparse-symbol function_parameters) [9257 9267])
+                            ("criteria" variable nil (reparse-symbol function_parameters) [9274 9282]))                          )
+                        (reparse-symbol indented_block_body) [9230 10826])
+                    ("getRegions" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10846 10850])
+                            ("query" variable nil (reparse-symbol function_parameters) [10852 10857]))                          )
+                        (reparse-symbol indented_block_body) [10831 11763])
+                    ("geoOnlyMarkers" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11802 11806])
+                            ("filters" variable nil (reparse-symbol function_parameters) [11808 11815])
+                            ("tipo" variable nil (reparse-symbol function_parameters) [11822 11826])
+                            ("pag" variable nil (reparse-symbol function_parameters) [11837 11840])
+                            ("mapBounds" variable nil (reparse-symbol function_parameters) [11847 11856])
+                            ("query" variable nil (reparse-symbol function_parameters) [11886 11891])
+                            ("street" variable nil (reparse-symbol function_parameters) [11898 11904])
+                            ("geoClosest" variable nil (reparse-symbol function_parameters) [11911 11921]))                          
+                        :decorators 
+                          ( ("analytics" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [11768 12418])
+                    ("geoOnlyFacets" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12456 12460])
+                            ("filters" variable nil (reparse-symbol function_parameters) [12462 12469])
+                            ("tipo" variable nil (reparse-symbol function_parameters) [12476 12480])
+                            ("pag" variable nil (reparse-symbol function_parameters) [12491 12494])
+                            ("mapBounds" variable nil (reparse-symbol function_parameters) [12501 12510])
+                            ("query" variable nil (reparse-symbol function_parameters) [12539 12544])
+                            ("street" variable nil (reparse-symbol function_parameters) [12551 12557])
+                            ("geoClosest" variable nil (reparse-symbol function_parameters) [12564 12574]))                          
+                        :decorators 
+                          ( ("analytics" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [12423 13071])
+                    ("onlyStats" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [13090 13094])
+                            ("filters" variable nil (reparse-symbol function_parameters) [13096 13103])
+                            ("tipo" variable nil (reparse-symbol function_parameters) [13110 13114])
+                            ("pag" variable nil (reparse-symbol function_parameters) [13125 13128])
+                            ("query" variable nil (reparse-symbol function_parameters) [13135 13140]))                          )
+                        (reparse-symbol indented_block_body) [13076 13629])
+                    ("geoWithMap" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [13649 13653])
+                            ("criteria" variable nil (reparse-symbol function_parameters) [13655 13663])
+                            ("sort_query" variable nil (reparse-symbol function_parameters) [13682 13692])
+                            ("facets" variable nil (reparse-symbol function_parameters) [13699 13705]))                          )
+                        (reparse-symbol indented_block_body) [13634 15688])
+                    ("get_region_friendly_name" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [15722 15726])
+                            ("query" variable nil (reparse-symbol function_parameters) [15728 15733])
+                            ("regioes" variable nil (reparse-symbol function_parameters) [15735 15742]))                          )
+                        (reparse-symbol indented_block_body) [15693 16049])
+                    ("build_search_query" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [16077 16081])
+                            ("query" variable nil (reparse-symbol function_parameters) [16083 16088])
+                            ("field" variable nil (reparse-symbol function_parameters) [16090 16095])
+                            ("street" variable nil (reparse-symbol function_parameters) [16097 16103]))                          
+                        :documentation "Returns: str ascii")
+                        (reparse-symbol indented_block_body) [16054 16664])
+                    ("get_basic_search_url" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [16694 16698])
+                            ("query" variable nil (reparse-symbol function_parameters) [16700 16705])
+                            ("filters" variable nil (reparse-symbol function_parameters) [16707 16714])
+                            ("tipo" variable nil (reparse-symbol function_parameters) [16716 16720])
+                            ("niveis" variable nil (reparse-symbol function_parameters) [16722 16728])
+                            ("mapBounds" variable nil (reparse-symbol function_parameters) [16730 16739])
+                            ("street" variable nil (reparse-symbol function_parameters) [16741 16747])
+                            ("criteria" variable nil (reparse-symbol function_parameters) [16749 16757]))                          )
+                        (reparse-symbol indented_block_body) [16669 17260])
+                    ("getMarkersRegiao" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [17286 17290])
+                            ("query" variable nil (reparse-symbol function_parameters) [17292 17297])
+                            ("filters" variable nil (reparse-symbol function_parameters) [17299 17306])
+                            ("tipo" variable nil (reparse-symbol function_parameters) [17308 17312])
+                            ("niveis" variable nil (reparse-symbol function_parameters) [17314 17320])
+                            ("mapBounds" variable nil (reparse-symbol function_parameters) [17336 17345])
+                            ("street" variable nil (reparse-symbol function_parameters) [17352 17358])
+                            ("criteria" variable nil (reparse-symbol function_parameters) [17365 17373]))                          )
+                        (reparse-symbol indented_block_body) [17265 18026])
+                    ("getFacetsFiltros" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [18052 18056])
+                            ("query" variable nil (reparse-symbol function_parameters) [18058 18063])
+                            ("filters" variable nil (reparse-symbol function_parameters) [18065 18072])
+                            ("tipo" variable nil (reparse-symbol function_parameters) [18074 18078])
+                            ("niveis" variable nil (reparse-symbol function_parameters) [18080 18086])
+                            ("mapBounds" variable nil (reparse-symbol function_parameters) [18102 18111])
+                            ("street" variable nil (reparse-symbol function_parameters) [18118 18124]))                          )
+                        (reparse-symbol indented_block_body) [18031 18662])
+                    ("getStatsFiltros" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [18687 18691])
+                            ("query" variable nil (reparse-symbol function_parameters) [18693 18698])
+                            ("filters" variable nil (reparse-symbol function_parameters) [18700 18707])
+                            ("tipo" variable nil (reparse-symbol function_parameters) [18709 18713])
+                            ("niveis" variable nil (reparse-symbol function_parameters) [18715 18721])
+                            ("mapBounds" variable nil (reparse-symbol function_parameters) [18737 18746])
+                            ("street" variable nil (reparse-symbol function_parameters) [18753 18759]))                          )
+                        (reparse-symbol indented_block_body) [18667 19296])
+                    ("getReturnValues" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [19321 19325])
+                            ("sort" variable nil (reparse-symbol function_parameters) [19327 19331]))                          )
+                        (reparse-symbol indented_block_body) [19301 19467])
+                    ("getSearchUrl" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [19489 19493])
+                            ("query" variable nil (reparse-symbol function_parameters) [19495 19500])
+                            ("filters" variable nil (reparse-symbol function_parameters) [19502 19509])
+                            ("tipo" variable nil (reparse-symbol function_parameters) [19511 19515])
+                            ("pag" variable nil (reparse-symbol function_parameters) [19517 19520])
+                            ("niveis" variable nil (reparse-symbol function_parameters) [19527 19533])
+                            ("mapBounds" variable nil (reparse-symbol function_parameters) [19570 19579])
+                            ("street" variable nil (reparse-symbol function_parameters) [19586 19592])
+                            ("geoClosest" variable nil (reparse-symbol function_parameters) [19599 19609])
+                            ("pagSize" variable nil (reparse-symbol function_parameters) [19616 19623])
+                            ("selection_depth" variable nil (reparse-symbol function_parameters) [19628 19643])
+                            ("criteria" variable nil (reparse-symbol function_parameters) [19690 19698])
+                            ("sort" variable nil (reparse-symbol function_parameters) [19717 19721])
+                            ("facets" variable nil (reparse-symbol function_parameters) [19728 19734]))                          )
+                        (reparse-symbol indented_block_body) [19472 20277])
+                    ("processMarkers" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [20301 20305])
+                            ("cs_json" variable nil (reparse-symbol function_parameters) [20307 20314]))                          )
+                        (reparse-symbol indented_block_body) [20282 20582])
+                    ("processHits" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [20603 20607])
+                            ("cs_json" variable nil (reparse-symbol function_parameters) [20609 20616])
+                            ("use_webp" variable nil (reparse-symbol function_parameters) [20618 20626])
+                            ("photo_resize" variable nil (reparse-symbol function_parameters) [20634 20646]))                          )
+                        (reparse-symbol indented_block_body) [20587 23469])
+                    ("getFacetsRegioes" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [23495 23499])
+                            ("filters" variable nil (reparse-symbol function_parameters) [23501 23508])
+                            ("tipo" variable nil (reparse-symbol function_parameters) [23510 23514]))                          )
+                        (reparse-symbol indented_block_body) [23474 23869])
+                    ("getRegioesFacetsQuery" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [23900 23904]))                          )
+                        (reparse-symbol indented_block_body) [23874 23950])
+                    ("getFacetsRegioesUrl" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [23979 23983])
+                            ("filters" variable nil (reparse-symbol function_parameters) [23985 23992])
+                            ("tipo" variable nil (reparse-symbol function_parameters) [23994 23998]))                          )
+                        (reparse-symbol indented_block_body) [23955 24251])
+                    ("getRegiaoWithoutAutocomplete" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [24289 24293])
+                            ("query" variable nil (reparse-symbol function_parameters) [24295 24300]))                          )
+                        (reparse-symbol indented_block_body) [24256 24874]))                  
+                :type "class")
+                nil [1031 24874]))          
+      :file "adapter.py"
+      :pointmax 24874
+      :fsize 24874
+      :lastmodtime '(22805 48426 908069 279000)
+      :unmatched-syntax '((NAME 21470 . 21476) (IF 21499 . 21501) (ELSE 21554 . 21558) (NAME 19973 . 19977) (IF 19985 . 19987) (ELSE 19993 . 19997) (NAME 17546 . 17549) (IF 17566 . 17568) (ELSE 17574 . 17578) (NAME 16817 . 16822) (IF 16834 . 16836) (ELSE 16856 . 16860) (RETURN 15982 . 15988) (IF 16016 . 16018) (ELSE 16039 . 16043) (NAME 15883 . 15896) (IF 15941 . 15943) (ELSE 15964 . 15968) (NAME 14247 . 14254) (IF 14286 . 14288) (ELSE 14309 . 14313) (NAME 14154 . 14160) (IF 14193 . 14195) (ELSE 14216 . 14220) (NAME 13435 . 13454) (IF 13494 . 13496) (ELSE 13517 . 13521) (NAME 13345 . 13352) (IF 13384 . 13386) (ELSE 13407 . 13411) (NAME 13252 . 13258) (IF 13291 . 13293) (ELSE 13314 . 13318) (NAME 12869 . 12888) (IF 12928 . 12930) (ELSE 12951 . 12955) (NAME 12779 . 12786) (IF 12818 . 12820) (ELSE 12841 . 12845) (NAME 12686 . 12692) (IF 12725 . 12727) (ELSE 12748 . 12752) (NAME 12216 . 12235) (IF 12275 . 12277) (ELSE 12298 . 12302) (NAME 12126 . 12133) (IF 12165 . 12167) (ELSE 12188 . 12192) (NAME 12033 . 12039) (IF 12072 . 12074) (ELSE 12095 . 12099) (NAME 11429 . 11436) (IF 11449 . 11451) (ELSE 11460 . 11464) (NAME 11265 . 11272) (IF 11285 . 11287) (ELSE 11296 . 11300) (NAME 11103 . 11110) (IF 11123 . 11125) (ELSE 11134 . 11138) (NAME 9036 . 9040) (IF 9048 . 9050) (ELSE 9068 . 9072)))
+    (semanticdb-table "util.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("search_py.api.adapters.region_mapper" include nil nil [1 62])
+            ("getListRegioes" function (:arguments 
+              ( ("query" variable nil (reparse-symbol function_parameters) [84 89]))              ) nil [65 314]))          
+      :file "util.py"
+      :pointmax 314
+      :fsize 313
+      :lastmodtime '(22755 63654 254621 540000)
+      :unmatched-syntax nil)
+    (semanticdb-table "__init__.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("RETURN_VALUES" variable nil nil [17 337])
+            ("statements" include nil nil [339 376])
+            ("statements" include nil nil [377 413])
+            ("adapter" include nil nil [415 429]))          
+      :file "__init__.py"
+      :pointmax 433
+      :fsize 432
+      :lastmodtime '(22805 65441 181230 39000)
+      :unmatched-syntax '(($EOI 433 . 433) ($EOI 432 . 432) ($EOI 431 . 431) ($EOI 431 . 431) ($EOI 433 . 433) ($EOI 426 . 426)))
+    (semanticdb-table "statements.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("urllib2" include nil nil [16 30])
+            ("search_py.api.adapters.cloudsearch" include nil nil [32 92])
+            ("SortField" type
+               (:members 
+                  ( ("sort" variable nil (reparse-symbol indented_block_body) [115 126])
+                    ("name" variable nil (reparse-symbol indented_block_body) [131 142])
+                    ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [188 204])
+                            ("self" variable nil (reparse-symbol indented_block_body) [213 229]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [161 165])
+                            ("name" variable nil (reparse-symbol function_parameters) [167 171])
+                            ("sort" variable nil (reparse-symbol function_parameters) [173 177]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [148 230]))                  
+                :type "class")
+                nil [94 230])
+            ("SortExpression" type
+               (:members 
+                  ( ("expression" variable nil (reparse-symbol indented_block_body) [257 274])
+                    ("sort" variable nil (reparse-symbol indented_block_body) [279 290])
+                    ("name" variable nil (reparse-symbol indented_block_body) [295 306])
+                    ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [364 392])
+                            ("self" variable nil (reparse-symbol indented_block_body) [401 417])
+                            ("self" variable nil (reparse-symbol indented_block_body) [426 442]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [325 329])
+                            ("expression" variable nil (reparse-symbol function_parameters) [331 341])
+                            ("name" variable nil (reparse-symbol function_parameters) [343 347])
+                            ("sort" variable nil (reparse-symbol function_parameters) [349 353]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [312 443]))                  
+                :type "class")
+                nil [231 443])
+            ("SortStatement" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [497 522])
+                            ("pass" code nil (reparse-symbol indented_block_body) [531 535]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [482 486]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [469 536])
+                    ("\"\"\"
+    Sorts the results by distance to the given lat_lng.
+    Can optionally pass a step in meters to group apartments together
+    \"\"\"" code nil (reparse-symbol indented_block_body) [541 678])
+                    ("add_geo_dist_expr" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [705 709])
+                            ("lat_lng" variable nil (reparse-symbol function_parameters) [711 718])
+                            ("step" variable nil (reparse-symbol function_parameters) [720 724]))                          )
+                        (reparse-symbol indented_block_body) [683 1084])
+                    ("add_field_sort_criteria" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1117 1121])
+                            ("name" variable nil (reparse-symbol function_parameters) [1123 1127])
+                            ("sort" variable nil (reparse-symbol function_parameters) [1129 1133]))                          )
+                        (reparse-symbol indented_block_body) [1089 1195])
+                    ("add_expression_sort_criteria" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1233 1237])
+                            ("expression" variable nil (reparse-symbol function_parameters) [1239 1249]))                          )
+                        (reparse-symbol indented_block_body) [1200 1355])
+                    ("_get_expressions" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1381 1385]))                          )
+                        (reparse-symbol indented_block_body) [1360 1479])
+                    ("get_expression_names" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1509 1513]))                          )
+                        (reparse-symbol indented_block_body) [1484 1579])
+                    ("__str__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1596 1600]))                          )
+                        (reparse-symbol indented_block_body) [1584 2136])
+                    ("__repr__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2154 2158]))                          )
+                        (reparse-symbol indented_block_body) [2141 2190]))                  
+                :type "class")
+                nil [444 2190]))          
+      :file "statements.py"
+      :pointmax 2190
+      :fsize 2189
+      :lastmodtime '(22755 63654 254621 540000)
+      :unmatched-syntax nil))
+  :file "!home!philip!dev!search!search_py!api!adapters!cloudsearch!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

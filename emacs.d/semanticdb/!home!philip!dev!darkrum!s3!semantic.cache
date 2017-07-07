@@ -1,0 +1,32 @@
+;; Object s3/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "s3/"
+  :tables
+  (list
+    (semanticdb-table "__init__.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("boto3" include nil nil [1 13])
+            ("os" include nil nil [14 23])
+            ("tempfile" include nil nil [24 39])
+            ("S3_BUCKET" variable nil nil [41 89])
+            ("S3_ENV_FOLDER" variable nil nil [90 139])
+            ("get_osenv" function nil nil [142 386])
+            ("upload" function (:arguments 
+              ( ("photo_id" variable nil (reparse-symbol function_parameters) [399 407])
+                ("local_filename" variable nil (reparse-symbol function_parameters) [409 423])
+                ("s3_folder" variable nil (reparse-symbol function_parameters) [425 434]))              ) nil [388 799])
+            ("delete" function (:arguments 
+              ( ("url" variable nil (reparse-symbol function_parameters) [812 815]))              ) nil [801 959])
+            ("delete_multiple" function (:arguments 
+              ( ("url_list" variable nil (reparse-symbol function_parameters) [981 989]))              ) nil [961 1191])
+            ("download" function (:arguments 
+              ( ("s3_file" variable nil (reparse-symbol function_parameters) [1206 1213]))              ) nil [1193 1445]))          
+      :file "__init__.py"
+      :pointmax 1445
+      :fsize 1444
+      :lastmodtime '(22819 21355 658535 360000)
+      :unmatched-syntax nil))
+  :file "!home!philip!dev!darkrum!s3!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

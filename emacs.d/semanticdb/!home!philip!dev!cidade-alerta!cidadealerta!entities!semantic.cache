@@ -1,0 +1,310 @@
+;; Object entities/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "entities/"
+  :tables
+  (list
+    (semanticdb-table "alert.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("cidadealerta.entities.audit" include nil nil [1 46])
+            ("rfc3339" include nil nil [47 84])
+            ("cidadealerta.db" include nil nil [85 113])
+            ("os" include nil nil [114 123])
+            ("AlertService" type
+               (:documentation "
+    Class used to manage queries
+    and methods for alert collection.
+    "
+                :superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("if" code nil (reparse-symbol indented_block_body) [288 344])
+                            ("self" variable nil (reparse-symbol indented_block_body) [352 370])
+                            ("self" variable nil (reparse-symbol indented_block_body) [379 440])
+                            ("self" variable nil (reparse-symbol indented_block_body) [449 497]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [258 262])
+                            ("database" variable nil (reparse-symbol function_parameters) [264 272]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [245 498])
+                    ("_find" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [513 517])
+                            ("query" variable nil (reparse-symbol function_parameters) [519 524])
+                            ("fields" variable nil (reparse-symbol function_parameters) [526 532]))                          )
+                        (reparse-symbol indented_block_body) [503 665])
+                    ("_find_one" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [684 688])
+                            ("query" variable nil (reparse-symbol function_parameters) [690 695]))                          )
+                        (reparse-symbol indented_block_body) [670 745])
+                    ("find_by_id" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [765 769])
+                            ("mongo_id" variable nil (reparse-symbol function_parameters) [771 779]))                          )
+                        (reparse-symbol indented_block_body) [750 831])
+                    ("insert_one" function
+                       (:parent "dummy"
+                        :decorators 
+                          ( ("audit" function (:type "decorator") nil nil))                          
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [862 866])
+                            ("data" variable nil (reparse-symbol function_parameters) [868 872]))                          
+                        :documentation "
+        Method to insert items in collection, based on json param.
+        data: the dict/json to be inserted in the collection
+        ")
+                        (reparse-symbol indented_block_body) [836 1279])
+                    ("_update_one" function
+                       (:parent "dummy"
+                        :decorators 
+                          ( ("audit" function (:type "decorator") nil nil))                          
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1311 1315])
+                            ("query" variable nil (reparse-symbol function_parameters) [1317 1322])
+                            ("data" variable nil (reparse-symbol function_parameters) [1324 1328]))                          
+                        :documentation "
+        Method to update items in collection, based on params.
+        The parameters are organized in the following order.
+        query: the dict to match the item which will be modified
+        data: the fields to be updated
+        ")
+                        (reparse-symbol indented_block_body) [1284 1846])
+                    ("update_by_id" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1868 1872])
+                            ("mongo_id" variable nil (reparse-symbol function_parameters) [1874 1882])
+                            ("data" variable nil (reparse-symbol function_parameters) [1884 1888]))                          )
+                        (reparse-symbol indented_block_body) [1851 1948])
+                    ("_delete_one" function
+                       (:parent "dummy"
+                        :decorators 
+                          ( ("audit" function (:type "decorator") nil nil))                          
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1980 1984])
+                            ("query" variable nil (reparse-symbol function_parameters) [1986 1991]))                          
+                        :documentation "
+        Method to delete items from collection, based on query param.
+        query: the dict to match the item which will be deleted
+        ")
+                        (reparse-symbol indented_block_body) [1953 2351])
+                    ("delete_by_id" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2373 2377])
+                            ("mongo_id" variable nil (reparse-symbol function_parameters) [2379 2387]))                          )
+                        (reparse-symbol indented_block_body) [2356 2441]))                  
+                :type "class")
+                nil [126 2441]))          
+      :file "alert.py"
+      :pointmax 2441
+      :fsize 2440
+      :lastmodtime '(22875 61747 681322 821000)
+      :unmatched-syntax nil)
+    (semanticdb-table "__init__.py"
+      :major-mode 'python-mode
+      :tags nil
+      :file "__init__.py"
+      :pointmax 1
+      :fsize 0
+      :lastmodtime '(22857 37616 536644 220000)
+      :unmatched-syntax nil)
+    (semanticdb-table "profile.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("cidadealerta.db" include nil nil [1 29])
+            ("os" include nil nil [30 39])
+            ("ProfileService" type
+               (:documentation "
+    Class used to manage queries
+    and methods for profile collection.
+    "
+                :superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("if" code nil (reparse-symbol indented_block_body) [208 264])
+                            ("self" variable nil (reparse-symbol indented_block_body) [272 290])
+                            ("self" variable nil (reparse-symbol indented_block_body) [299 364])
+                            ("self" variable nil (reparse-symbol indented_block_body) [373 421])
+                            ("self" code nil (reparse-symbol indented_block_body) [430 494]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [178 182])
+                            ("database" variable nil (reparse-symbol function_parameters) [184 192]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [165 495])
+                    ("find" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [509 513])
+                            ("query" variable nil (reparse-symbol function_parameters) [515 520]))                          )
+                        (reparse-symbol indented_block_body) [500 566])
+                    ("_find_one" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [585 589])
+                            ("query" variable nil (reparse-symbol function_parameters) [591 596]))                          )
+                        (reparse-symbol indented_block_body) [571 646])
+                    ("find_by_id" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [666 670])
+                            ("mongo_id" variable nil (reparse-symbol function_parameters) [672 680]))                          )
+                        (reparse-symbol indented_block_body) [651 732])
+                    ("find_by_email" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [755 759])
+                            ("email" variable nil (reparse-symbol function_parameters) [761 766]))                          )
+                        (reparse-symbol indented_block_body) [737 817])
+                    ("insert_one" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [837 841])
+                            ("data" variable nil (reparse-symbol function_parameters) [843 847]))                          
+                        :documentation "
+        Method to insert items in collection, based on json param.
+        data: the dict/json to be inserted in the collection
+        ")
+                        (reparse-symbol indented_block_body) [822 1178])
+                    ("_update_one" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1199 1203])
+                            ("query" variable nil (reparse-symbol function_parameters) [1205 1210])
+                            ("data" variable nil (reparse-symbol function_parameters) [1212 1216])
+                            ("operation" variable nil (reparse-symbol function_parameters) [1218 1227]))                          
+                        :documentation "
+        Method to update items in collection, based on params.
+        The parameters are organized in the following order.
+        query: the dict to match the item which will be modified
+        data: the fields to be updated
+        operation: the operation to be used (default is $set)
+        ")
+                        (reparse-symbol indented_block_body) [1183 1803])
+                    ("update_field_by_email" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1834 1838])
+                            ("email" variable nil (reparse-symbol function_parameters) [1840 1845])
+                            ("data" variable nil (reparse-symbol function_parameters) [1847 1851]))                          )
+                        (reparse-symbol indented_block_body) [1808 1910])
+                    ("update_list" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1931 1935])
+                            ("query" variable nil (reparse-symbol function_parameters) [1937 1942])
+                            ("data" variable nil (reparse-symbol function_parameters) [1944 1948]))                          )
+                        (reparse-symbol indented_block_body) [1915 2009])
+                    ("update_field_by_id" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2037 2041])
+                            ("profile_id" variable nil (reparse-symbol function_parameters) [2043 2053])
+                            ("data" variable nil (reparse-symbol function_parameters) [2055 2059]))                          )
+                        (reparse-symbol indented_block_body) [2014 2121]))                  
+                :type "class")
+                nil [42 2121]))          
+      :file "profile.py"
+      :pointmax 2121
+      :fsize 2120
+      :lastmodtime '(22878 46730 402903 226000)
+      :unmatched-syntax nil)
+    (semanticdb-table "audit.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("datetime" include nil nil [1 30])
+            ("functools" include nil nil [31 58])
+            ("inspect" include nil nil [59 88])
+            ("os" include nil nil [89 98])
+            ("table_name" variable nil nil [101 152])
+            ("audit" function (:arguments 
+              ( ("function" variable nil (reparse-symbol function_parameters) [165 173]))              ) nil [155 1318]))          
+      :file "audit.py"
+      :pointmax 1318
+      :fsize 1317
+      :lastmodtime '(22867 64447 392480 870000)
+      :unmatched-syntax nil)
+    (semanticdb-table "user.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("cidadealerta.db" include nil nil [1 29])
+            ("os" include nil nil [30 39])
+            ("UserService" type
+               (:documentation "
+    Class used to manage queries
+    and methods for user collection.
+    "
+                :superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("if" code nil (reparse-symbol indented_block_body) [202 258])
+                            ("self" variable nil (reparse-symbol indented_block_body) [266 325])
+                            ("self" variable nil (reparse-symbol indented_block_body) [334 382]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [172 176])
+                            ("database" variable nil (reparse-symbol function_parameters) [178 186]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [159 383])
+                    ("find" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [397 401])
+                            ("query" variable nil (reparse-symbol function_parameters) [403 408]))                          )
+                        (reparse-symbol indented_block_body) [388 454])
+                    ("find_one" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [472 476])
+                            ("query" variable nil (reparse-symbol function_parameters) [478 483])
+                            ("fields" variable nil (reparse-symbol function_parameters) [485 491]))                          )
+                        (reparse-symbol indented_block_body) [459 632])
+                    ("find_by_id" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [652 656])
+                            ("mongo_id" variable nil (reparse-symbol function_parameters) [658 666]))                          )
+                        (reparse-symbol indented_block_body) [637 718])
+                    ("insert_one" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [738 742])
+                            ("data" variable nil (reparse-symbol function_parameters) [744 748]))                          
+                        :documentation "
+        Method to insert items in collection, based on json param.
+        data: the dict/json to be inserted in the collection
+        ")
+                        (reparse-symbol indented_block_body) [723 1079])
+                    ("update_one" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1099 1103])
+                            ("query" variable nil (reparse-symbol function_parameters) [1105 1110])
+                            ("data" variable nil (reparse-symbol function_parameters) [1112 1116]))                          
+                        :documentation "
+        Method to update items in collection, based on params.
+        The parameters are organized in the following order.
+        query: the dict to match the item which will be modified
+        data: the fields to be updated
+        operation: the operation to be used (default is $set)
+        ")
+                        (reparse-symbol indented_block_body) [1084 1682]))                  
+                :type "class")
+                nil [42 1682]))          
+      :file "user.py"
+      :pointmax 1682
+      :fsize 1681
+      :lastmodtime '(22878 46743 735494 279000)
+      :unmatched-syntax nil))
+  :file "!home!philip!dev!cidade-alerta!cidadealerta!entities!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

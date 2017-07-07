@@ -1,0 +1,132 @@
+;; Object kafka/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "kafka/"
+  :tables
+  (list
+    (semanticdb-table "handlers.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("logging" include nil nil [1 15])
+            ("sys" include nil nil [16 26])
+            ("cidadealerta.entities.profile" include nil nil [27 83])
+            ("cidadealerta.entities.user" include nil nil [84 134])
+            ("logging" code nil nil [137 244])
+            ("LOGGER" variable nil nil [245 288])
+            ("UserHandler" type
+               (:documentation "
+    Class used to handle User events update
+    from Kafka
+    "
+                :superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [440 481])
+                            ("self" variable nil (reparse-symbol indented_block_body) [490 525]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [410 414])
+                            ("database" variable nil (reparse-symbol function_parameters) [416 424]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [397 526])
+                    ("get_profiles_by_email" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [557 561])
+                            ("email_list" variable nil (reparse-symbol function_parameters) [563 573]))                          )
+                        (reparse-symbol indented_block_body) [531 795])
+                    ("create_or_get_user" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [823 827])
+                            ("payload" variable nil (reparse-symbol function_parameters) [829 836]))                          )
+                        (reparse-symbol indented_block_body) [800 1098])
+                    ("get_user_by_external_id" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1131 1135])
+                            ("external_id" variable nil (reparse-symbol function_parameters) [1137 1148]))                          )
+                        (reparse-symbol indented_block_body) [1103 1239])
+                    ("get_emails" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1259 1263])
+                            ("payload" variable nil (reparse-symbol function_parameters) [1265 1272]))                          )
+                        (reparse-symbol indented_block_body) [1244 1474])
+                    ("get_email_list" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1498 1502])
+                            ("user_id" variable nil (reparse-symbol function_parameters) [1504 1511]))                          )
+                        (reparse-symbol indented_block_body) [1479 1716])
+                    ("handle_user_create" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1744 1748])
+                            ("payload" variable nil (reparse-symbol function_parameters) [1750 1757]))                          
+                        :documentation "
+        Method to handle USER_CREATE
+        ")
+                        (reparse-symbol indented_block_body) [1721 2376])
+                    ("handle_user_update" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2404 2408])
+                            ("payload" variable nil (reparse-symbol function_parameters) [2410 2417]))                          
+                        :documentation "
+        Method to handle USER_UPDATE events
+        ")
+                        (reparse-symbol indented_block_body) [2381 2527])
+                    ("run" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2540 2544])
+                            ("event_type" variable nil (reparse-symbol function_parameters) [2546 2556])
+                            ("payload" variable nil (reparse-symbol function_parameters) [2558 2565]))                          
+                        :documentation "
+        Main method
+        ")
+                        (reparse-symbol indented_block_body) [2532 2684])
+                    ("get_handler" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2705 2709])
+                            ("event_type" variable nil (reparse-symbol function_parameters) [2711 2721]))                          )
+                        (reparse-symbol indented_block_body) [2689 2880]))                  
+                :type "class")
+                nil [291 2880]))          
+      :file "handlers.py"
+      :pointmax 2880
+      :fsize 2879
+      :lastmodtime '(22878 46743 735494 279000)
+      :unmatched-syntax nil)
+    (semanticdb-table "kafka_worker.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("workers.run_async" include nil nil [1 35])
+            ("workers.kafka.handlers" include nil nil [36 77])
+            ("functools" include nil nil [78 94])
+            ("json" include nil nil [95 106])
+            ("logging" include nil nil [107 121])
+            ("sys" include nil nil [160 170])
+            ("kafka" include nil nil [231 297])
+            ("logging" code nil nil [300 407])
+            ("LOGGER" variable nil nil [409 451])
+            ("HANDLERS" variable nil nil [453 496])
+            ("TOPICS" variable nil nil [497 526])
+            ("process_messages" function (:arguments 
+              ( ("consumer" variable nil (reparse-symbol function_parameters) [550 558]))              ) nil [529 820])
+            ("process_message" function (:arguments 
+              ( ("consumer" variable nil (reparse-symbol function_parameters) [842 850])
+                ("message" variable nil (reparse-symbol function_parameters) [852 859])
+                ("topic" variable nil (reparse-symbol function_parameters) [861 866]))              ) nil [822 1493])
+            ("main" function nil nil [1495 1761])
+            ("if" code nil nil [1763 1801]))          
+      :file "kafka_worker.py"
+      :pointmax 1801
+      :fsize 1800
+      :lastmodtime '(22878 46743 735494 279000)
+      :unmatched-syntax nil))
+  :file "!home!philip!dev!cidade-alerta!workers!kafka!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

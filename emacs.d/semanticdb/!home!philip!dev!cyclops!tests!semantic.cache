@@ -1,0 +1,204 @@
+;; Object tests/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "tests/"
+  :tables
+  (list
+    (semanticdb-table "test_bar_code_reader.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("condominium.bar_code_reader" include nil nil [1 54])
+            ("os" include nil nil [55 64])
+            ("test_scan_bar_code" function nil nil [67 399])
+            ("test_validate_bar_code" function nil nil [401 614])
+            ("read_bar_code" function nil nil [616 890]))          
+      :file "test_bar_code_reader.py"
+      :pointmax 890
+      :fsize 889
+      :lastmodtime '(22713 43080 957033 702000)
+      :unmatched-syntax nil)
+    (semanticdb-table "test_bar_code_scanner.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("condominium.bar_code_scanner" include nil nil [1 56])
+            ("os" include nil nil [57 66])
+            ("condominium.ocr_utils" include nil nil [67 108])
+            ("warnings" include nil nil [109 124])
+            ("test_scan_1" function (:arguments 
+              ( ("tmpdir_factory" variable nil (reparse-symbol function_parameters) [143 157]))              ) nil [127 715])
+            ("test_scan_2" function (:arguments 
+              ( ("tmpdir_factory" variable nil (reparse-symbol function_parameters) [733 747]))              ) nil [717 1305])
+            ("test_scan_3" function (:arguments 
+              ( ("tmpdir_factory" variable nil (reparse-symbol function_parameters) [1323 1337]))              ) nil [1307 1895])
+            ("test_scan_4" function (:arguments 
+              ( ("tmpdir_factory" variable nil (reparse-symbol function_parameters) [1913 1927]))              ) nil [1897 2485]))          
+      :file "test_bar_code_scanner.py"
+      :pointmax 2485
+      :fsize 2484
+      :lastmodtime '(22713 43080 957033 702000)
+      :unmatched-syntax nil)
+    (semanticdb-table "test_bar_code_utils.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("condominium.bar_code_utils" include nil nil [1 52])
+            ("datetime" include nil nil [53 82])
+            ("test_calc_dv_block_1" function nil nil [85 272])
+            ("test_calc_dv_block_2" function nil nil [274 462])
+            ("test_calc_dv_block_3" function nil nil [464 652])
+            ("test_calc_dv_block_4" function nil nil [654 842])
+            ("test_calc_dv_billet_ok" function nil nil [844 1006])
+            ("test_calc_dv_billet_ok_2" function nil nil [1008 1172])
+            ("test_calc_dv_billet_error" function nil nil [1174 1339])
+            ("test_validate_billet_ok" function nil nil [1341 1506])
+            ("test_validate_billet_error_in_first_block" function nil nil [1508 1695])
+            ("test_validate_billet_error_in_last_block" function nil nil [1697 1883])
+            ("test_billet_wrong_size" function nil nil [1885 2054])
+            ("test_billet_wrong_format" function nil nil [2056 2225])
+            ("test_bulid_bar_code" function nil nil [2227 2580])
+            ("test_build_code_line" function nil nil [2582 2834])
+            ("test_validate_billet_none" function nil nil [2836 2939])
+            ("test_validate_all" function nil nil [2941 3097])
+            ("test_validate_all_error" function nil nil [3099 3265])
+            ("test_calc_due_date" function nil nil [3267 3461])
+            ("test_calc_value" function nil nil [3463 3624]))          
+      :file "test_bar_code_utils.py"
+      :pointmax 3624
+      :fsize 3623
+      :lastmodtime '(22713 43080 961033 854000)
+      :unmatched-syntax nil)
+    (semanticdb-table "test_downloader.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("condominium.downloader" include nil nil [1 46])
+            ("os" include nil nil [47 56])
+            ("test_get_not_existent_folder_id" function nil nil [59 217])
+            ("test_dowload_null_file" function nil nil [219 563]))          
+      :file "test_downloader.py"
+      :pointmax 563
+      :fsize 562
+      :lastmodtime '(22713 43059 56183 323000)
+      :unmatched-syntax nil)
+    (semanticdb-table "test_ocr_utils.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("condominium.ocr_utils" include nil nil [1 42])
+            ("os" include nil nil [43 52])
+            ("test_convert_png" function nil nil [55 407]))          
+      :file "test_ocr_utils.py"
+      :pointmax 407
+      :fsize 418
+      :lastmodtime '(22713 43080 961033 854000)
+      :unmatched-syntax nil)
+    (semanticdb-table "test_status_check.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("'''
+Tests for the reader service
+'''" code nil nil [1 37])
+            ("unittest.mock" include nil nil [38 73])
+            ("datetime" include nil nil [74 103])
+            ("condominium.responsability_check" include nil nil [104 167])
+            ("DATA" variable nil nil [170 508])
+            ("test_last_day_of_month" function nil nil [511 780])
+            ("test_last_day_of_month_feb" function nil nil [782 1040])
+            ("test_last_day_of_month_leap" function nil nil [1042 1314])
+            ("test_check_status_valid" function nil nil [1316 1789])
+            ("test_home_not_found" function nil nil [1791 2041])
+            ("test_first_month" function nil nil [2043 2514])
+            ("test_second_month" function nil nil [2516 2981])
+            ("test_last_month" function nil nil [2983 3444])
+            ("test_last_month_ended" function nil nil [3446 3931])
+            ("test_next_month_ended" function nil nil [3933 4431])
+            ("test_landlord_pays" function nil nil [4433 4925]))          
+      :file "test_status_check.py"
+      :pointmax 4925
+      :fsize 5846
+      :lastmodtime '(22718 55941 46484 929000)
+      :unmatched-syntax nil)
+    (semanticdb-table "test_itau_crawler.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("requests" include nil nil [1 16])
+            ("requests_mock" include nil nil [17 37])
+            ("os" include nil nil [38 47])
+            ("pytest" include nil nil [48 61])
+            ("services.seu_barriga" include nil nil [62 105])
+            ("crawler.itau" include nil nil [106 136])
+            ("session" variable nil nil [139 167])
+            ("adapter" variable nil nil [168 201])
+            ("session" code nil nil [202 232])
+            ("service" variable nil nil [233 255])
+            ("SB_URL" variable nil nil [257 319])
+            ("BARCODE_URL" code nil nil [320 378])
+            ("ITAU_URL" variable nil nil [379 439])
+            ("content" variable nil nil [441 562])
+            ("params_r" variable nil nil [563 609])
+            ("params_o" code nil nil [610 640])
+            ("" code nil nil [660 696])
+            ("html_creator" function (:arguments 
+              ( ("name" variable nil (reparse-symbol function_parameters) [714 718])
+                ("expired" variable nil (reparse-symbol function_parameters) [720 727]))              ) nil [697 1159])
+            ("" code nil nil [1178 1194])
+            ("match_request_r" function (:arguments 
+              ( ("request" variable nil (reparse-symbol function_parameters) [1215 1222]))              ) nil [1195 1269])
+            ("" code nil nil [1288 1304])
+            ("match_request_o" function (:arguments 
+              ( ("request" variable nil (reparse-symbol function_parameters) [1325 1332]))              ) nil [1305 1379])
+            ("" code nil nil [1398 1414])
+            ("match_request_boleto" function (:arguments 
+              ( ("request" variable nil (reparse-symbol function_parameters) [1440 1447]))              ) nil [1415 1503])
+            ("test_get_non_existent_barcode_line" function nil nil [1505 1813])
+            ("" code nil nil [1836 1847])
+            ("test_cannot_connect_to_sb" function (:arguments 
+              ( ("kwargs" variable nil (reparse-symbol function_parameters) [1878 1886]))              ) nil [1848 2052])
+            ("" code nil nil [2075 2086])
+            ("test_cannot_connect_itau" function (:arguments 
+              ( ("kwargs" variable nil (reparse-symbol function_parameters) [2116 2124]))              ) nil [2087 2358])
+            ("" code nil nil [2381 2392])
+            ("test_itau_wrong_ans" function (:arguments 
+              ( ("kwargs" variable nil (reparse-symbol function_parameters) [2417 2425]))              ) nil [2393 2687])
+            ("" code nil nil [2710 2721])
+            ("test_already_paid" function (:arguments 
+              ( ("kwargs" variable nil (reparse-symbol function_parameters) [2744 2752]))              ) nil [2722 3030])
+            ("" code nil nil [3053 3064])
+            ("test_missing" function (:arguments 
+              ( ("kwargs" variable nil (reparse-symbol function_parameters) [3082 3090]))              ) nil [3065 3371])
+            ("" code nil nil [3394 3405])
+            ("test_not_expired" function (:arguments 
+              ( ("kwargs" variable nil (reparse-symbol function_parameters) [3427 3435]))              ) nil [3406 4320])
+            ("" code nil nil [4343 4354])
+            ("test_expired" function (:arguments 
+              ( ("kwargs" variable nil (reparse-symbol function_parameters) [4372 4380]))              ) nil [4355 5002])
+            ("" code nil nil [5025 5036])
+            ("test_not_available" function (:arguments 
+              ( ("kwargs" variable nil (reparse-symbol function_parameters) [5060 5068]))              ) nil [5037 5449]))          
+      :file "test_itau_crawler.py"
+      :pointmax 5449
+      :fsize 5453
+      :lastmodtime '(22718 63585 404811 585000)
+      :unmatched-syntax nil)
+    (semanticdb-table "__init__.py"
+      :major-mode 'python-mode
+      :tags nil
+      :file "__init__.py"
+      :pointmax 1
+      :fsize 0
+      :lastmodtime '(22676 48220 897332 369000)
+      :unmatched-syntax nil)
+    (semanticdb-table "test_flask.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("app" include nil nil [1 26])
+            ("cyclops_app" variable nil nil [29 69])
+            ("cyclops_app" variable nil nil [70 94])
+            ("app" variable nil nil [95 130])
+            ("test_healthcheck" function nil nil [133 235])
+            ("test_authenticated" function nil nil [237 356]))          
+      :file "test_flask.py"
+      :pointmax 356
+      :fsize 355
+      :lastmodtime '(22713 43059 56183 323000)
+      :unmatched-syntax nil)
+)
+  :file "!home!philip!dev!cyclops!tests!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

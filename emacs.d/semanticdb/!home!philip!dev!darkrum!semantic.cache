@@ -1,0 +1,48 @@
+;; Object darkrum/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "darkrum/"
+  :tables
+  (list
+    (semanticdb-table "app.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("flask" include nil nil [181 233])
+            ("flask_cors" include nil nil [234 275])
+            ("utils" include nil nil [276 329])
+            ("routes.upload" include nil nil [330 362])
+            ("routes.photos" include nil nil [363 403])
+            ("os" include nil nil [404 413])
+            ("ALLOWED_CROSS_DOMAINS" variable nil nil [415 463])
+            ("app" variable nil nil [465 530])
+            ("CORS" code nil nil [531 540])
+            ("app" variable nil nil [542 598])
+            ("not_authenticated" variable nil nil [600 660])
+            ("ENV" variable nil nil [662 704])
+            ("authenticate" function (:decorators 
+              ( ("app.before_request" function (:type "decorator") nil nil))              ) nil [707 915])
+            ("after_request" function
+               (:decorators 
+                  ( ("app.after_request" function (:type "decorator") nil nil))                  
+                :arguments 
+                  ( ("response" variable nil (reparse-symbol function_parameters) [954 962]))                  )
+                nil [917 1106])
+            ("" code nil nil [1118 1151])
+            ("" code nil nil [1165 1196])
+            ("healthcheck" function nil nil [1197 1232])
+            ("" code nil nil [1244 1272])
+            ("get_config" function nil nil [1273 1697])
+            ("validate_token" function (:arguments 
+              ( ("request" variable nil (reparse-symbol function_parameters) [1718 1725]))              ) nil [1699 2135])
+            ("app" code nil nil [2137 2178])
+            ("app" code nil nil [2179 2209])
+            ("app" code nil nil [2210 2240])
+            ("app" code nil nil [2241 2271])
+            ("app" variable nil nil [2273 2543]))          
+      :file "app.py"
+      :pointmax 2544
+      :fsize 2543
+      :lastmodtime '(22828 38197 105261 60000)
+      :unmatched-syntax nil))
+  :file "!home!philip!dev!darkrum!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

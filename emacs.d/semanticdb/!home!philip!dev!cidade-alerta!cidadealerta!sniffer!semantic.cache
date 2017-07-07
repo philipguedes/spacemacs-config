@@ -1,0 +1,61 @@
+;; Object sniffer/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "sniffer/"
+  :tables
+  (list
+    (semanticdb-table "sniffer.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("cidadealerta.services.cloudsearch" include nil nil [1 64])
+            ("cidadealerta.services.alert" include nil nil [65 120])
+            ("Sniffer" type
+               (:superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("if" code nil (reparse-symbol indented_block_body) [195 261])
+                            ("self" variable nil (reparse-symbol indented_block_body) [269 299]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [163 167])
+                            ("controller" variable nil (reparse-symbol function_parameters) [169 179]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [150 300])
+                    ("get_all_queries" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [325 329]))                          )
+                        (reparse-symbol indented_block_body) [305 481])
+                    ("_get_search_criteria" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [511 515])
+                            ("alert" variable nil (reparse-symbol function_parameters) [517 522]))                          
+                        :documentation "
+        This function is responsible to create the search criteria that we'll
+        be using to search houses in cloudsearch.
+        The search criteria should fit the boto3 docs for CloudSearchDomain.
+        The official docs to understand the syntax here can be found at
+        http://docs.aws.amazon.com/cloudsearch/latest/developerguide/searching.html
+        ")
+                        (reparse-symbol indented_block_body) [486 1259])
+                    ("search_houses" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1282 1286]))                          
+                        :documentation "
+        Method to search houses in CloudSearch that matches
+        the criteria for a certain alert.
+        It returns a dict with the alert_id as key and results as value.
+        ")
+                        (reparse-symbol indented_block_body) [1264 1794]))                  
+                :type "class")
+                nil [123 1794]))          
+      :file "sniffer.py"
+      :pointmax 1794
+      :fsize 1793
+      :lastmodtime '(22877 5345 502612 378000)
+      :unmatched-syntax nil))
+  :file "!home!philip!dev!cidade-alerta!cidadealerta!sniffer!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

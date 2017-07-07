@@ -1,0 +1,28 @@
+;; Object sniffer/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "sniffer/"
+  :tables
+  (list
+    (semanticdb-table "test_sniffer.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("pytest" include nil nil [1 14])
+            ("cidadealerta.sniffer.sniffer" include nil nil [15 63])
+            ("" code nil nil [81 97])
+            ("sniffer" function (:arguments 
+              ( ("alert_controller" variable nil (reparse-symbol function_parameters) [110 126]))              ) nil [98 188])
+            ("test_get_all_queries" function (:arguments 
+              ( ("sniffer" variable nil (reparse-symbol function_parameters) [215 222])
+                ("created_alerts" variable nil (reparse-symbol function_parameters) [224 238]))              ) nil [190 389])
+            ("test_get_search_criteria" function (:arguments 
+              ( ("sniffer" variable nil (reparse-symbol function_parameters) [420 427])
+                ("created_alerts" variable nil (reparse-symbol function_parameters) [429 443])
+                ("alert_controller" variable nil (reparse-symbol function_parameters) [445 461]))              ) nil [391 1016]))          
+      :file "test_sniffer.py"
+      :pointmax 1016
+      :fsize 1015
+      :lastmodtime '(22877 5345 506612 400000)
+      :unmatched-syntax nil))
+  :file "!home!philip!dev!cidade-alerta!tests!sniffer!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

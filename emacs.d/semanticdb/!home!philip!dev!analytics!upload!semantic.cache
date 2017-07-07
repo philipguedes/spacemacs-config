@@ -1,0 +1,172 @@
+;; Object upload/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "upload/"
+  :tables
+  (list
+    (semanticdb-table "server.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("flask" include nil nil [280 321])
+            ("crop" include nil nil [322 346])
+            ("boto3" include nil nil [347 359])
+            ("database" include nil nil [360 375])
+            ("datetime" include nil nil [376 391])
+            ("imghdr" include nil nil [392 405])
+            ("json" include nil nil [406 417])
+            ("libxmp.utils" include nil nil [418 437])
+            ("os" include nil nil [438 447])
+            ("tempfile" include nil nil [448 463])
+            ("uuid" include nil nil [464 475])
+            ("jwt_utils" include nil nil [476 492])
+            ("app" variable nil nil [494 515])
+            ("PHOTOSPHERE_NAMESPACE" variable nil nil [517 584])
+            ("S3_BUCKET" variable nil nil [585 614])
+            ("" code nil nil [670 703])
+            ("healthcheck" function nil nil [704 739])
+            ("" code nil nil [750 785])
+            ("authenticated" function nil nil [786 884])
+            ("error" function (:arguments 
+              ( ("message" variable nil (reparse-symbol function_parameters) [895 902])
+                ("code" variable nil (reparse-symbol function_parameters) [904 908]))              ) nil [885 1024])
+            ("is_photosphere" function (:arguments 
+              ( ("image" variable nil (reparse-symbol function_parameters) [1044 1049]))              ) nil [1025 1357])
+            ("is_authenticated" function (:arguments 
+              ( ("request" variable nil (reparse-symbol function_parameters) [1379 1386]))              ) nil [1358 1424])
+            ("validate_token" function (:arguments 
+              ( ("request" variable nil (reparse-symbol function_parameters) [1444 1451]))              ) nil [1425 1765])
+            ("store_temp_image" function (:arguments 
+              ( ("image" variable nil (reparse-symbol function_parameters) [1787 1792]))              ) nil [1766 1911])
+            ("valid_house" function (:arguments 
+              ( ("db" variable nil (reparse-symbol function_parameters) [1928 1930])
+                ("house_id" variable nil (reparse-symbol function_parameters) [1932 1940]))              ) nil [1912 2094])
+            ("upload_to_s3" function (:arguments 
+              ( ("local_filename" variable nil (reparse-symbol function_parameters) [2112 2126]))              ) nil [2095 2310])
+            ("add_to_database" function (:arguments 
+              ( ("db" variable nil (reparse-symbol function_parameters) [2331 2333])
+                ("house_id" variable nil (reparse-symbol function_parameters) [2335 2343])
+                ("s3_url" variable nil (reparse-symbol function_parameters) [2345 2351])
+                ("description" variable nil (reparse-symbol function_parameters) [2353 2364])
+                ("preview_from" variable nil (reparse-symbol function_parameters) [2366 2378]))              ) nil [2311 2829])
+            ("create_preview" function (:arguments 
+              ( ("local_filename" variable nil (reparse-symbol function_parameters) [2849 2863]))              ) nil [2830 2983])
+            ("" code nil nil [2994 3038])
+            ("image_upload" function (:arguments 
+              ( ("house_id" variable nil (reparse-symbol function_parameters) [3056 3064]))              ) nil [3039 4227])
+            ("if" code nil nil [4228 4283]))          
+      :file "server.py"
+      :pointmax 4283
+      :fsize 4283
+      :lastmodtime '(22774 21374 77913 412000)
+      :unmatched-syntax nil)
+    (semanticdb-table "crop.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("os" include nil nil [1 10])
+            ("shutil" include nil nil [11 24])
+            ("subprocess" include nil nil [25 42])
+            ("tempfile" include nil nil [43 58])
+            ("numpy" include nil nil [59 71])
+            ("scipy" include nil nil [72 94])
+            ("Image3D" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [156 184])
+                            ("self" variable nil (reparse-symbol indented_block_body) [193 244])
+                            ("self" variable nil (reparse-symbol indented_block_body) [253 305]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [129 133])
+                            ("image_path" variable nil (reparse-symbol function_parameters) [135 145]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [116 306])
+                    ("crop" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [320 324]))                          
+                        :documentation "
+        Create 6 images representing a cubemap.
+        They're named as crop<number>.jpg, where number can be
+        any integer in the interval [1, 6]
+        The number 1 always represent the front image.
+        ")
+                        (reparse-symbol indented_block_body) [311 669])
+                    ("isolate_and_flip" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [695 699]))                          
+                        :documentation "
+        Isolate the preview image and saves
+        in the same dir where the original image is.
+        It saves under the name <originalimagename>_preview.jpg
+        in the same path of the equirectangular image
+        ")
+                        (reparse-symbol indented_block_body) [674 1260])
+                    ("set_up" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1276 1280]))                          
+                        :documentation "
+        Create a temporary directory with a copy of the image
+        and change the current working directory to it
+        ")
+                        (reparse-symbol indented_block_body) [1265 1610])
+                    ("clean_up" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1628 1632]))                          
+                        :documentation "
+        Clean the environment removing the temp dir tree
+        ")
+                        (reparse-symbol indented_block_body) [1615 1752])
+                    ("run" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1765 1769]))                          
+                        :documentation "
+        Returns a tuple with the original image path
+        and the cropped image path
+        ")
+                        (reparse-symbol indented_block_body) [1757 2015]))                  
+                :type "class")
+                nil [97 2015]))          
+      :file "crop.py"
+      :pointmax 2015
+      :fsize 2014
+      :lastmodtime '(22767 41003 125599 826000)
+      :unmatched-syntax nil)
+    (semanticdb-table "sample_upload.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("requests" include nil nil [1 16])
+            ("image" variable nil nil [18 53])
+            ("req" variable nil nil [54 177])
+            ("print" code nil nil [178 199])
+            ("print" code nil nil [200 214]))          
+      :file "sample_upload.py"
+      :pointmax 215
+      :fsize 214
+      :lastmodtime '(22767 34261 948445 400000)
+      :unmatched-syntax nil)
+    (semanticdb-table "jwt_utils.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("Crypto.PublicKey" include nil nil [1 33])
+            ("jwt" include nil nil [34 44])
+            ("os" include nil nil [45 54])
+            ("get_jwt_data" function
+               (:documentation "
+    Construct RSA PublicKey and check the signature
+    Returns an empty dict if it fails
+    "
+                :arguments 
+                  ( ("token" variable nil (reparse-symbol function_parameters) [217 222]))                  )
+                nil [200 614]))          
+      :file "jwt_utils.py"
+      :pointmax 614
+      :fsize 613
+      :lastmodtime '(22774 21398 899884 21000)
+      :unmatched-syntax nil))
+  :file "!home!philip!dev!analytics!upload!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

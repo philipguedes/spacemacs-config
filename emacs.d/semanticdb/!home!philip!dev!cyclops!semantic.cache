@@ -1,0 +1,115 @@
+;; Object cyclops/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "cyclops/"
+  :tables
+  (list
+    (semanticdb-table "app.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("flask" include nil nil [1 59])
+            ("utils.flask_utils" include nil nil [60 99])
+            ("os" include nil nil [100 109])
+            ("routes.boleto" include nil nil [110 143])
+            ("routes.file" include nil nil [144 173])
+            ("routes.contract" include nil nil [174 210])
+            ("routes.entry" include nil nil [211 243])
+            ("routes.home" include nil nil [244 273])
+            ("routes.iptu" include nil nil [274 302])
+            ("routes.manager" include nil nil [303 338])
+            ("routes.sispag" include nil nil [339 371])
+            ("routes.invoice" include nil nil [372 406])
+            ("routes.monthly_closing" include nil nil [407 457])
+            ("routes.google" include nil nil [458 490])
+            ("routes.seubarriga" include nil nil [491 531])
+            ("env" variable nil nil [533 571])
+            ("app" variable nil nil [572 649])
+            ("not_authenticated" variable nil nil [650 710])
+            ("authenticate" function (:decorators 
+              ( ("app.before_request" function (:type "decorator") nil nil))              ) nil [713 857])
+            ("" code nil nil [873 911])
+            ("is_authenticated" function nil nil [912 972])
+            ("" code nil nil [998 1031])
+            ("healthcheck" function nil nil [1032 1087])
+            ("app" code nil nil [1089 1130])
+            ("app" code nil nil [1131 1162])
+            ("app" code nil nil [1163 1192])
+            ("app" code nil nil [1193 1225])
+            ("app" code nil nil [1226 1257])
+            ("app" code nil nil [1258 1287])
+            ("app" code nil nil [1288 1316])
+            ("app" code nil nil [1317 1349])
+            ("app" code nil nil [1350 1380])
+            ("app" code nil nil [1381 1412])
+            ("app" code nil nil [1413 1452])
+            ("app" code nil nil [1453 1505])
+            ("app" code nil nil [1506 1566])
+            ("app" variable nil nil [1568 2167])
+            ("after_request" function
+               (:decorators 
+                  ( ("app.after_request" function (:type "decorator") nil nil))                  
+                :arguments 
+                  ( ("response" variable nil (reparse-symbol function_parameters) [2207 2215]))                  )
+                nil [2170 2714]))          
+      :file "app.py"
+      :pointmax 2714
+      :fsize 2713
+      :lastmodtime '(22786 21324 823671 491000)
+      :unmatched-syntax nil)
+    (semanticdb-table "run_local.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("gevent.pywsgi" include nil nil [20 56])
+            ("app" include nil nil [57 76])
+            ("argparse" include nil nil [77 92])
+            ("logging" include nil nil [93 107])
+            ("os" include nil nil [108 117])
+            ("logfile" variable nil nil [119 181])
+            ("logging_format" variable nil nil [183 254])
+            ("logging" code nil nil [255 424])
+            ("parser" variable nil nil [426 460])
+            ("parser" code nil nil [461 527])
+            ("args" variable nil nil [528 554])
+            ("try" code nil nil [556 622])
+            ("http_server" variable nil nil [622 782])
+            ("print" code nil nil [783 828])
+            ("http_server" code nil nil [829 856]))          
+      :file "run_local.py"
+      :pointmax 857
+      :fsize 856
+      :lastmodtime '(22676 48220 897332 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "mainp.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("logging" include nil nil [20 34])
+            ("os" include nil nil [35 44])
+            ("sys" include nil nil [45 55])
+            ("concurrent.futures" include nil nil [56 126])
+            ("condominium.downloader" include nil nil [127 172])
+            ("condominium.reader_service" include nil nil [173 225])
+            ("entities.boleto" include nil nil [226 267])
+            ("Crypto.Random" include nil nil [268 298])
+            ("condominium.boleto_process" include nil nil [299 351])
+            ("run_async" include nil nil [352 378])
+            ("utils.log_utils" include nil nil [379 414])
+            ("logging" code nil nil [417 577])
+            ("for" code nil nil [578 889])
+            ("LOGGER" variable nil nil [889 925])
+            ("DOWNLOADER" variable nil nil [926 951])
+            ("MAX_WORKERS" variable nil nil [952 1001])
+            ("process_file" function nil nil [1004 1320])
+            ("process_files" function nil nil [1322 1697])
+            ("main" function nil nil [1699 1853])
+            ("if" code nil nil [1855 1893]))          
+      :file "mainp.py"
+      :pointmax 1893
+      :fsize 1892
+      :lastmodtime '(22786 21324 823671 491000)
+      :unmatched-syntax nil)
+    (semanticdb-table "run_async.py"
+      :file "run_async.py"
+      :fsize 1748
+      :lastmodtime '(22786 21324 839671 636000)))
+  :file "!home!philip!dev!cyclops!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

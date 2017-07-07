@@ -1,0 +1,36 @@
+;; Object frontend/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "frontend/"
+  :tables
+  (list
+    (semanticdb-table "__init__.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("\"\"\"
+    cidadealerta.frontend
+    ~~~~~~~~~~~~~~~~~~~~~
+    
+    launchpad frontend application package
+\"\"\"" code nil nil [25 132])
+            ("functools" include nil nil [134 161])
+            ("flask" include nil nil [163 196])
+            ("factory" include nil nil [206 220])
+            ("create_app" function
+               (:documentation "Returns a dashboard application instance"
+                :arguments 
+                  ( ("settings_override" variable nil (reparse-symbol function_parameters) [238 255]))                  )
+                nil [223 545])
+            ("handle_error" function (:arguments 
+              ( ("e" variable nil (reparse-symbol function_parameters) [564 565]))              ) nil [547 630])
+            ("route" function (:arguments 
+              ( ("bp" variable nil (reparse-symbol function_parameters) [642 644])
+                ("args" variable nil (reparse-symbol function_parameters) [646 651])
+                ("kwargs" variable nil (reparse-symbol function_parameters) [653 661]))              ) nil [632 854]))          
+      :file "__init__.py"
+      :pointmax 854
+      :fsize 853
+      :lastmodtime '(22829 54637 676004 943000)
+      :unmatched-syntax '((PERIOD 204 . 205) (FROM 198 . 202) (PERIOD 203 . 204))))
+  :file "!home!philip!dev!cidade-alerta!cidadealerta!frontend!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,68 @@
+;; Object entities/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "entities/"
+  :tables
+  (list
+    (semanticdb-table "test_alert.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("pytest" include nil nil [1 14])
+            ("os" include nil nil [15 24])
+            ("cidadealerta.entities.alert" include nil nil [25 77])
+            ("tests.entities" include nil nil [78 120])
+            ("" code nil nil [138 156])
+            ("cidadealerta_db" function (:arguments 
+              ( ("db" variable nil (reparse-symbol function_parameters) [177 179]))              ) nil [157 232])
+            ("" code nil nil [249 265])
+            ("audit_collection" function (:arguments 
+              ( ("db" variable nil (reparse-symbol function_parameters) [287 289]))              ) nil [266 402])
+            ("test_insert" function (:arguments 
+              ( ("cidadealerta_db" variable nil (reparse-symbol function_parameters) [420 435])
+                ("audit_collection" variable nil (reparse-symbol function_parameters) [437 453]))              ) nil [404 1615])
+            ("test_update" function (:arguments 
+              ( ("cidadealerta_db" variable nil (reparse-symbol function_parameters) [1633 1648])
+                ("audit_collection" variable nil (reparse-symbol function_parameters) [1650 1666])
+                ("created_alerts" variable nil (reparse-symbol function_parameters) [1668 1682]))              ) nil [1617 3263])
+            ("test_delete" function (:arguments 
+              ( ("cidadealerta_db" variable nil (reparse-symbol function_parameters) [3281 3296])
+                ("audit_collection" variable nil (reparse-symbol function_parameters) [3298 3314])
+                ("created_alerts" variable nil (reparse-symbol function_parameters) [3316 3330]))              ) nil [3265 4685])
+            ("update_test_data" function nil nil [4687 6195]))          
+      :file "test_alert.py"
+      :pointmax 6195
+      :fsize 6194
+      :lastmodtime '(22868 2343 966293 258000)
+      :unmatched-syntax nil)
+    (semanticdb-table "__init__.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("get_mock_alerts" function nil nil [1 2884])
+            ("get_mock_profiles" function nil nil [2886 3220]))          
+      :file "__init__.py"
+      :pointmax 3220
+      :fsize 3219
+      :lastmodtime '(22870 49189 254263 170000)
+      :unmatched-syntax nil)
+    (semanticdb-table "test_profile.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("pytest" include nil nil [1 14])
+            ("pymongo" include nil nil [15 29])
+            ("cidadealerta.entities.profile" include nil nil [30 86])
+            ("tests.entities" include nil nil [87 131])
+            ("" code nil nil [149 167])
+            ("cidadealerta_db" function (:arguments 
+              ( ("db" variable nil (reparse-symbol function_parameters) [188 190]))              ) nil [168 245])
+            ("test_insert" function (:arguments 
+              ( ("cidadealerta_db" variable nil (reparse-symbol function_parameters) [263 278]))              ) nil [247 812])
+            ("test_update" function (:arguments 
+              ( ("cidadealerta_db" variable nil (reparse-symbol function_parameters) [830 845])
+                ("created_profiles" variable nil (reparse-symbol function_parameters) [847 863]))              ) nil [814 1483]))          
+      :file "test_profile.py"
+      :pointmax 1483
+      :fsize 1487
+      :lastmodtime '(22869 30674 530618 179000)
+      :unmatched-syntax nil))
+  :file "!home!philip!dev!cidade-alerta!tests!entities!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

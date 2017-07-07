@@ -1,0 +1,313 @@
+;; Object google/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "google/"
+  :tables
+  (list
+    (semanticdb-table "drive.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("google.server_credentials" include nil nil [1 55])
+            ("apiclient" include nil nil [56 87])
+            ("apiclient.http" include nil nil [88 130])
+            ("os" include nil nil [131 140])
+            ("httplib2shim" include nil nil [141 160])
+            ("Drive" type
+               (:documentation "
+    Provides methos to access the google drive API
+    "
+                :superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" code nil (reparse-symbol indented_block_body) [283 299])
+                            ("self" variable nil (reparse-symbol indented_block_body) [308 368]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [268 272]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [255 369])
+                    ("authorize" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [388 392]))                          
+                        :documentation "
+        Initializes the google drive API, authenticating the user
+        ")
+                        (reparse-symbol indented_block_body) [374 687])
+                    ("refresh" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [704 708]))                          )
+                        (reparse-symbol indented_block_body) [692 755])
+                    ("get_folders_by_name" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [784 788])
+                            ("name" variable nil (reparse-symbol function_parameters) [790 794])
+                            ("folder_id" variable nil (reparse-symbol function_parameters) [796 805]))                          
+                        :documentation "
+        Returns a list of google drive folders, identified by name or
+        file_id
+        ")
+                        (reparse-symbol indented_block_body) [760 1185])
+                    ("list_files" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1205 1209])
+                            ("folder_id" variable nil (reparse-symbol function_parameters) [1211 1220])
+                            ("query" variable nil (reparse-symbol function_parameters) [1227 1232]))                          
+                        :documentation "
+        Return a list of files from google drive. Passing a folder_id, returns
+        the files for that folder.
+        ")
+                        (reparse-symbol indented_block_body) [1190 1644])
+                    ("get_file_info" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1667 1671])
+                            ("file_id" variable nil (reparse-symbol function_parameters) [1673 1680]))                          
+                        :documentation "
+        Return the info for a file, containing id, name, description, etc
+        ")
+                        (reparse-symbol indented_block_body) [1649 1847])
+                    ("get_file_media" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1871 1875])
+                            ("file_id" variable nil (reparse-symbol function_parameters) [1877 1884]))                          
+                        :documentation "
+        Get the file content, to download the file
+        ")
+                        (reparse-symbol indented_block_body) [1852 2034])
+                    ("download_file" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2057 2061])
+                            ("file_id" variable nil (reparse-symbol function_parameters) [2063 2070])
+                            ("path" variable nil (reparse-symbol function_parameters) [2072 2076]))                          
+                        :documentation "
+        Downloads a file from google drive
+        ")
+                        (reparse-symbol indented_block_body) [2039 2401])
+                    ("upload_file" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2422 2426])
+                            ("file_path" variable nil (reparse-symbol function_parameters) [2428 2437])
+                            ("description" variable nil (reparse-symbol function_parameters) [2439 2450])
+                            ("parent_id" variable nil (reparse-symbol function_parameters) [2452 2461]))                          
+                        :documentation "
+        Uploads a file to google drive
+        ")
+                        (reparse-symbol indented_block_body) [2406 2884])
+                    ("create_folder" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2907 2911])
+                            ("folder_name" variable nil (reparse-symbol function_parameters) [2913 2924])
+                            ("parent_id" variable nil (reparse-symbol function_parameters) [2926 2935]))                          
+                        :documentation "
+        Creates a folder in google drive
+        ")
+                        (reparse-symbol indented_block_body) [2889 3272])
+                    ("delete_file" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3293 3297])
+                            ("file_id" variable nil (reparse-symbol function_parameters) [3299 3306]))                          
+                        :documentation "
+        Deletes a file or folder from google drive
+        ")
+                        (reparse-symbol indented_block_body) [3277 3477])
+                    ("update_file" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3498 3502])
+                            ("file_id" variable nil (reparse-symbol function_parameters) [3504 3511])
+                            ("new_p" variable nil (reparse-symbol function_parameters) [3513 3518])
+                            ("old_p" variable nil (reparse-symbol function_parameters) [3520 3525]))                          
+                        :documentation "
+        Deletes a file or folder from google drive
+        ")
+                        (reparse-symbol indented_block_body) [3482 3825])
+                    ("grant_permission" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3851 3855])
+                            ("folder_name" variable nil (reparse-symbol function_parameters) [3857 3868])
+                            ("email" variable nil (reparse-symbol function_parameters) [3870 3875]))                          
+                        :documentation "
+        Gives permission to a file or folder
+        ")
+                        (reparse-symbol indented_block_body) [3830 4322]))                  
+                :type "class")
+                nil [163 4322]))          
+      :file "drive.py"
+      :pointmax 4322
+      :fsize 4321
+      :lastmodtime '(22738 41113 94909 415000)
+      :unmatched-syntax nil)
+    (semanticdb-table "server_credentials.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("__future__" include nil nil [1 38])
+            ("oauth2client.service_account" include nil nil [39 105])
+            ("os" include nil nil [106 115])
+            ("json" include nil nil [116 127])
+            ("SCOPES" variable nil nil [129 179])
+            ("CREDENTIALS_JSON" variable nil nil [180 2546])
+            ("get_credentials" function nil nil [2557 2849]))          
+      :file "server_credentials.py"
+      :pointmax 2849
+      :fsize 2799
+      :lastmodtime '(22736 14402 180047 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "sheets.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("oauth2client.service_account" include nil nil [1 67])
+            ("json" include nil nil [68 79])
+            ("httplib2shim" include nil nil [80 99])
+            ("apiclient" include nil nil [100 131])
+            ("CREDENTIALS_JSON" variable nil nil [166 2540])
+            ("SCOPES" variable nil nil [2548 2614])
+            ("get_credentials" function (:documentation "
+    Authenticates a user, using a service account credential
+    ") nil [2617 2909])
+            ("Sheets" type
+               (:documentation "
+    Provides methods to access the google sheets API
+    "
+                :superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" code nil (reparse-symbol indented_block_body) [3064 3080])
+                            ("self" variable nil (reparse-symbol indented_block_body) [3089 3123]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3019 3023])
+                            ("spreadsheetId" variable nil (reparse-symbol function_parameters) [3025 3038]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [3006 3114])
+                    ("authorize" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3133 3137]))                          
+                        :documentation "
+        Initializes the google sheets API, authienticating the user
+        ")
+                        (reparse-symbol indented_block_body) [3119 3416])
+                    ("get_rows" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3434 3438])
+                            ("rangeName" variable nil (reparse-symbol function_parameters) [3440 3449]))                          
+                        :documentation "
+        Returns a matrix that contains the specified range of values
+        from the spreadsheet, read row by row
+        ")
+                        (reparse-symbol indented_block_body) [3421 3795])
+                    ("get_columns" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3816 3820])
+                            ("rangeName" variable nil (reparse-symbol function_parameters) [3822 3831]))                          
+                        :documentation "
+        Returns a matrix that contains the specified range of values
+        from the spreadsheet, read column by column
+        ")
+                        (reparse-symbol indented_block_body) [3800 4232])
+                    ("get_multiple_rows" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4259 4263])
+                            ("ranges" variable nil (reparse-symbol function_parameters) [4265 4271]))                          
+                        :documentation "
+        Returns a list of matrix that contains all the specified ranges
+        of values from the spreadsheet, read row by row
+        ")
+                        (reparse-symbol indented_block_body) [4237 4678])
+                    ("get_multiple_columns" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4708 4712])
+                            ("ranges" variable nil (reparse-symbol function_parameters) [4714 4720]))                          
+                        :documentation "
+        Returns a list of matrix that contains all the specified ranges
+        of values from the spreadsheet, read column by column
+        ")
+                        (reparse-symbol indented_block_body) [4683 5187]))                  
+                :type "class")
+                nil [2911 5187]))          
+      :file "sheets.py"
+      :pointmax 5187
+      :fsize 5186
+      :lastmodtime '(22732 7825 288663 194000)
+      :unmatched-syntax nil)
+    (semanticdb-table "loadwarnings.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("google.sheets" include nil nil [1 31])
+            ("requests" include nil nil [32 47])
+            ("main" function nil nil [50 3330])
+            ("if" code nil nil [3332 3370]))          
+      :file "loadwarnings.py"
+      :pointmax 3370
+      :fsize 3369
+      :lastmodtime '(22732 17524 548595 99000)
+      :unmatched-syntax nil)
+    (semanticdb-table "update_mongo.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("entities.boleto" include nil nil [1 42])
+            ("google.drive" include nil nil [43 73])
+            ("utils.flask_utils" include nil nil [74 113])
+            ("flask" include nil nil [114 139])
+            ("UpdateBoletos" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [244 280])
+                            ("self" variable nil (reparse-symbol indented_block_body) [289 309])
+                            ("self" variable nil (reparse-symbol indented_block_body) [318 345])
+                            ("self" variable nil (reparse-symbol indented_block_body) [354 395]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [182 186])
+                            ("boletos_folder" variable nil (reparse-symbol function_parameters) [188 202]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [169 396])
+                    ("update_boleto" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [419 423])
+                            ("file_name" variable nil (reparse-symbol function_parameters) [425 434])
+                            ("file_id" variable nil (reparse-symbol function_parameters) [436 443]))                          )
+                        (reparse-symbol indented_block_body) [401 723])
+                    ("get_processed_folders" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [754 758])
+                            ("query" variable nil (reparse-symbol function_parameters) [760 765]))                          )
+                        (reparse-symbol indented_block_body) [728 1514])
+                    ("update_all" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1534 1538])
+                            ("query" variable nil (reparse-symbol function_parameters) [1540 1545])
+                            ("nextPageToken" variable nil (reparse-symbol function_parameters) [1547 1560]))                          )
+                        (reparse-symbol indented_block_body) [1519 1979])
+                    ("run" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1992 1996]))                          )
+                        (reparse-symbol indented_block_body) [1984 2091]))                  
+                :type "class")
+                nil [142 2091]))          
+      :file "update_mongo.py"
+      :pointmax 2091
+      :unmatched-syntax nil))
+  :file "!home!philip!dev!cyclops!google!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

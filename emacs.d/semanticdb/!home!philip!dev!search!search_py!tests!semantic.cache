@@ -1,0 +1,57 @@
+;; Object tests/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "tests/"
+  :tables
+  (list
+    (semanticdb-table "test_urls.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("datetime" include nil nil [1 16])
+            ("os" include nil nil [17 26])
+            ("django.core.urlresolvers" include nil nil [28 76])
+            ("django.utils" include nil nil [77 110])
+            ("django.test" include nil nil [111 143])
+            ("search_py.api.controllers" include nil nil [145 190])
+            ("search_py.config" include nil nil [191 224])
+            ("search_py.api.controllers" include nil nil [225 269])
+            ("UrlsTests" type
+               (:superclasses ("TestCase")
+                :members 
+                  ( ("test_filters" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [367 371]))                          
+                        :documentation "
+        Check if filters are properly parsed from urls.
+        ")
+                        (reparse-symbol indented_block_body) [350 1820])
+                    ("test_no_prefixes" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1846 1850]))                          )
+                        (reparse-symbol indented_block_body) [1825 2186])
+                    ("test_validate_urls_from_analytics" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2229 2233]))                          
+                        :documentation "
+        Check if a pool of urls collected from analytics are
+        validated by the url system.
+        ")
+                        (reparse-symbol indented_block_body) [2191 2811])
+                    ("validate_url" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2833 2837])
+                            ("path" variable nil (reparse-symbol function_parameters) [2839 2843]))                          )
+                        (reparse-symbol indented_block_body) [2816 3056]))                  
+                :type "class")
+                nil [318 3056]))          
+      :file "test_urls.py"
+      :pointmax 3056
+      :fsize 3055
+      :lastmodtime '(22755 63654 430624 658000)
+      :unmatched-syntax nil))
+  :file "!home!philip!dev!search!search_py!tests!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

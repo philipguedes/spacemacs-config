@@ -1,0 +1,292 @@
+;; Object services/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "services/"
+  :tables
+  (list
+    (semanticdb-table "__init__.py"
+      :major-mode 'python-mode
+      :tags nil
+      :file "__init__.py"
+      :pointmax 1
+      :fsize 0
+      :lastmodtime '(22857 37600 644413 424000)
+      :unmatched-syntax nil)
+    (semanticdb-table "emails.py"
+      :major-mode 'python-mode
+      :tags nil
+      :file "emails.py"
+      :pointmax 63
+      :fsize 62
+      :lastmodtime '(22857 37600 644413 424000)
+      :unmatched-syntax nil)
+    (semanticdb-table "cloudsearch.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("boto3" include nil nil [109 121])
+            ("os" include nil nil [122 131])
+            ("ENDPOINT_URL" variable nil nil [133 186])
+            ("REGION_NAME" variable nil nil [187 237])
+            ("AWS_ACCESS_KEY_ID" variable nil nil [238 297])
+            ("AWS_SECRET_ACCESS_KEY" variable nil nil [298 365])
+            ("CloudSearchDomain" type
+               (:superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [433 675]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [418 422]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [405 676])
+                    ("search" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [692 696])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [698 706]))                          )
+                        (reparse-symbol indented_block_body) [681 753]))                  
+                :type "class")
+                nil [368 753]))          
+      :file "cloudsearch.py"
+      :pointmax 753
+      :fsize 752
+      :lastmodtime '(22875 45669 848026 157000)
+      :unmatched-syntax nil)
+    (semanticdb-table "alert.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("cidadealerta.entities.alert" include nil nil [1 53])
+            ("cidadealerta.db" include nil nil [54 82])
+            ("AlertController" type
+               (:superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("if" code nil (reparse-symbol indented_block_body) [163 219])
+                            ("self" variable nil (reparse-symbol indented_block_body) [227 266]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [133 137])
+                            ("database" variable nil (reparse-symbol function_parameters) [139 147]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [120 267])
+                    ("create_alert" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [289 293])
+                            ("alert" variable nil (reparse-symbol function_parameters) [295 300]))                          )
+                        (reparse-symbol indented_block_body) [272 351])
+                    ("get_alert" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [370 374])
+                            ("alert_id" variable nil (reparse-symbol function_parameters) [376 384]))                          )
+                        (reparse-symbol indented_block_body) [356 438])
+                    ("update_alert" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [460 464])
+                            ("alert_id" variable nil (reparse-symbol function_parameters) [466 474])
+                            ("alert" variable nil (reparse-symbol function_parameters) [476 481]))                          )
+                        (reparse-symbol indented_block_body) [443 544])
+                    ("delete_alert" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [566 570])
+                            ("alert_id" variable nil (reparse-symbol function_parameters) [572 580]))                          )
+                        (reparse-symbol indented_block_body) [549 636])
+                    ("get_alert_fields" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [662 666])
+                            ("query" variable nil (reparse-symbol function_parameters) [668 673])
+                            ("field_list" variable nil (reparse-symbol function_parameters) [675 685]))                          
+                        :documentation "
+        Get alerts that matches :query
+        and return only the id and specified :fields
+        ")
+                        (reparse-symbol indented_block_body) [641 910]))                  
+                :type "class")
+                nil [85 910]))          
+      :file "alert.py"
+      :pointmax 910
+      :fsize 988
+      :lastmodtime '(22878 46730 402903 226000)
+      :unmatched-syntax nil)
+    (semanticdb-table "profile.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("cidadealerta.entities.profile" include nil nil [1 57])
+            ("cidadealerta.db" include nil nil [58 86])
+            ("ProfileController" type
+               (:superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("if" code nil (reparse-symbol indented_block_body) [169 225])
+                            ("self" variable nil (reparse-symbol indented_block_body) [233 274]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [139 143])
+                            ("database" variable nil (reparse-symbol function_parameters) [145 153]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [126 275])
+                    ("get_by_email" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [297 301])
+                            ("email" variable nil (reparse-symbol function_parameters) [303 308]))                          )
+                        (reparse-symbol indented_block_body) [280 362])
+                    ("get_by_id" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [381 385])
+                            ("profile_id" variable nil (reparse-symbol function_parameters) [387 397]))                          )
+                        (reparse-symbol indented_block_body) [367 453])
+                    ("create_or_get_profile" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [484 488])
+                            ("email" variable nil (reparse-symbol function_parameters) [490 495]))                          )
+                        (reparse-symbol indented_block_body) [458 822])
+                    ("update_email" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [844 848])
+                            ("profile_id" variable nil (reparse-symbol function_parameters) [850 860])
+                            ("new_email" variable nil (reparse-symbol function_parameters) [862 871]))                          )
+                        (reparse-symbol indented_block_body) [827 977])
+                    ("get_alerts_id" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1000 1004])
+                            ("profile_id" variable nil (reparse-symbol function_parameters) [1006 1016]))                          )
+                        (reparse-symbol indented_block_body) [982 1108])
+                    ("insert_alert" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1130 1134])
+                            ("email" variable nil (reparse-symbol function_parameters) [1136 1141])
+                            ("alert_id" variable nil (reparse-symbol function_parameters) [1143 1151]))                          
+                        :documentation "
+        Append a specified alert_id to alerts array.
+        If the array already has the alert_id,
+        this operation does nothing
+        ")
+                        (reparse-symbol indented_block_body) [1113 1438])
+                    ("get_all" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1455 1459]))                          )
+                        (reparse-symbol indented_block_body) [1443 1501])
+                    ("update_profile_by_id" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1531 1535])
+                            ("profile_id" variable nil (reparse-symbol function_parameters) [1537 1547])
+                            ("data" variable nil (reparse-symbol function_parameters) [1549 1553]))                          )
+                        (reparse-symbol indented_block_body) [1506 1623]))                  
+                :type "class")
+                nil [89 1623]))          
+      :file "profile.py"
+      :pointmax 1623
+      :fsize 1622
+      :lastmodtime '(22878 46730 402903 226000)
+      :unmatched-syntax nil)
+    (semanticdb-table "service.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("cidadealerta.services.alert" include nil nil [1 56])
+            ("cidadealerta.services.profile" include nil nil [57 116])
+            ("ServiceController" type
+               (:superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [199 254])
+                            ("self" variable nil (reparse-symbol indented_block_body) [263 314]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [169 173])
+                            ("database" variable nil (reparse-symbol function_parameters) [175 183]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [156 315])
+                    ("create_alert" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [337 341])
+                            ("data" variable nil (reparse-symbol function_parameters) [343 347]))                          )
+                        (reparse-symbol indented_block_body) [320 650])
+                    ("delete_alert" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [672 676])
+                            ("alert_id" variable nil (reparse-symbol function_parameters) [678 686]))                          )
+                        (reparse-symbol indented_block_body) [655 751])
+                    ("get_alert" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [770 774])
+                            ("alert_id" variable nil (reparse-symbol function_parameters) [776 784])
+                            ("field_list" variable nil (reparse-symbol function_parameters) [786 796]))                          )
+                        (reparse-symbol indented_block_body) [756 1092])
+                    ("get_all_alerts" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1116 1120])
+                            ("field_list" variable nil (reparse-symbol function_parameters) [1122 1132]))                          )
+                        (reparse-symbol indented_block_body) [1097 1213])
+                    ("get_profile" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1234 1238])
+                            ("profile_id" variable nil (reparse-symbol function_parameters) [1240 1250]))                          )
+                        (reparse-symbol indented_block_body) [1218 1316])
+                    ("get_all_profiles" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1342 1346]))                          )
+                        (reparse-symbol indented_block_body) [1321 1400])
+                    ("get_profile_alerts" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1428 1432])
+                            ("profile_id" variable nil (reparse-symbol function_parameters) [1434 1444]))                          )
+                        (reparse-symbol indented_block_body) [1405 1596])
+                    ("get_profile_alerts_id" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1627 1631])
+                            ("profile_id" variable nil (reparse-symbol function_parameters) [1633 1643]))                          )
+                        (reparse-symbol indented_block_body) [1601 1713])
+                    ("update_alert" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1735 1739])
+                            ("alert_id" variable nil (reparse-symbol function_parameters) [1741 1749])
+                            ("update_data" variable nil (reparse-symbol function_parameters) [1751 1762]))                          )
+                        (reparse-symbol indented_block_body) [1718 1840])
+                    ("update_email" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1862 1866])
+                            ("profile_id" variable nil (reparse-symbol function_parameters) [1868 1878])
+                            ("new_email" variable nil (reparse-symbol function_parameters) [1880 1889]))                          )
+                        (reparse-symbol indented_block_body) [1845 1969])
+                    ("update_profile" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1993 1997])
+                            ("profile_id" variable nil (reparse-symbol function_parameters) [1999 2009])
+                            ("data" variable nil (reparse-symbol function_parameters) [2011 2015]))                          )
+                        (reparse-symbol indented_block_body) [1974 2098]))                  
+                :type "class")
+                nil [119 2098]))          
+      :file "service.py"
+      :pointmax 2098
+      :fsize 2097
+      :lastmodtime '(22878 46730 402903 226000)
+      :unmatched-syntax '((RETURN 1055 . 1061) (IF 1072 . 1074) (ELSE 1082 . 1086))))
+  :file "!home!philip!dev!cidade-alerta!cidadealerta!services!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

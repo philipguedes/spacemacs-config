@@ -1,0 +1,161 @@
+;; Object parser/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "parser/"
+  :tables
+  (list
+    (semanticdb-table "template.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("os" include nil nil [1 10])
+            ("subprocess" include nil nil [11 28])
+            ("entities" include nil nil [29 59])
+            ("entities.home" include nil nil [60 97])
+            ("parser.parser" include nil nil [98 130])
+            ("s3" include nil nil [131 148])
+            ("enum" include nil nil [149 170])
+            ("logging" include nil nil [171 185])
+            ("condominium.reader_service" include nil nil [186 238])
+            ("datetime" include nil nil [239 268])
+            ("utils" include nil nil [269 281])
+            ("logger" variable nil nil [284 320])
+            ("TemplateStatus" type
+               (:superclasses ("Enum")
+                :members 
+                  ( ("Image" variable nil (reparse-symbol indented_block_body) [355 364])
+                    ("Found" variable nil (reparse-symbol indented_block_body) [369 378])
+                    ("NotFound" variable nil (reparse-symbol indented_block_body) [383 395]))                  
+                :type "class")
+                nil [323 396])
+            ("Template" type
+               (:superclasses ("object")
+                :members 
+                  ( ("MAX_DIFF" variable nil (reparse-symbol indented_block_body) [426 440])
+                    ("THRESHOLD" variable nil (reparse-symbol indented_block_body) [445 459])
+                    ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [505 571])
+                            ("self" variable nil (reparse-symbol indented_block_body) [580 648])
+                            ("self" variable nil (reparse-symbol indented_block_body) [657 723])
+                            ("self" variable nil (reparse-symbol indented_block_body) [732 788])
+                            ("self" variable nil (reparse-symbol indented_block_body) [797 851])
+                            ("self" variable nil (reparse-symbol indented_block_body) [860 893])
+                            ("self" variable nil (reparse-symbol indented_block_body) [902 930]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [478 482])
+                            ("downloader" variable nil (reparse-symbol function_parameters) [484 494]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [465 931])
+                    ("compare_files" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [954 958])
+                            ("folder" variable nil (reparse-symbol function_parameters) [960 966])
+                            ("name1" variable nil (reparse-symbol function_parameters) [968 973])
+                            ("name2" variable nil (reparse-symbol function_parameters) [975 980]))                          )
+                        (reparse-symbol indented_block_body) [936 1372])
+                    ("create_xml" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1392 1396])
+                            ("file_name" variable nil (reparse-symbol function_parameters) [1398 1407])
+                            ("folder" variable nil (reparse-symbol function_parameters) [1409 1415])
+                            ("out_folder" variable nil (reparse-symbol function_parameters) [1417 1427]))                          )
+                        (reparse-symbol indented_block_body) [1377 1820])
+                    ("save_property" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1843 1847])
+                            ("folder" variable nil (reparse-symbol function_parameters) [1849 1855])
+                            ("xml_file" variable nil (reparse-symbol function_parameters) [1857 1865])
+                            ("template" variable nil (reparse-symbol function_parameters) [1867 1875])
+                            ("property_id" variable nil (reparse-symbol function_parameters) [1877 1888]))                          )
+                        (reparse-symbol indented_block_body) [1825 2084])
+                    ("find_template" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2107 2111])
+                            ("file_name" variable nil (reparse-symbol function_parameters) [2113 2122])
+                            ("folder" variable nil (reparse-symbol function_parameters) [2124 2130])
+                            ("property_id" variable nil (reparse-symbol function_parameters) [2132 2143])
+                            ("templates" variable nil (reparse-symbol function_parameters) [2145 2154]))                          )
+                        (reparse-symbol indented_block_body) [2089 2863])
+                    ("download_template_s3" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2893 2897])
+                            ("template" variable nil (reparse-symbol function_parameters) [2899 2907])
+                            ("folder" variable nil (reparse-symbol function_parameters) [2909 2915]))                          )
+                        (reparse-symbol indented_block_body) [2868 3173])
+                    ("check_template" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3197 3201])
+                            ("file_name" variable nil (reparse-symbol function_parameters) [3203 3212])
+                            ("folder" variable nil (reparse-symbol function_parameters) [3214 3220])
+                            ("template" variable nil (reparse-symbol function_parameters) [3222 3230])
+                            ("xml_file" variable nil (reparse-symbol function_parameters) [3232 3240]))                          )
+                        (reparse-symbol indented_block_body) [3178 3521])
+                    ("process_result" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3545 3549])
+                            ("result" variable nil (reparse-symbol function_parameters) [3551 3557]))                          )
+                        (reparse-symbol indented_block_body) [3526 3757])
+                    ("save_template" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3780 3784])
+                            ("file_name" variable nil (reparse-symbol function_parameters) [3786 3795])
+                            ("folder" variable nil (reparse-symbol function_parameters) [3797 3803]))                          )
+                        (reparse-symbol indented_block_body) [3762 4130])
+                    ("save_property_template" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4162 4166])
+                            ("property_id" variable nil (reparse-symbol function_parameters) [4168 4179])
+                            ("template" variable nil (reparse-symbol function_parameters) [4181 4189]))                          )
+                        (reparse-symbol indented_block_body) [4135 4342])
+                    ("remove_images" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4365 4369])
+                            ("folder" variable nil (reparse-symbol function_parameters) [4371 4377]))                          )
+                        (reparse-symbol indented_block_body) [4347 4543])
+                    ("save_expenses" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4566 4570])
+                            ("expenses" variable nil (reparse-symbol function_parameters) [4572 4580])
+                            ("pdf_file" variable nil (reparse-symbol function_parameters) [4582 4590]))                          )
+                        (reparse-symbol indented_block_body) [4548 5276])
+                    ("parse" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5291 5295])
+                            ("template" variable nil (reparse-symbol function_parameters) [5297 5305])
+                            ("folder" variable nil (reparse-symbol function_parameters) [5307 5313])
+                            ("file_name" variable nil (reparse-symbol function_parameters) [5315 5324]))                          )
+                        (reparse-symbol indented_block_body) [5281 6204])
+                    ("get_template" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6226 6230])
+                            ("file_name" variable nil (reparse-symbol function_parameters) [6232 6241])
+                            ("folder" variable nil (reparse-symbol function_parameters) [6243 6249])
+                            ("property_id" variable nil (reparse-symbol function_parameters) [6251 6262]))                          )
+                        (reparse-symbol indented_block_body) [6209 7447]))                  
+                :type "class")
+                nil [398 7447]))          
+      :file "template.py"
+      :pointmax 7447
+      :fsize 7446
+      :lastmodtime '(22676 48220 893332 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "parser.py"
+      :file "parser.py"
+      :fsize 3575
+      :lastmodtime '(22676 48220 893332 0)))
+  :file "!home!philip!dev!cyclops!parser!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

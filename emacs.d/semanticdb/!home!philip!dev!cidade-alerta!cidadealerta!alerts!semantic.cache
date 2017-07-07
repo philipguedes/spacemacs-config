@@ -1,0 +1,71 @@
+;; Object alerts/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "alerts/"
+  :tables
+  (list
+    (semanticdb-table "__init__.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("\"\"\"
+    cidadealerta.alerts
+    ~~~~~~~~~~~~~~~~~~~
+
+    cidade-alerta alerts package
+\"\"\"" code nil nil [25 114])
+            ("flask" include nil nil [116 142])
+            ("CidadeAlertaError" include nil nil [156 189])
+            ("Service" include nil nil [156 189])
+            ("Alert" include nil nil [203 215])
+            ("AlertsService" type
+               (:superclasses ("Service")
+                :members 
+                  ( ("__model__" variable nil (reparse-symbol indented_block_body) [252 269])
+                    ("send_emails" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [291 295]))                          )
+                        (reparse-symbol indented_block_body) [275 999])
+                    ("send_email" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1019 1023])
+                            ("user" variable nil (reparse-symbol function_parameters) [1025 1029]))                          )
+                        (reparse-symbol indented_block_body) [1004 1164])
+                    ("drop_alerts" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1185 1189])
+                            ("user" variable nil (reparse-symbol function_parameters) [1191 1195]))                          )
+                        (reparse-symbol indented_block_body) [1169 1279]))                  
+                :type "class")
+                nil [218 1279]))          
+      :file "__init__.py"
+      :pointmax 1279
+      :fsize 1278
+      :lastmodtime '(22829 54637 676004 943000)
+      :unmatched-syntax '((FROM 190 . 194) (PERIOD 195 . 196) (PERIOD 150 . 151) (FROM 144 . 148) (PERIOD 149 . 150)))
+    (semanticdb-table "models.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("\"\"\"
+    cidadealerta.alerts.models
+    ~~~~~~~~~~~~~~~~~~~~~~~~~
+
+    Alert models
+\"\"\"" code nil nil [25 111])
+            ("db" include nil nil [125 134])
+            ("Alert" type
+               (:superclasses ("db.Model")
+                :members 
+                  ( ("id" variable nil (reparse-symbol indented_block_body) [164 208])
+                    ("user_id" variable nil (reparse-symbol indented_block_body) [236 293]))                  
+                :type "class")
+                nil [137 294]))          
+      :file "models.py"
+      :pointmax 294
+      :fsize 293
+      :lastmodtime '(22829 54637 676004 943000)
+      :unmatched-syntax '((PERIOD 119 . 120) (FROM 113 . 117) (PERIOD 118 . 119))))
+  :file "!home!philip!dev!cidade-alerta!cidadealerta!alerts!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

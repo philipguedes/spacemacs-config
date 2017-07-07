@@ -1,0 +1,157 @@
+;; Object entities/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "entities/"
+  :tables
+  (list
+    (semanticdb-table "photosphere.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("datetime" include nil nil [1 16])
+            ("entities" include nil nil [17 47])
+            ("PhotosphereService" type
+               (:superclasses ("DBService")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("super" code nil (reparse-symbol indented_block_body) [119 157]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [104 108]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [91 158])
+                    ("add_to_database" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [183 187])
+                            ("photo_id" variable nil (reparse-symbol function_parameters) [189 197])
+                            ("house_id" variable nil (reparse-symbol function_parameters) [199 207])
+                            ("s3_url" variable nil (reparse-symbol function_parameters) [209 215])
+                            ("description" variable nil (reparse-symbol function_parameters) [217 228]))                          )
+                        (reparse-symbol indented_block_body) [163 636])
+                    ("delete_from_database" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [666 670])
+                            ("photo_id" variable nil (reparse-symbol function_parameters) [672 680]))                          )
+                        (reparse-symbol indented_block_body) [641 885])
+                    ("delete_all_photospheres" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [918 922])
+                            ("house_id" variable nil (reparse-symbol function_parameters) [924 932]))                          )
+                        (reparse-symbol indented_block_body) [890 1128])
+                    ("get_photospheres" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1154 1158])
+                            ("house_id" variable nil (reparse-symbol function_parameters) [1160 1168]))                          )
+                        (reparse-symbol indented_block_body) [1133 1700])
+                    ("get_photospheres_urls" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1731 1735])
+                            ("house_id" variable nil (reparse-symbol function_parameters) [1737 1745]))                          )
+                        (reparse-symbol indented_block_body) [1705 1946])
+                    ("get_photosphere_url" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1975 1979])
+                            ("photo_id" variable nil (reparse-symbol function_parameters) [1981 1989]))                          )
+                        (reparse-symbol indented_block_body) [1951 2205])
+                    ("update_description_batch" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2239 2243])
+                            ("photosphere_list" variable nil (reparse-symbol function_parameters) [2245 2261]))                          )
+                        (reparse-symbol indented_block_body) [2210 2464])
+                    ("update_description" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2492 2496])
+                            ("photo_id" variable nil (reparse-symbol function_parameters) [2498 2506])
+                            ("description" variable nil (reparse-symbol function_parameters) [2508 2519]))                          )
+                        (reparse-symbol indented_block_body) [2469 2837])
+                    ("update_position_batch" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2868 2872])
+                            ("photosphere_list" variable nil (reparse-symbol function_parameters) [2874 2890]))                          )
+                        (reparse-symbol indented_block_body) [2842 3035])
+                    ("update_position" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3060 3064])
+                            ("photo_id" variable nil (reparse-symbol function_parameters) [3066 3074])
+                            ("position" variable nil (reparse-symbol function_parameters) [3076 3084]))                          )
+                        (reparse-symbol indented_block_body) [3040 3361]))                  
+                :type "class")
+                nil [50 3361]))          
+      :file "photosphere.py"
+      :pointmax 3361
+      :fsize 3360
+      :lastmodtime '(22828 33003 704131 251000)
+      :unmatched-syntax nil)
+    (semanticdb-table "__init__.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("abc" include nil nil [1 24])
+            ("MySQLdb" include nil nil [25 46])
+            ("os" include nil nil [47 56])
+            ("PROD_HOST" variable nil nil [58 105])
+            ("PROD_USER" variable nil nil [106 148])
+            ("PROD_PASSWORD" variable nil nil [149 195])
+            ("PROD_DB" variable nil nil [196 234])
+            ("DBService" type
+               (:members 
+                  ( ("__metaclass__" variable nil (reparse-symbol indented_block_body) [258 281])
+                    ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [315 338]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [300 304]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [287 339])
+                    ("get_db" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [355 359]))                          )
+                        (reparse-symbol indented_block_body) [344 553])
+                    ("valid_house" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [574 578])
+                            ("house_id" variable nil (reparse-symbol function_parameters) [580 588]))                          )
+                        (reparse-symbol indented_block_body) [558 881])
+                    ("valid_photosphere" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [908 912])
+                            ("photo_id" variable nil (reparse-symbol function_parameters) [914 922]))                          )
+                        (reparse-symbol indented_block_body) [886 1155])
+                    ("valid_photosphere_list" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1187 1191])
+                            ("photo_id_list" variable nil (reparse-symbol function_parameters) [1193 1206]))                          )
+                        (reparse-symbol indented_block_body) [1160 1535])
+                    ("commit" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1551 1555]))                          )
+                        (reparse-symbol indented_block_body) [1540 1583])
+                    ("rollback" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1601 1605]))                          )
+                        (reparse-symbol indented_block_body) [1588 1635]))                  
+                :type "class")
+                nil [237 1635]))          
+      :file "__init__.py"
+      :pointmax 1635
+      :fsize 1634
+      :lastmodtime '(22812 49689 167740 200000)
+      :unmatched-syntax '((RETURN 1124 . 1130) (IF 1136 . 1138) (ELSE 1144 . 1148))))
+  :file "!home!philip!dev!darkrum!entities!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

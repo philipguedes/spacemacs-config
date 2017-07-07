@@ -1,0 +1,126 @@
+;; Object Downloads/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Downloads/"
+  :tables
+  (list
+
+    (semanticdb-table "myarvb.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("os" include nil nil [1 10])
+            ("arvore_impressa" variable nil nil [82 102])
+            ("BTree" type
+               (:superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [69 83])
+                            ("self" variable nil (reparse-symbol indented_block_body) [118 133])
+                            ("self" variable nil (reparse-symbol indented_block_body) [159 174])
+                            ("self" variable nil (reparse-symbol indented_block_body) [183 194]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [142 146])
+                            ("t" variable nil (reparse-symbol function_parameters) [148 149]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [129 286])
+                    ("split" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [325 329]))                          
+                        :documentation "
+        Divide o no que esta cheio, criando um pai para ele
+        e um irmao que possui metade das chaves e metade dos filhos.
+        Insere ambos na arvore
+        Segue o jogo
+        ")
+                        (reparse-symbol indented_block_body) [315 2023])
+                    ("get_interval" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2056 2060])
+                            ("payload" variable nil (reparse-symbol function_parameters) [2062 2069]))                          )
+                        (reparse-symbol indented_block_body) [2039 2199])
+                    ("is_full" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2241 2245]))                          
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [2215 2294])
+                    ("folha" function
+                       (:parent "dummy"
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2334 2338]))                          
+                        :documentation "
+        Retorna se o no eh uma folha ou nao
+        ")
+                        (reparse-symbol indented_block_body) [2310 2445])
+                    ("size" function
+                       (:parent "dummy"
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2484 2488]))                          
+                        :documentation "
+        Retorna o tamanho do no
+        ")
+                        (reparse-symbol indented_block_body) [2461 2577])
+                    ("raiz" function
+                       (:parent "dummy"
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2605 2609]))                          
+                        :documentation "
+        Retorna a raiz da arvoreB em questao
+        ")
+                        (reparse-symbol indented_block_body) [2582 2923])
+                    ("insert" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2950 2954])
+                            ("payload" variable nil (reparse-symbol function_parameters) [2956 2963]))                          )
+                        (reparse-symbol indented_block_body) [2939 3525])
+                    ("add_key" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3553 3557])
+                            ("value" variable nil (reparse-symbol function_parameters) [3559 3564]))                          )
+                        (reparse-symbol indented_block_body) [3541 3624])
+                    ("store_printed_tree" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3652 3656])
+                            ("nivel" variable nil (reparse-symbol function_parameters) [3658 3663]))                          
+                        :documentation "
+        Esta funçao armazena na variavel arvore_impressa
+        toda a arvore B, para posteriormente printar tudo junto
+        Se nao for passado nenhum nivel, o valor padrao eh 0 (nivel = 0)
+        ")
+                        (reparse-symbol indented_block_body) [3629 4119]))                  
+                :type "class")
+                nil [104 4119])
+            ("print_ordered_tree" function
+               (:documentation "
+    Esta funçao printa a arvore de um jeito mais facil de entender
+    "
+                :arguments 
+                  ( ("arvoreB" variable nil (reparse-symbol function_parameters) [4145 4152]))                  )
+                nil [4122 4735])
+            ("read_pics" function (:documentation "
+    Le os arquivos na pasta raiz, no caso, a mesma pasta desse arquivo
+    Retorna uma lista contendo os nomes
+    ") nil [4737 4989])
+            ("main" function nil nil [4991 5295])
+            ("if" code nil nil [5297 5335]))          
+      :file "myarvb.py"
+      :pointmax 5335
+      :fsize 5341
+      :lastmodtime '(22812 38443 939155 889000)
+      :unmatched-syntax nil))
+  :file "!home!philip!Downloads!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

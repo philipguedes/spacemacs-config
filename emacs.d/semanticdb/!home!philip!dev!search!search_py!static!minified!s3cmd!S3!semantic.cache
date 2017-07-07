@@ -1,0 +1,225 @@
+;; Object S3/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "S3/"
+  :tables
+  (list
+    (semanticdb-table "Config.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("logging" include nil nil [130 144])
+            ("logging" include nil nil [145 192])
+            ("re" include nil nil [193 202])
+            ("os" include nil nil [203 212])
+            ("sys" include nil nil [213 223])
+            ("Progress" include nil nil [224 239])
+            ("SortedDict" include nil nil [240 273])
+            ("httplib" include nil nil [274 288])
+            ("json" include nil nil [289 300])
+            ("Config" type
+               (:superclasses ("object")
+                :members 
+                  ( ("_instance" variable nil (reparse-symbol indented_block_body) [328 344])
+                    ("_parsed_files" variable nil (reparse-symbol indented_block_body) [349 367])
+                    ("_doc" variable nil (reparse-symbol indented_block_body) [372 381])
+                    ("access_key" variable nil (reparse-symbol indented_block_body) [386 401])
+                    ("secret_key" variable nil (reparse-symbol indented_block_body) [406 421])
+                    ("access_token" variable nil (reparse-symbol indented_block_body) [426 443])
+                    ("host_base" variable nil (reparse-symbol indented_block_body) [448 478])
+                    ("host_bucket" variable nil (reparse-symbol indented_block_body) [483 526])
+                    ("simpledb_host" variable nil (reparse-symbol indented_block_body) [531 566])
+                    ("cloudfront_host" variable nil (reparse-symbol indented_block_body) [571 615])
+                    ("verbosity" variable nil (reparse-symbol indented_block_body) [620 647])
+                    ("progress_meter" variable nil (reparse-symbol indented_block_body) [652 673])
+                    ("progress_class" variable nil (reparse-symbol indented_block_body) [678 714])
+                    ("send_chunk" variable nil (reparse-symbol indented_block_body) [719 736])
+                    ("recv_chunk" variable nil (reparse-symbol indented_block_body) [741 758])
+                    ("list_md5" variable nil (reparse-symbol indented_block_body) [763 779])
+                    ("human_readable_sizes" variable nil (reparse-symbol indented_block_body) [784 812])
+                    ("extra_headers" variable nil (reparse-symbol indented_block_body) [817 863])
+                    ("force" variable nil (reparse-symbol indented_block_body) [868 881])
+                    ("enable" variable nil (reparse-symbol indented_block_body) [886 899])
+                    ("get_continue" variable nil (reparse-symbol indented_block_body) [904 924])
+                    ("skip_existing" variable nil (reparse-symbol indented_block_body) [929 950])
+                    ("recursive" variable nil (reparse-symbol indented_block_body) [955 972])
+                    ("acl_public" variable nil (reparse-symbol indented_block_body) [977 994])
+                    ("acl_grants" variable nil (reparse-symbol indented_block_body) [999 1014])
+                    ("acl_revokes" variable nil (reparse-symbol indented_block_body) [1019 1035])
+                    ("proxy_host" variable nil (reparse-symbol indented_block_body) [1040 1055])
+                    ("proxy_port" variable nil (reparse-symbol indented_block_body) [1060 1077])
+                    ("encrypt" variable nil (reparse-symbol indented_block_body) [1082 1097])
+                    ("dry_run" variable nil (reparse-symbol indented_block_body) [1102 1117])
+                    ("add_encoding_exts" variable nil (reparse-symbol indented_block_body) [1122 1144])
+                    ("preserve_attrs" variable nil (reparse-symbol indented_block_body) [1149 1170])
+                    ("preserve_attrs_list" variable nil (reparse-symbol indented_block_body) [1175 1682])
+                    ("delete_removed" variable nil (reparse-symbol indented_block_body) [1687 1709])
+                    ("delete_after" variable nil (reparse-symbol indented_block_body) [1714 1734])
+                    ("delete_after_fetch" variable nil (reparse-symbol indented_block_body) [1739 1765])
+                    ("_doc" variable nil (reparse-symbol indented_block_body) [1770 1861])
+                    ("delay_updates" variable nil (reparse-symbol indented_block_body) [1866 1887])
+                    ("gpg_passphrase" variable nil (reparse-symbol indented_block_body) [1892 1911])
+                    ("gpg_command" variable nil (reparse-symbol indented_block_body) [1916 1932])
+                    ("gpg_encrypt" variable nil (reparse-symbol indented_block_body) [1937 2078])
+                    ("gpg_decrypt" variable nil (reparse-symbol indented_block_body) [2083 2224])
+                    ("use_https" variable nil (reparse-symbol indented_block_body) [2229 2246])
+                    ("bucket_location" variable nil (reparse-symbol indented_block_body) [2251 2273])
+                    ("default_mime_type" variable nil (reparse-symbol indented_block_body) [2278 2319])
+                    ("guess_mime_type" variable nil (reparse-symbol indented_block_body) [2324 2346])
+                    ("mime_type" variable nil (reparse-symbol indented_block_body) [2351 2365])
+                    ("enable_multipart" variable nil (reparse-symbol indented_block_body) [2370 2393])
+                    ("multipart_chunk_size_mb" variable nil (reparse-symbol indented_block_body) [2398 2426])
+                    ("sync_checks" variable nil (reparse-symbol indented_block_body) [2487 2516])
+                    ("exclude" variable nil (reparse-symbol indented_block_body) [2573 2585])
+                    ("include" variable nil (reparse-symbol indented_block_body) [2590 2602])
+                    ("debug_exclude" variable nil (reparse-symbol indented_block_body) [2670 2688])
+                    ("debug_include" variable nil (reparse-symbol indented_block_body) [2693 2711])
+                    ("encoding" variable nil (reparse-symbol indented_block_body) [2716 2734])
+                    ("urlencoding_mode" variable nil (reparse-symbol indented_block_body) [2739 2766])
+                    ("log_target_prefix" variable nil (reparse-symbol indented_block_body) [2771 2793])
+                    ("reduced_redundancy" variable nil (reparse-symbol indented_block_body) [2798 2824])
+                    ("follow_symlinks" variable nil (reparse-symbol indented_block_body) [2829 2852])
+                    ("socket_timeout" variable nil (reparse-symbol indented_block_body) [2857 2877])
+                    ("invalidate_on_cf" variable nil (reparse-symbol indented_block_body) [2882 2906])
+                    ("invalidate_default_index_on_cf" variable nil (reparse-symbol indented_block_body) [2968 3006])
+                    ("invalidate_default_index_root_on_cf" variable nil (reparse-symbol indented_block_body) [3011 3053])
+                    ("website_index" variable nil (reparse-symbol indented_block_body) [3058 3086])
+                    ("website_error" variable nil (reparse-symbol indented_block_body) [3091 3109])
+                    ("website_endpoint" variable nil (reparse-symbol indented_block_body) [3114 3191])
+                    ("additional_destinations" variable nil (reparse-symbol indented_block_body) [3196 3224])
+                    ("cache_file" variable nil (reparse-symbol indented_block_body) [3229 3244])
+                    ("add_headers" variable nil (reparse-symbol indented_block_body) [3249 3265])
+                    ("__new__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3311 3315])
+                            ("configfile" variable nil (reparse-symbol function_parameters) [3317 3327]))                          )
+                        (reparse-symbol indented_block_body) [3299 3452])
+                    ("__init__" function
+                       (:suite 
+                          ( ("if" code nil (reparse-symbol indented_block_body) [3504 3788]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3470 3474])
+                            ("configfile" variable nil (reparse-symbol function_parameters) [3476 3486]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [3457 3788])
+                    ("role_config" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3809 3813]))                          )
+                        (reparse-symbol indented_block_body) [3793 4754])
+                    ("role_refresh" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4776 4780]))                          )
+                        (reparse-symbol indented_block_body) [4759 4889])
+                    ("env_config" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4909 4913]))                          )
+                        (reparse-symbol indented_block_body) [4894 6483])
+                    ("option_list" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6530 6534]))                          )
+                        (reparse-symbol indented_block_body) [6514 7023])
+                    ("read_config_file" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7049 7053])
+                            ("configfile" variable nil (reparse-symbol function_parameters) [7055 7065]))                          )
+                        (reparse-symbol indented_block_body) [7028 7476])
+                    ("dump_config" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7497 7501])
+                            ("stream" variable nil (reparse-symbol function_parameters) [7503 7509]))                          )
+                        (reparse-symbol indented_block_body) [7481 7563])
+                    ("update_option" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7586 7590])
+                            ("option" variable nil (reparse-symbol function_parameters) [7592 7598])
+                            ("value" variable nil (reparse-symbol function_parameters) [7600 7605]))                          )
+                        (reparse-symbol indented_block_body) [7568 8982]))                  
+                :type "class")
+                nil [302 8982])
+            ("ConfigParser" type
+               (:superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [9064 9077])
+                            ("self" code nil (reparse-symbol indented_block_body) [9086 9117]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9028 9032])
+                            ("file" variable nil (reparse-symbol function_parameters) [9034 9038])
+                            ("sections" variable nil (reparse-symbol function_parameters) [9040 9048]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [9015 9118])
+                    ("parse_file" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9138 9142])
+                            ("file" variable nil (reparse-symbol function_parameters) [9144 9148])
+                            ("sections" variable nil (reparse-symbol function_parameters) [9150 9158]))                          )
+                        (reparse-symbol indented_block_body) [9123 10667])
+                    ("__getitem__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10688 10692])
+                            ("name" variable nil (reparse-symbol function_parameters) [10694 10698]))                          )
+                        (reparse-symbol indented_block_body) [10672 10731])
+                    ("__setitem__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10752 10756])
+                            ("name" variable nil (reparse-symbol function_parameters) [10758 10762])
+                            ("value" variable nil (reparse-symbol function_parameters) [10764 10769]))                          )
+                        (reparse-symbol indented_block_body) [10736 10803])
+                    ("get" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10816 10820])
+                            ("name" variable nil (reparse-symbol function_parameters) [10822 10826])
+                            ("default" variable nil (reparse-symbol function_parameters) [10828 10835]))                          )
+                        (reparse-symbol indented_block_body) [10808 10937]))                  
+                :type "class")
+                nil [8983 10937])
+            ("ConfigDumper" type
+               (:superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [11006 11026]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10983 10987])
+                            ("stream" variable nil (reparse-symbol function_parameters) [10989 10995]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [10970 11027])
+                    ("dump" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11041 11045])
+                            ("section" variable nil (reparse-symbol function_parameters) [11047 11054])
+                            ("config" variable nil (reparse-symbol function_parameters) [11056 11062]))                          )
+                        (reparse-symbol indented_block_body) [11032 11234]))                  
+                :type "class")
+                nil [10938 11234]))          
+      :file "Config.py"
+      :pointmax 11258
+      :fsize 11257
+      :lastmodtime '(22755 63654 382623 808000)
+      :unmatched-syntax nil)
+    (semanticdb-table "Progress.py"
+      :file "Progress.py"
+      :fsize 6565
+      :lastmodtime '(22755 63654 382623 808000))
+    (semanticdb-table "SortedDict.py"
+      :file "SortedDict.py"
+      :fsize 1958
+      :lastmodtime '(22755 63654 382623 808000)))
+  :file "!home!philip!dev!search!search_py!static!minified!s3cmd!S3!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

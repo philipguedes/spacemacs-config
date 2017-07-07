@@ -1,0 +1,68 @@
+;; Object routes/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "routes/"
+  :tables
+  (list
+    (semanticdb-table "upload.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("flask" include nil nil [1 28])
+            ("services" include nil nil [29 61])
+            ("upload" variable nil nil [63 101])
+            ("" code nil nil [116 171])
+            ("image_upload" function (:arguments 
+              ( ("house_id" variable nil (reparse-symbol function_parameters) [189 197]))              ) nil [172 246]))          
+      :file "upload.py"
+      :pointmax 246
+      :fsize 245
+      :lastmodtime '(22804 33654 835332 789000)
+      :unmatched-syntax nil)
+    (semanticdb-table "__init__.py"
+      :major-mode 'python-mode
+      :tags nil
+      :file "__init__.py"
+      :pointmax 1
+      :fsize 0
+      :lastmodtime '(22774 36265 360628 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "photos.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("flask" include nil nil [1 37])
+            ("flask_cors" include nil nil [38 79])
+            ("services" include nil nil [80 112])
+            ("flask_headers" include nil nil [113 146])
+            ("ALLOWED_CROSS_DOMAINS" variable nil nil [149 197])
+            ("photos" variable nil nil [199 237])
+            ("public" variable nil nil [238 276])
+            ("CORS" code nil nil [277 289])
+            ("" code nil nil [305 361])
+            ("" code nil nil [375 406])
+            ("get_photospheres" function (:arguments 
+              ( ("house_id" variable nil (reparse-symbol function_parameters) [428 436]))              ) nil [407 489])
+            ("" code nil nil [504 577])
+            ("delete_image" function (:arguments 
+              ( ("photo_id" variable nil (reparse-symbol function_parameters) [595 603]))              ) nil [578 652])
+            ("" code nil nil [667 756])
+            ("update_order" function (:arguments 
+              ( ("photo_id" variable nil (reparse-symbol function_parameters) [774 782])
+                ("order" variable nil (reparse-symbol function_parameters) [784 789]))              ) nil [757 845])
+            ("" code nil nil [860 932])
+            ("update_photosphere_data" function (:arguments 
+              ( ("house_id" variable nil (reparse-symbol function_parameters) [961 969]))              ) nil [933 1099])
+            ("" code nil nil [1114 1192])
+            ("" code nil nil [1206 1237])
+            ("" code nil nil [1246 1293])
+            ("get_preview" function (:arguments 
+              ( ("photo_id" variable nil (reparse-symbol function_parameters) [1310 1318]))              ) nil [1294 1366])
+            ("" code nil nil [1381 1440])
+            ("delete_all_photospheres" function (:arguments 
+              ( ("house_id" variable nil (reparse-symbol function_parameters) [1469 1477]))              ) nil [1441 1537]))          
+      :file "photos.py"
+      :pointmax 1537
+      :fsize 1536
+      :lastmodtime '(22819 21355 622535 8000)
+      :unmatched-syntax nil))
+  :file "!home!philip!dev!darkrum!routes!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,49 @@
+;; Object search/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "search/"
+  :tables
+  (list
+    (semanticdb-table "manage.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("os" include nil nil [23 32])
+            ("sys" include nil nil [33 43])
+            ("if" code nil nil [45 260]))          
+      :file "manage.py"
+      :pointmax 260
+      :fsize 259
+      :lastmodtime '(22755 63654 254621 540000)
+      :unmatched-syntax nil)
+    (semanticdb-table "static_files.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("sys" include nil nil [24 34])
+            ("subprocess" include nil nil [35 52])
+            ("os" include nil nil [53 62])
+            ("cmd" function (:arguments 
+              ( ("command" variable nil (reparse-symbol function_parameters) [72 79]))              ) nil [64 112])
+            ("ENV" variable nil nil [113 130])
+            ("ACCESS_KEY" variable nil nil [131 155])
+            ("SECRET_KEY" variable nil nil [156 180])
+            ("JENKINS_ID" variable nil nil [181 205])
+            ("try" code nil nil [207 388])
+            ("print" code nil nil [389 422])
+            ("os" code nil nil [424 461])
+            ("cmd" code nil nil [463 569])
+            ("print" code nil nil [571 594])
+            ("cmd" code nil nil [596 637])
+            ("cmd" code nil nil [638 678])
+            ("cmd" code nil nil [679 727])
+            ("cmd" code nil nil [728 770])
+            ("print" code nil nil [772 809])
+            ("if" code nil nil [811 1024])
+            ("assets" variable nil nil [1025 3604])
+            ("for" code nil nil [3606 4075]))          
+      :file "static_files.py"
+      :pointmax 4077
+      :fsize 4076
+      :lastmodtime '(22755 63654 430624 658000)
+      :unmatched-syntax nil))
+  :file "!home!philip!dev!search!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

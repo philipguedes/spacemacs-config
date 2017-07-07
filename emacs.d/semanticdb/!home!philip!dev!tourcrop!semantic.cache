@@ -1,0 +1,85 @@
+;; Object tourcrop/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "tourcrop/"
+  :tables
+  (list
+    (semanticdb-table "crop.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("os" include nil nil [1 10])
+            ("shutil" include nil nil [11 24])
+            ("subprocess" include nil nil [25 42])
+            ("tempfile" include nil nil [43 58])
+            ("numpy" include nil nil [59 71])
+            ("scipy" include nil nil [72 94])
+            ("Image3D" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [140 168])
+                            ("self" variable nil (reparse-symbol indented_block_body) [177 228])
+                            ("self" variable nil (reparse-symbol indented_block_body) [237 289]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [129 133])
+                            ("image_path" variable nil (reparse-symbol function_parameters) [135 145]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [116 306])
+                    ("crop" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [320 324]))                          
+                        :documentation "
+        Create 6 images representing a cubemap.
+        They're named as crop<number>.jpg, where number can be
+        any integer in the interval [1, 6]
+        The number 1 always represent the front image.
+        ")
+                        (reparse-symbol indented_block_body) [311 669])
+                    ("isolate_and_flip" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [695 699]))                          
+                        :documentation "
+        Isolate the preview image and saves
+        in the same dir where the original image is.
+        It saves under the name <originalimagename>_preview.jpg
+        in the same path of the equirectangular image
+        ")
+                        (reparse-symbol indented_block_body) [674 1290])
+                    ("set_up" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1306 1310]))                          
+                        :documentation "
+        Create a temporary directory with a copy of the image
+        and change the current working directory to it
+        ")
+                        (reparse-symbol indented_block_body) [1295 1640])
+                    ("clean_up" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1658 1662]))                          
+                        :documentation "
+        Clean the environment removing the temp dir tree
+        ")
+                        (reparse-symbol indented_block_body) [1645 1782])
+                    ("run" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1795 1799]))                          
+                        :documentation "
+        Returns a tuple with the original image path
+        and the cropped image path
+        ")
+                        (reparse-symbol indented_block_body) [1787 2062]))                  
+                :type "class")
+                nil [97 2062]))          
+      :file "crop.py"
+      :pointmax 2062
+      :fsize 2061
+      :lastmodtime '(22766 27233 832278 223000)
+      :unmatched-syntax nil))
+  :file "!home!philip!dev!tourcrop!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,31 @@
+;; Object versions/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "versions/"
+  :tables
+  (list
+    (semanticdb-table "4becc0a506f6_first_revision.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("\"\"\"First revision
+
+Revision ID: 4becc0a506f6
+Revises: 
+Create Date: 2017-05-19 08:49:02.683238
+
+\"\"\"" code nil nil [1 100])
+            ("alembic" include nil nil [101 123])
+            ("sqlalchemy" include nil nil [124 147])
+            ("revision" variable nil nil [191 216])
+            ("down_revision" variable nil nil [217 237])
+            ("branch_labels" variable nil nil [238 258])
+            ("depends_on" variable nil nil [259 276])
+            ("upgrade" function nil nil [279 3090])
+            ("downgrade" function nil nil [3092 3429]))          
+      :file "4becc0a506f6_first_revision.py"
+      :pointmax 3429
+      :fsize 3428
+      :lastmodtime '(22819 15446 40976 161000)
+      :unmatched-syntax nil))
+  :file "!home!philip!dev!cidade-alerta!alembic!versions!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

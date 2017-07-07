@@ -1,0 +1,18 @@
+;; Object translators/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "translators/"
+  :tables
+  (list
+    (semanticdb-table "contract.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("translate" function (:arguments 
+              ( ("data" variable nil (reparse-symbol function_parameters) [17 21]))              ) nil [3 1049]))          
+      :file "contract.py"
+      :pointmax 1049
+      :fsize 39
+      :lastmodtime '(22877 8309 679590 797000)
+      :unmatched-syntax nil))
+  :file "!home!philip!dev!cidade-alerta!cidadealerta!translators!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

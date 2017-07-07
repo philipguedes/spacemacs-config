@@ -1,0 +1,37 @@
+;; Object auth/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "auth/"
+  :tables
+  (list
+    (semanticdb-table "__init__.py"
+      :major-mode 'python-mode
+      :tags nil
+      :file "__init__.py"
+      :pointmax 1
+      :fsize 0
+      :lastmodtime '(22859 63175 41331 413000)
+      :unmatched-syntax nil)
+    (semanticdb-table "decorator.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("os" include nil nil [1 10])
+            ("functools" include nil nil [11 38])
+            ("flask" include nil nil [40 72])
+            ("ENV" variable nil nil [74 117])
+            ("API_KEY" variable nil nil [118 148])
+            ("require_api_key" function
+               (:documentation "
+    A decorator that checks for a valid API key supplied in the header
+    of an HTTP request
+    "
+                :arguments 
+                  ( ("func" variable nil (reparse-symbol function_parameters) [171 175]))                  )
+                nil [151 627]))          
+      :file "decorator.py"
+      :pointmax 627
+      :fsize 626
+      :lastmodtime '(22859 63175 41331 413000)
+      :unmatched-syntax nil))
+  :file "!home!philip!dev!cidade-alerta!cidadealerta!api!auth!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

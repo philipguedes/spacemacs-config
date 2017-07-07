@@ -1,0 +1,30 @@
+;; Object cidadealerta/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "cidadealerta/"
+  :tables
+  (list
+    (semanticdb-table "db.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("os" include nil nil [1 10])
+            ("pymongo" include nil nil [11 42])
+            ("MONGO_CONNECTION_STRING" variable nil nil [45 190])
+            ("get_db" function (:documentation "
+    Method used to inject MongoDB dependency
+    ") nil [200 366]))          
+      :file "db.py"
+      :pointmax 366
+      :fsize 365
+      :lastmodtime '(22875 45669 844025 988000)
+      :unmatched-syntax nil)
+    (semanticdb-table "__init__.py"
+      :major-mode 'python-mode
+      :tags nil
+      :file "__init__.py"
+      :pointmax 1
+      :fsize 0
+      :lastmodtime '(22859 63175 29331 581000)
+      :unmatched-syntax nil))
+  :file "!home!philip!dev!cidade-alerta!cidadealerta!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

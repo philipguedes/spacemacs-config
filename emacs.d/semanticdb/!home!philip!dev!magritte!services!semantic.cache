@@ -1,0 +1,48 @@
+;; Object services/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "services/"
+  :tables
+  (list
+    (semanticdb-table "photosphere.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("flask" include nil nil [1 35])
+            ("libxmp.utils" include nil nil [36 55])
+            ("tempfile" include nil nil [56 71])
+            ("os" include nil nil [72 81])
+            ("entities.photosphere" include nil nil [82 133])
+            ("imghdr" include nil nil [134 147])
+            ("s3" include nil nil [148 157])
+            ("utils" include nil nil [158 185])
+            ("editor" include nil nil [186 209])
+            ("PHOTOSPHERE_NAMESPACE" variable nil nil [211 278])
+            ("get_service" function nil nil [281 332])
+            ("store_temp_image" function (:arguments 
+              ( ("image" variable nil (reparse-symbol function_parameters) [355 360]))              ) nil [334 479])
+            ("is_photosphere" function (:arguments 
+              ( ("image" variable nil (reparse-symbol function_parameters) [500 505]))              ) nil [481 813])
+            ("error" function (:arguments 
+              ( ("message" variable nil (reparse-symbol function_parameters) [825 832])
+                ("code" variable nil (reparse-symbol function_parameters) [834 838]))              ) nil [815 954])
+            ("is_authenticated" function (:arguments 
+              ( ("request" variable nil (reparse-symbol function_parameters) [977 984]))              ) nil [956 1022])
+            ("validate_token" function (:arguments 
+              ( ("request" variable nil (reparse-symbol function_parameters) [1043 1050]))              ) nil [1024 1364])
+            ("image_upload" function (:arguments 
+              ( ("house_id" variable nil (reparse-symbol function_parameters) [1383 1391]))              ) nil [1366 2530]))          
+      :file "photosphere.py"
+      :pointmax 2530
+      :fsize 2602
+      :lastmodtime '(22775 46622 927679 17000)
+      :unmatched-syntax nil)
+    (semanticdb-table "__init__.py"
+      :major-mode 'python-mode
+      :tags nil
+      :file "__init__.py"
+      :pointmax 1
+      :fsize 0
+      :lastmodtime '(22775 33553 88650 639000)
+      :unmatched-syntax nil))
+  :file "!home!philip!dev!magritte!services!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

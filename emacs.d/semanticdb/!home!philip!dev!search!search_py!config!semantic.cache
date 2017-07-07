@@ -1,0 +1,50 @@
+;; Object config/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "config/"
+  :tables
+  (list
+    (semanticdb-table "urls.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("django.conf.urls" include nil nil [15 57])
+            ("django.views.generic" include nil nil [58 103])
+            ("django.views.generic.base" include nil nil [104 154])
+            ("search_py.config" include nil nil [156 193])
+            ("search_py.api.controllers.classifieds" include nil nil [195 256])
+            ("search_py.api.controllers.search" include nil nil [257 308])
+            ("search_py.api.controllers.index" include nil nil [309 358])
+            ("search_py.api.controllers.test" include nil nil [359 406])
+            ("search_py.api.controllers.redirect" include nil nil [407 465])
+            ("search_py.api.controllers.auth" include nil nil [466 513])
+            ("search_py.api.controllers.files" include nil nil [514 563])
+            ("search_py.api.controllers.imovel" include nil nil [564 615])
+            ("search_py.api.controllers.mensagem" include nil nil [616 671])
+            ("search_py.api.controllers.customerror" include nil nil [672 733])
+            ("search_py.api.controllers.statichtml" include nil nil [734 793])
+            ("search_py.api.controllers.sitemap" include nil nil [794 847])
+            ("search_py.api.controllers.visitas" include nil nil [848 901])
+            ("search_py.api.controllers.lead" include nil nil [902 949])
+            ("search_py.api.controllers.emails" include nil nil [950 1001])
+            ("search_py.api.controllers.agendamento" include nil nil [1002 1063])
+            ("search_py.config.url_patterns" include nil nil [1064 1111])
+            ("search_py.config.url_patterns" include nil nil [1112 1172])
+            ("django.views.decorators.cache" include nil nil [1174 1226])
+            ("urlpatterns" variable nil nil [1228 6514])
+            ("handler500" variable nil nil [6516 6549])
+            ("handler404" variable nil nil [6550 6583]))          
+      :file "urls.py"
+      :pointmax 6584
+      :fsize 6585
+      :lastmodtime '(22796 38531 679215 655000)
+      :unmatched-syntax nil)
+    (semanticdb-table "url_patterns.py"
+      :file "url_patterns.py"
+      :fsize 196
+      :lastmodtime '(22755 63654 258621 612000))
+    (semanticdb-table "cache.py"
+      :file "cache.py"
+      :fsize 255
+      :lastmodtime '(22755 63654 258621 612000)))
+  :file "!home!philip!dev!search!search_py!config!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,28 @@
+;; Object finance/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "finance/"
+  :tables
+  (list
+    (semanticdb-table "list_payments.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("database" include nil nil [1 16])
+            ("csv" include nil nil [17 27])
+            ("fields" variable nil nil [110 296])
+            ("db" variable nil nil [297 319])
+            ("cursor" variable nil nil [320 340])
+            ("cursor" code nil nil [341 649])
+            ("rows" variable nil nil [650 674])
+            ("f" variable nil nil [675 712])
+            ("w" variable nil nil [713 760])
+            ("w" code nil nil [761 779])
+            ("for" code nil nil [780 817])
+            ("f" code nil nil [817 826]))          
+      :file "list_payments.py"
+      :pointmax 827
+      :fsize 826
+      :lastmodtime '(22766 26829 711348 586000)
+      :unmatched-syntax nil))
+  :file "!home!philip!dev!analytics!finance!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

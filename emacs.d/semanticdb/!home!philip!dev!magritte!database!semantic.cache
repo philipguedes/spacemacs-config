@@ -1,0 +1,82 @@
+;; Object database/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "database/"
+  :tables
+  (list
+
+    (semanticdb-table "__init__.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("MySQLdb" include nil nil [1 28])
+            ("MySQLdb" include nil nil [29 50])
+            ("os" include nil nil [51 60])
+            ("sys" include nil nil [61 71])
+            ("DBService" type
+               (:superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [149 182])
+                            ("self" variable nil (reparse-symbol indented_block_body) [191 219]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [116 120])
+                            ("serverside" variable nil (reparse-symbol function_parameters) [122 132]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [103 220])
+                    ("get_db" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [236 240])
+                            ("serverside" variable nil (reparse-symbol function_parameters) [242 252]))                          )
+                        (reparse-symbol indented_block_body) [225 563])
+                    ("valid_house" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [584 588])
+                            ("house_id" variable nil (reparse-symbol function_parameters) [590 598]))                          )
+                        (reparse-symbol indented_block_body) [568 749]))                  
+                :type "class")
+                nil [74 749]))          
+      :file "__init__.py"
+      :pointmax 1734
+      :fsize 1049
+      :lastmodtime '(22774 37353 439008 957000)
+      :unmatched-syntax nil)
+    (semanticdb-table "photosphere.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("datetime" include nil nil [1 16])
+            ("entities" include nil nil [17 47])
+            ("PhotosphereService" type
+               (:superclasses ("DBService")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("super" code nil (reparse-symbol indented_block_body) [137 191]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [104 108])
+                            ("serverside" variable nil (reparse-symbol function_parameters) [110 120]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [91 192])
+                    ("add_to_database" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [217 221])
+                            ("db" variable nil (reparse-symbol function_parameters) [223 225])
+                            ("house_id" variable nil (reparse-symbol function_parameters) [227 235])
+                            ("s3_url" variable nil (reparse-symbol function_parameters) [237 243])
+                            ("description" variable nil (reparse-symbol function_parameters) [245 256])
+                            ("preview_from" variable nil (reparse-symbol function_parameters) [258 270]))                          )
+                        (reparse-symbol indented_block_body) [197 736]))                  
+                :type "class")
+                nil [50 736]))          
+      :file "photosphere.py"
+      :pointmax 736
+      :fsize 735
+      :lastmodtime '(22775 36134 821849 355000)
+      :unmatched-syntax nil))
+  :file "!home!philip!dev!magritte!database!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

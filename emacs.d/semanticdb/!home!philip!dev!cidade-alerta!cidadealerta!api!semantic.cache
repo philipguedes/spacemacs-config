@@ -1,0 +1,37 @@
+;; Object api/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "api/"
+  :tables
+  (list
+    (semanticdb-table "__init__.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("ALLOWED_CROSS_DOMAINS" variable nil nil [1 49]))          
+      :file "__init__.py"
+      :pointmax 50
+      :fsize 49
+      :lastmodtime '(22859 63175 41331 413000)
+      :unmatched-syntax nil)
+    (semanticdb-table "swagger.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("os" include nil nil [1 10])
+            ("re" include nil nil [11 20])
+            ("flask" include nil nil [21 44])
+            ("flask" include nil nil [45 70])
+            ("ENV" variable nil nil [72 115])
+            ("SWAGGER_API_KEY" variable nil nil [116 162])
+            ("if" code nil nil [164 293])
+            ("pattern" variable nil nil [294 332])
+            ("guard_apidocs_requests" function (:arguments 
+              ( ("app" variable nil (reparse-symbol function_parameters) [362 365]))              ) nil [335 813])
+            ("swagger_ui_template" variable nil nil [814 1099])
+            ("swagger_config" variable nil nil [1101 1378]))          
+      :file "swagger.py"
+      :pointmax 1379
+      :fsize 1378
+      :lastmodtime '(22865 30797 185836 196000)
+      :unmatched-syntax nil))
+  :file "!home!philip!dev!cidade-alerta!cidadealerta!api!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

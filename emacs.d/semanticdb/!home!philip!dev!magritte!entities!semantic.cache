@@ -1,0 +1,84 @@
+;; Object entities/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "entities/"
+  :tables
+  (list
+    (semanticdb-table "__init__.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("MySQLdb" include nil nil [1 28])
+            ("MySQLdb" include nil nil [29 50])
+            ("os" include nil nil [51 60])
+            ("DBService" type
+               (:superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [138 171])
+                            ("self" variable nil (reparse-symbol indented_block_body) [180 208]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [105 109])
+                            ("serverside" variable nil (reparse-symbol function_parameters) [111 121]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [92 209])
+                    ("get_db" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [225 229])
+                            ("serverside" variable nil (reparse-symbol function_parameters) [231 241]))                          )
+                        (reparse-symbol indented_block_body) [214 552])
+                    ("valid_house" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [573 577])
+                            ("house_id" variable nil (reparse-symbol function_parameters) [579 587]))                          )
+                        (reparse-symbol indented_block_body) [557 766])
+                    ("commit" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [782 786]))                          )
+                        (reparse-symbol indented_block_body) [771 814]))                  
+                :type "class")
+                nil [63 814]))          
+      :file "__init__.py"
+      :pointmax 814
+      :fsize 813
+      :lastmodtime '(22775 52877 947849 868000)
+      :unmatched-syntax nil)
+    (semanticdb-table "photosphere.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("datetime" include nil nil [1 16])
+            ("entities" include nil nil [17 47])
+            ("PhotosphereService" type
+               (:superclasses ("DBService")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("super" code nil (reparse-symbol indented_block_body) [137 185]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [104 108])
+                            ("serverside" variable nil (reparse-symbol function_parameters) [110 120]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [91 186])
+                    ("add_to_database" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [211 215])
+                            ("house_id" variable nil (reparse-symbol function_parameters) [217 225])
+                            ("s3_url" variable nil (reparse-symbol function_parameters) [227 233])
+                            ("description" variable nil (reparse-symbol function_parameters) [235 246])
+                            ("preview_from" variable nil (reparse-symbol function_parameters) [248 260]))                          )
+                        (reparse-symbol indented_block_body) [191 731]))                  
+                :type "class")
+                nil [50 731]))          
+      :file "photosphere.py"
+      :pointmax 731
+      :fsize 730
+      :lastmodtime '(22775 43409 72563 772000)
+      :unmatched-syntax nil))
+  :file "!home!philip!dev!magritte!entities!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

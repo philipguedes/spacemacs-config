@@ -1,0 +1,18 @@
+;; Object bin/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "bin/"
+  :tables
+  (list
+    (semanticdb-table "django-admin.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("django.core" include nil nil [49 83])
+            ("if" code nil nil [85 155]))          
+      :file "django-admin.py"
+      :pointmax 155
+      :fsize 154
+      :lastmodtime '(22796 39179 522745 878000)
+      :unmatched-syntax nil))
+  :file "!home!philip!dev!search!env_search!bin!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

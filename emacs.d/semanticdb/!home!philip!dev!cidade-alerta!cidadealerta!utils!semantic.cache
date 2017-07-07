@@ -1,0 +1,44 @@
+;; Object utils/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "utils/"
+  :tables
+  (list
+    (semanticdb-table "__init__.py"
+      :major-mode 'python-mode
+      :tags nil
+      :file "__init__.py"
+      :pointmax 1
+      :fsize 0
+      :lastmodtime '(22841 38822 597361 21000)
+      :unmatched-syntax nil)
+    (semanticdb-table "flask_utils.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("hashids" include nil nil [1 28])
+            ("werkzeug.routing" include nil nil [29 71])
+            ("hashids" variable nil nil [93 154])
+            ("HashidConverter" type
+               (:superclasses ("BaseConverter")
+                :members 
+                  ( ("to_url" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [210 214])
+                            ("value" variable nil (reparse-symbol function_parameters) [216 221]))                          )
+                        (reparse-symbol indented_block_body) [199 261])
+                    ("to_python" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [280 284])
+                            ("value" variable nil (reparse-symbol function_parameters) [286 291]))                          )
+                        (reparse-symbol indented_block_body) [266 334]))                  
+                :type "class")
+                nil [157 334]))          
+      :file "flask_utils.py"
+      :pointmax 334
+      :fsize 333
+      :lastmodtime '(22841 38822 597361 21000)
+      :unmatched-syntax nil))
+  :file "!home!philip!dev!cidade-alerta!cidadealerta!utils!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

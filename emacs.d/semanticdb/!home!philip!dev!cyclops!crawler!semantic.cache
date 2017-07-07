@@ -1,0 +1,87 @@
+;; Object crawler/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "crawler/"
+  :tables
+  (list
+    (semanticdb-table "itau.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("bs4" include nil nil [1 30])
+            ("utils.flask_utils" include nil nil [31 70])
+            ("re" include nil nil [71 80])
+            ("requests" include nil nil [81 96])
+            ("base_url" variable nil nil [98 139])
+            ("headers" variable nil nil [140 203])
+            ("get_params" function (:arguments 
+              ( ("full_barcode" variable nil (reparse-symbol function_parameters) [221 233]))              ) nil [206 983])
+            ("make_ans" function (:arguments 
+              ( ("content" variable nil (reparse-symbol function_parameters) [998 1005])
+                ("status" variable nil (reparse-symbol function_parameters) [1007 1013]))              ) nil [985 1100])
+            ("get_pdf_file" function (:arguments 
+              ( ("content" variable nil (reparse-symbol function_parameters) [1119 1126]))              ) nil [1102 2565]))          
+      :file "itau.py"
+      :pointmax 2565
+      :fsize 2568
+      :lastmodtime '(22729 31480 635904 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "lello.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("bs4" include nil nil [1 30])
+            ("requests" include nil nil [31 46])
+            ("re" include nil nil [47 56])
+            ("urllib.parse" include nil nil [57 76])
+            ("os" include nil nil [77 86])
+            ("utils" include nil nil [87 99])
+            ("entities.pdf_file" include nil nil [100 144])
+            ("crawler.utils" include nil nil [145 182])
+            ("logging" include nil nil [183 197])
+            ("Lello" type
+               (:superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [261 314])
+                            ("self" variable nil (reparse-symbol indented_block_body) [323 370])
+                            ("self" variable nil (reparse-symbol indented_block_body) [379 419])
+                            ("self" variable nil (reparse-symbol indented_block_body) [428 448]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [238 242])
+                            ("folder" variable nil (reparse-symbol function_parameters) [244 250]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [225 449])
+                    ("get_boletos" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [470 474])
+                            ("home_id" variable nil (reparse-symbol function_parameters) [476 483])
+                            ("cpf" variable nil (reparse-symbol function_parameters) [485 488])
+                            ("password" variable nil (reparse-symbol function_parameters) [490 498]))                          )
+                        (reparse-symbol indented_block_body) [454 1131])
+                    ("get_pdf_url" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1152 1156])
+                            ("cpf" variable nil (reparse-symbol function_parameters) [1158 1161]))                          )
+                        (reparse-symbol indented_block_body) [1136 1777])
+                    ("get_due_date" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1799 1803])
+                            ("soup" variable nil (reparse-symbol function_parameters) [1805 1809]))                          )
+                        (reparse-symbol indented_block_body) [1782 2029]))                  
+                :type "class")
+                nil [200 2029]))          
+      :file "lello.py"
+      :pointmax 2029
+      :fsize 2028
+      :lastmodtime '(22676 48220 893332 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "utils.py"
+      :file "utils.py"
+      :fsize 971
+      :lastmodtime '(22676 48220 893332 0)))
+  :file "!home!philip!dev!cyclops!crawler!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

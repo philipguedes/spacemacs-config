@@ -1,0 +1,22 @@
+;; Object profiler/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "profiler/"
+  :tables
+  (list
+    (semanticdb-table "__init__.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("\"\"\"
+    cidadealerta.profiler
+    ~~~~~~~~~~~~~~~~~~~~~
+
+    cidade-alerta profiler package
+\"\"\"" code nil nil [25 120]))          
+      :file "__init__.py"
+      :pointmax 121
+      :fsize 120
+      :lastmodtime '(22819 15446 44976 158000)
+      :unmatched-syntax nil))
+  :file "!home!philip!dev!cidade-alerta!cidadealerta!profiler!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

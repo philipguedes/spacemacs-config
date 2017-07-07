@@ -1,0 +1,38 @@
+;; Object cidade-alerta/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "cidade-alerta/"
+  :tables
+  (list
+    (semanticdb-table "Makefile"
+      :major-mode 'makefile-gmake-mode
+      :tags 
+        '( ("init" function nil nil [1 7])
+            ("test" function nil nil [44 50]))          
+      :file "Makefile"
+      :pointmax 69
+      :fsize 68
+      :lastmodtime '(22819 15446 40976 161000)
+      :unmatched-syntax '((symbol 64 . 69) (symbol 54 . 63) (bol 50 . 50) (symbol 26 . 42) (symbol 23 . 25) (symbol 15 . 22) (symbol 11 . 14) (bol 7 . 7)))
+    (semanticdb-table "app.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("flasgger" include nil nil [1 29])
+            ("flask" include nil nil [30 53])
+            ("flask_cors" include nil nil [54 81])
+            ("cidadealerta.api.swagger" include nil nil [82 141])
+            ("cidadealerta.api.swagger" include nil nil [142 198])
+            ("cidadealerta.api.swagger" include nil nil [199 250])
+            ("app" variable nil nil [252 317])
+            ("guard_apidocs_requests" code nil nil [319 346])
+            ("Swagger" code nil nil [347 412])
+            ("CORS" code nil nil [413 435])
+            ("" code nil nil [448 481])
+            ("healthcheck" function nil nil [482 517]))          
+      :file "app.py"
+      :pointmax 517
+      :fsize 516
+      :lastmodtime '(22857 37616 536644 220000)
+      :unmatched-syntax nil))
+  :file "!home!philip!dev!cidade-alerta!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")
